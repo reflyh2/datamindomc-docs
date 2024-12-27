@@ -6,7 +6,7 @@ outline: deep
 
 ![Informasi Kurs](../public/informasi-kurs.png)
 
-Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan data terkait nilai tukar mata uang (kurs), stok valuta asing, serta data transaksi yang relevan. Halaman ini dirancang untuk membantu pengguna dalam memantau dan mengelola kurs valas dan transaksi keuangan.
+Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan data terkait nilai tukar mata uang (kurs), stok valuta asing, serta data transaksi yang relevan. Halaman ini dirancang untuk membantu pengguna dalam memantau data kurs valas dan transaksi keuangan.
 
 ---
 
@@ -30,7 +30,6 @@ Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan d
     - **Brankas**: Jumlah stok mata uang asing yang tersedia.
     - **Akhir**: Total stok mata uang asing pada akhir periode.
     - **Akhir (USD)**: Total stok dalam denominasi USD.
-- **Pelajari juga**
 
 ### 3. **Data Transaksi**
 
@@ -51,7 +50,7 @@ Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan d
 
 ### 5. **Aksi dan Tombol**
 
-- **Tombol “Print”**:
+- **Tombol "Print"**:
   - **Fungsi**: Digunakan untuk mencetak informasi yang ditampilkan pada halaman.
   - **Lokasi**: Di bagian kanan atas halaman.
 
@@ -68,8 +67,6 @@ Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan d
    - Pengguna dapat memonitor saldo dan modal valuta asing serta melihat nilai “Nett” sebagai hasil dari saldo dikurangi modal.
 4. **Mencetak Laporan**:
    - Klik tombol “Print” untuk mencetak laporan informasi kurs yang ditampilkan di halaman.
-
----
 
 ## Lainnya
 

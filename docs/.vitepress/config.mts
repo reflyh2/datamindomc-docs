@@ -47,7 +47,7 @@ export default defineConfig({
           { text: "Transaksi Valas", link: "/transaksi/transaksi-valas" },
           {
             text: "Transaksi Antar Cabang",
-            link: "/transaksi/transaksi-valas",
+            link: "/transaksi/transaksi-antarcabang",
           },
           {
             text: "Daftar Transaksi Valas",
