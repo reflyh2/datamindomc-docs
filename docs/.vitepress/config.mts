@@ -62,10 +62,10 @@ export default defineConfig({
       {
         text: "Inventori",
         items: [
-          { text: "Stok Valas", link: "/transaksi/informasi-kurs" },
-          { text: "Pinjaman Valas", link: "/transaksi/informasi-kurs" },
-          { text: "PB Valas", link: "/transaksi/informasi-kurs" },
-          { text: "Riwayat Valas", link: "/transaksi/informasi-kurs" },
+          { text: "Stok Valas", link: "/inventori/stok-valas" },
+          { text: "Pinjaman Valas", link: "/inventori/pinjaman-valas" },
+          { text: "PB Valas", link: "/inventori/pb-valas" },
+          { text: "Riwayat Valas", link: "/inventori/riwayat-valas" },
         ],
       },
 
