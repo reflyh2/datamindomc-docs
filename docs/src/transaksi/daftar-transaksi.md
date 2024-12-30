@@ -4,7 +4,7 @@ outline: deep
 
 # Daftar Transaksi Valas
 
-![Daftar Transaksi Valas](../public/daftar-transaksi.png)
+![Daftar Transaksi Valas](/daftar-transaksi.png)
 
 Halaman **Daftar Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data transaksi valas, pengguna dapat memantau seluruh data transaksi, mengekspor data dan beberapa aksi lainnya.
 

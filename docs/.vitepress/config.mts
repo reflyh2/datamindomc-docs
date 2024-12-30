@@ -4,9 +4,10 @@ export default defineConfig({
   title: "Datamindo",
   description: "Dokumentasi penggunaan penggunaan software.",
   lang: "id-ID",
+  srcDir: "src",
   cleanUrls: true,
   themeConfig: {
-    logo: { src: "../public/logo.svg", alt: "logo" },
+    logo: { src: "/logo.svg", alt: "logo" },
 
     darkModeSwitchLabel: "Tampilan",
     lightModeSwitchTitle: "Ubah ke tampilan terang",
@@ -67,6 +68,47 @@ export default defineConfig({
           { text: "PB Valas", link: "/inventori/pb-valas" },
           { text: "Riwayat Valas", link: "/inventori/riwayat-valas" },
         ],
+      },
+
+      {
+        text: "Master",
+        items: [
+          { text: "Pengaturan Kurs", link: "/inventori/stok-valas" },
+          { text: "Proses Awal Hari", link: "/inventori/stok-valas" },
+          { text: "Master Valas", link: "/inventori/stok-valas" },
+          { text: "Pecahan Valas", link: "/inventori/stok-valas" },
+        ],
+      },
+
+      {
+        text: "Staff",
+        items: [
+          { text: "Daftar Pengguna", link: "/inventori/stok-valas" },
+          { text: "Daftar Jabatan", link: "/inventori/stok-valas" },
+          { text: "Daftar Akses", link: "/inventori/stok-valas" },
+        ],
+      },
+
+      {
+        text: "Manajemen Cabang",
+        items: [
+          { text: "Perusahaan", link: "/inventori/stok-valas" },
+          { text: "Area", link: "/inventori/stok-valas" },
+          { text: "Cabang", link: "/inventori/stok-valas" },
+          { text: "Pengaturan Cabang", link: "/inventori/stok-valas" },
+        ],
+      },
+
+      {
+        text: "Pelanggan",
+        items: [
+          { text: "Pengaturan Pelanggan", link: "/inventori/stok-valas" },
+          { text: "Database Pelanggan", link: "/inventori/stok-valas" },
+        ],
+      },
+
+      {
+        text: "Laporan Umum",
       },
 
       {

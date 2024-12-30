@@ -4,7 +4,7 @@ outline: deep
 
 # Stok Valas
 
-![Stok Valas](../public/stok-valas.png)
+![Stok Valas](/stok-valas.png)
 
 Halaman **Stok Valas** adalah bagian dari sistem aplikasi yang digunakan untuk memantau daftar stok valas.
 

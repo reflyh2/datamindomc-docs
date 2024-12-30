@@ -4,7 +4,7 @@ outline: deep
 
 # Pembayaran Valas
 
-![Pembayaran Valas](../public/pembayaran-valas.png)
+![Pembayaran Valas](/pembayaran-valas.png)
 
 Halaman **Pembayaran Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data transaksi valas yang memerlukan pembayaran.
 
@@ -39,7 +39,7 @@ Halaman **Pembayaran Valas** adalah bagian dari sistem aplikasi yang digunakan u
 1. **Melakukan pembayaran Valas**:
    - Pengguna dapat melakukan pembayaran valas dengan menekan tombol "Payment" pada transaksi yang ingin dilakukan pembayaran.
    - Form pembayaran akan muncul seperti pada gambar berikut :
-     ![Form Pembayaran Valas](../public/form-pembayaran-valas.png)
+     ![Form Pembayaran Valas](/form-pembayaran-valas.png)
    - Pilih metode pembayaran dan tekan tombol "Payment".
    - Pembayaran telah selesai, dan status transaksi akan berubah dari unpaid ke paid.
 

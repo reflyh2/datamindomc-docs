@@ -4,7 +4,7 @@ outline: deep
 
 # PB Valas
 
-![PB Valas](../public/pb-valas.png)
+![PB Valas](/pb-valas.png)
 
 Halaman **PB Valas** adalah bagian dari sistem aplikasi yang digunakan untuk memantau daftar stok valas.
 

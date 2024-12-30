@@ -4,7 +4,7 @@ outline: deep
 
 # Transaksi Valas
 
-![Transaksi Valas](../public/transaksi-valas.png)
+![Transaksi Valas](/transaksi-valas.png)
 
 Halaman **Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan untuk menambahkan transaksi valas baru. Terdapat dua form yang haru dilengkapi yaitu informasi umum dan data valas.
 
@@ -54,12 +54,12 @@ Halaman **Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan un
    - Input jumlah valas yang ingin di transaksikan, jika tipe transaksi yang dipilih adalah penjualan pastikan jumlah yang diinput tidak melebihi stok yang tersedia.
 3. **Pratinjau Data Valas**:
    - Setelah data valas ditambahkan maka tabel pratinjau data valas akan terisi.
-   - Contoh tabel yang sudah terisi : ![Pratinjau data valas](../public/tv-preview.png)
+   - Contoh tabel yang sudah terisi : ![Pratinjau data valas](/tv-preview.png)
 4. **Menyimpan Transaksi**:
    - Pastikan data yang sudah di input sudah benar.
    - Klik tombol "Simpan" pada bagian kanan atas halaman.
    - Jika transaksi berhasil maka akan muncul faktur transaksi.
-   - Contoh faktur : ![Faktur Transaksi](../public/invoice-tv.png)
+   - Contoh faktur : ![Faktur Transaksi](/invoice-tv.png)
 
 ## Lainnya
 

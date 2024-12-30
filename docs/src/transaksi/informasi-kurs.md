@@ -4,7 +4,7 @@ outline: deep
 
 # Informasi Kurs
 
-![Informasi Kurs](../public/informasi-kurs.png)
+![Informasi Kurs](/informasi-kurs.png)
 
 Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan data terkait nilai tukar mata uang (kurs), stok valuta asing, serta data transaksi yang relevan. Halaman ini dirancang untuk membantu pengguna dalam memantau data kurs valas dan transaksi keuangan.
 
