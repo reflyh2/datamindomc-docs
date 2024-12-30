@@ -20,9 +20,9 @@ Halaman **Master Valas** adalah bagian dari sistem aplikasi yang digunakan untuk
 
 ### 2. **Table Daftar Master Valas**
 
-- **Fungsi**: Memberikan informasi tentang daftar valas yang ada, terdiri dari beberapa kolom seperti kode valas, nama valas, dan kolom action.
+- **Fungsi**: Memberikan informasi tentang daftar valas yang ada, terdiri dari beberapa kolom seperti kode valas, nama valas, dan action.
 
-### 4. **Aksi dan Tombol**
+### 3. **Aksi dan Tombol**
 
 - **Tombol "Create"**:
 
@@ -54,15 +54,20 @@ Halaman **Master Valas** adalah bagian dari sistem aplikasi yang digunakan untuk
 ## Alur Penggunaan
 
 1. **Menambahkan Data**:
+
    - Pengguna dapat menekan tombol "create" dan selanjutnya akan diarahkan ke halaman tambah master valas seperti berikut:
      ![Tambah Master Valas](/tambah-master-valas.png)
    - Pengguna dapat melengkapi form master valas yang tersedia.
    - Apabila data sudah lengkap maka pengguna dapat menekan tombol "Simpan" dan data master valas berhasil di tambahkan.
+
 2. **Memperbarui Data**:
+
    - Pengguna dapat menekan tombol "Edit" pada kolom "action" untuk data master valas yang akan diperbarui dan selanjutnya akan diarahkan ke halaman edit master valas.
    - Pengguna dapat memperbarui data master valas pada form edit yang tersedia.
    - Apabila data sudah lengkap maka pengguna dapat menekan tombol "Simpan" dan data master valas berhasil di perbarui.
+
 3. **Menghapus Data**:
+
    - Pengguna dapat menekan tombol "Delete" pada kolom "action" untuk data master valas yang akan dihapus dan selanjutnya akan tampil dialog konfirmasi seperti berikut:
      ![Hapus Master Valas](/hapus-master-valas.png)
    - Pengguna dapat menekan tombol "Ok" jika ingin melanjutkan hapus data, namun jika tidak pengguna dapat menekan tombol "Cancel" untuk membatalkan aksi.
