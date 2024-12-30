@@ -75,7 +75,7 @@ export default defineConfig({
         items: [
           { text: "Pengaturan Kurs", link: "/inventori/stok-valas" },
           { text: "Proses Awal Hari", link: "/inventori/stok-valas" },
-          { text: "Master Valas", link: "/inventori/stok-valas" },
+          { text: "Master Valas", link: "/master/master-valas" },
           { text: "Pecahan Valas", link: "/inventori/stok-valas" },
         ],
       },
