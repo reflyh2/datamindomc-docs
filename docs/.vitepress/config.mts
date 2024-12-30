@@ -105,8 +105,11 @@ export default defineConfig({
       {
         text: "Pelanggan",
         items: [
-          { text: "Pengaturan Pelanggan", link: "/inventori/stok-valas" },
-          { text: "Database Pelanggan", link: "/inventori/stok-valas" },
+          {
+            text: "Pengaturan Pelanggan",
+            link: "/pelanggan/pengaturan-pelanggan",
+          },
+          { text: "Database Pelanggan", link: "/pelanggan/database-pelanggan" },
         ],
       },
 
