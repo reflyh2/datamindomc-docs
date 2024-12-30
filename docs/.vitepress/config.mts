@@ -92,10 +92,13 @@ export default defineConfig({
       {
         text: "Manajemen Cabang",
         items: [
-          { text: "Perusahaan", link: "/inventori/stok-valas" },
-          { text: "Area", link: "/inventori/stok-valas" },
-          { text: "Cabang", link: "/inventori/stok-valas" },
-          { text: "Pengaturan Cabang", link: "/inventori/stok-valas" },
+          { text: "Perusahaan", link: "/manajemen-cabang/perusahaan" },
+          { text: "Area", link: "/manajemen-cabang/area" },
+          { text: "Cabang", link: "/manajemen-cabang/cabang" },
+          {
+            text: "Pengaturan Cabang",
+            link: "/manajemen-cabang/pengaturan-cabang",
+          },
         ],
       },
 
