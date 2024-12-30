@@ -56,7 +56,7 @@ Halaman **Perusahaan** adalah bagian dari sistem aplikasi yang digunakan untuk m
 1. **Menambahkan Data**:
 
    - Pengguna dapat menekan tombol "create" dan selanjutnya akan diarahkan ke halaman tambah perusahaan seperti berikut:
-     ![Tambah Pengguna](/tambah-perusahaan.png)
+     ![Tambah Cabang](/tambah-perusahaan.png)
    - Pengguna dapat melengkapi form perusahaan yang tersedia.
    - Apabila data sudah lengkap maka pengguna dapat menekan tombol "Simpan" dan data perusahaan berhasil di tambahkan.
 
@@ -69,7 +69,7 @@ Halaman **Perusahaan** adalah bagian dari sistem aplikasi yang digunakan untuk m
 3. **Menghapus Data**:
 
    - Pengguna dapat menekan tombol "Delete" pada kolom "action" untuk data perusahaan yang akan dihapus dan selanjutnya akan tampil dialog konfirmasi seperti berikut:
-     ![Hapus Pengguna](/hapus-perusahaan.png)
+     ![Hapus Cabang](/hapus-perusahaan.png)
    - Pengguna dapat menekan tombol "Ok" jika ingin melanjutkan hapus data, namun jika tidak pengguna dapat menekan tombol "Cancel" untuk membatalkan aksi.
 
 ## Lainnya
