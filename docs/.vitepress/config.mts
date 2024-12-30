@@ -83,9 +83,9 @@ export default defineConfig({
       {
         text: "Staff",
         items: [
-          { text: "Daftar Pengguna", link: "/inventori/stok-valas" },
-          { text: "Daftar Jabatan", link: "/inventori/stok-valas" },
-          { text: "Daftar Akses", link: "/inventori/stok-valas" },
+          { text: "Daftar Pengguna", link: "/staff/daftar-pengguna" },
+          { text: "Daftar Jabatan", link: "/staff/daftar-jabatan" },
+          { text: "Daftar Akses", link: "/staff/daftar-akses" },
         ],
       },
 
