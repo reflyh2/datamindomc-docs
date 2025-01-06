@@ -115,6 +115,42 @@ export default defineConfig({
 
       {
         text: "Laporan Umum",
+        items: [
+          {
+            text: "Transaksi Valas",
+            items: [
+              {
+                text: "Rincian Valas",
+                link: "/laporan-umum/transaksi-valas/rincian-valas",
+              },
+              {
+                text: "Ringkasan Valas",
+                link: "/laporan-umum/transaksi-valas/ringkasan-valas",
+              },
+              {
+                text: "Laporan IDR",
+                link: "/laporan-umum/transaksi-valas/laporan-idr",
+              },
+            ],
+          },
+          {
+            text: "Laba",
+            items: [
+              {
+                text: "Per Cabang",
+                link: "/laporan-umum/laba/per-cabang",
+              },
+              {
+                text: "Per Valas",
+                link: "/laporan-umum/laba/per-valas",
+              },
+              {
+                text: "Per Marketing",
+                link: "/laporan-umum/laba/per-marketing",
+              },
+            ],
+          },
+        ],
       },
 
       {
