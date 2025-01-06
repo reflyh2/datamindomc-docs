@@ -18,7 +18,7 @@ Halaman **Daftar Pengguna** adalah bagian dari sistem aplikasi yang digunakan un
 - **Isi**: "Pengguna”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pengguna”.
 
-### 2. **Table Daftar Pengguna**
+### 2. **Tabel Daftar Pengguna**
 
 - **Fungsi**: Memberikan informasi tentang daftar pengguna yang ada, terdiri dari beberapa kolom seperti nama, email, cabang, jabatan dan action.
 

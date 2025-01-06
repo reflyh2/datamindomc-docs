@@ -18,7 +18,7 @@ Halaman **Mutasi Valas** adalah bagian dari sistem aplikasi yang digunakan untuk
 - **Isi**: "Mutasi Valas”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Mutasi Valas”.
 
-### 2. **Table Daftar Stok Valas**
+### 2. **Tabel Daftar Stok Valas**
 
 - **Fungsi**: Memberikan informasi tentang mutasi valas dalam periode tertentu dan untuk valas tertentu.
 

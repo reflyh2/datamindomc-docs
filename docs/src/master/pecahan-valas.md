@@ -18,7 +18,7 @@ Halaman **Pecahan Valas** adalah bagian dari sistem aplikasi yang digunakan untu
 - **Isi**: "Pecahan Valas”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pecahan Valas.
 
-### 2. **Table Daftar Pecahan Valas**
+### 2. **Tabel Daftar Pecahan Valas**
 
 - **Fungsi**: Memberikan informasi tentang daftar pecahan valas yang ada, terdiri dari beberapa kolom seperti mata uang, kode, nama, potongan beli, potongan jual dan action.
 

@@ -18,7 +18,7 @@ Halaman **Daftar Akses** adalah bagian dari sistem aplikasi yang digunakan untuk
 - **Isi**: "Akses”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Akses”.
 
-### 2. **Table Daftar Pengguna**
+### 2. **Tabel Daftar Pengguna**
 
 - **Fungsi**: Memberikan informasi tentang daftar akses yang ada, terdiri dari beberapa kolom seperti kategori, nama, permission dan action.
 

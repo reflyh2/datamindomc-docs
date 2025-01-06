@@ -18,7 +18,7 @@ Halaman **Daftar Jabatan** adalah bagian dari sistem aplikasi yang digunakan unt
 - **Isi**: "Jabatan”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Jabatan”.
 
-### 2. **Table Daftar Jabatan**
+### 2. **Tabel Daftar Jabatan**
 
 - **Fungsi**: Memberikan informasi tentang daftar jabatan yang ada, terdiri dari beberapa kolom seperti nama, keterangan dan action.
 

@@ -18,7 +18,7 @@ Halaman **Pinjaman Valas** adalah bagian dari sistem aplikasi yang digunakan unt
 - **Isi**: "Pinjaman Valas”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pinjaman Valas”.
 
-### 2. **Table Daftar Pinjaman Valas**
+### 2. **Tabel Daftar Pinjaman Valas**
 
 - **Fungsi**: Memberikan informasi tentang daftar pinjaman valas yang ada.
 

@@ -18,7 +18,7 @@ Halaman **Master Valas** adalah bagian dari sistem aplikasi yang digunakan untuk
 - **Isi**: "Master Valas”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Master Valas”.
 
-### 2. **Table Daftar Master Valas**
+### 2. **Tabel Daftar Master Valas**
 
 - **Fungsi**: Memberikan informasi tentang daftar valas yang ada, terdiri dari beberapa kolom seperti kode valas, nama valas, dan action.
 

@@ -18,7 +18,7 @@ Halaman **Area** adalah bagian dari sistem aplikasi yang digunakan untuk mengelo
 - **Isi**: "Area".
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Area”.
 
-### 2. **Table Daftar Area**
+### 2. **Tabel Daftar Area**
 
 - **Fungsi**: Memberikan informasi tentang daftar area yang ada, terdiri dari beberapa kolom seperti nama, kode, keterangan dan action.
 

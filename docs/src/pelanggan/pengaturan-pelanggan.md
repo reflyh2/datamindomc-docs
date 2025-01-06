@@ -18,7 +18,7 @@ Halaman **Pengaturan Pelanggan** adalah bagian dari sistem aplikasi yang digunak
 - **Isi**: "Pelanggan”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pelanggan”.
 
-### 2. **Table Daftar Pelanggan**
+### 2. **Tabel Daftar Pelanggan**
 
 - **Fungsi**: Memberikan informasi tentang daftar pelanggan yang ada, terdiri dari beberapa kolom seperti nama, no telpon, pekerjaan, alamat, email, kategori dan action.
 

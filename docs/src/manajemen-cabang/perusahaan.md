@@ -18,7 +18,7 @@ Halaman **Perusahaan** adalah bagian dari sistem aplikasi yang digunakan untuk m
 - **Isi**: "Perusahaan".
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Perusahaan”.
 
-### 2. **Table Daftar Pengguna**
+### 2. **Tabel Daftar Pengguna**
 
 - **Fungsi**: Memberikan informasi tentang daftar perusahaan yang ada, terdiri dari beberapa kolom seperti nama, alamat, no telpon, email, NPWP, jabatan dan action.
 

@@ -18,7 +18,7 @@ Halaman **Database Pelanggan** adalah bagian dari sistem aplikasi yang digunakan
 - **Isi**: "Database Pelanggan”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Database Pelanggan”.
 
-### 2. **Table Rincian Pelanggan**
+### 2. **Tabel Rincian Pelanggan**
 
 - **Fungsi**: Memberikan informasi pelanggan secara rinci, terdiri dari beberapa kolom seperti nama, no telpon, pekerjaan, total transaksi, j.faktur, valas transaksi,serta transaksi terakhir.
 

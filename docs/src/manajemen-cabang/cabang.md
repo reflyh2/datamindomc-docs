@@ -18,7 +18,7 @@ Halaman **Cabang** adalah bagian dari sistem aplikasi yang digunakan untuk menge
 - **Isi**: "Cabang".
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Cabang”.
 
-### 2. **Table Daftar Cabang**
+### 2. **Tabel Daftar Cabang**
 
 - **Fungsi**: Memberikan informasi tentang daftar cabang yang ada, terdiri dari beberapa kolom seperti nama, kode, telepon, periode, shift, area, portal dan action.
 

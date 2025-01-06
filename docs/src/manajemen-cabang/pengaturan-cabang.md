@@ -18,7 +18,7 @@ Halaman **Pengaturan Cabang** adalah bagian dari sistem aplikasi yang digunakan 
 - **Isi**: "Pengaturan Cabang".
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pengaturan Cabang”.
 
-### 2. **Table Daftar Pengaturan Cabang**
+### 2. **Tabel Daftar Pengaturan Cabang**
 
 - **Fungsi**: Memberikan informasi tentang pengaturan cabang berdasarkan area tertentu, pengguna dapat mengubah pengaturan langsung pada kolom tertentu seperti modal, shift dan periode.
 

@@ -18,7 +18,7 @@ Halaman **PB Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mem
 - **Isi**: "Stok Valas”.
 - **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Stok Valas”.
 
-### 2. **Table Daftar Stok Valas**
+### 2. **Tabel Daftar Stok Valas**
 
 - **Fungsi**: Memberikan informasi tentang stok valas mulai dari stok brangkas, stok akhir dan informasi lainnya.
 
