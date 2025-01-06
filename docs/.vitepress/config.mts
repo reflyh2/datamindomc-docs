@@ -154,6 +154,15 @@ export default defineConfig({
       },
 
       {
+        text: "Keuangan",
+        items: [
+          { text: "Daftar Akun", link: "/keuangan/daftar-akun" },
+          { text: "Jurnal", link: "/keuangan/jurnal" },
+          { text: "Laporan Akunting", link: "/keuangan/laporan-akunting" },
+        ],
+      },
+
+      {
         text: "Example",
         items: [
           { text: "Markdown Examples", link: "/markdown-examples" },
