@@ -55,8 +55,8 @@ export default defineConfig({
             link: "/transaksi/daftar-transaksi",
           },
           { text: "Pembayaran Valas", link: "/transaksi/pembayaran-valas" },
-          { text: "Serah Terima Kasir", link: "/transaksi/transaksi-valas" },
-          { text: "Penutupan Periode", link: "/transaksi/transaksi-valas" },
+          { text: "Serah Terima Kasir", link: "/transaksi/serah-terima-kasir" },
+          { text: "Penutupan Periode", link: "/transaksi/penutupan-periode" },
         ],
       },
 
