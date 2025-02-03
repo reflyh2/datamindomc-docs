@@ -44,7 +44,7 @@ Halaman **Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan un
 1. **Menginput data informasi umum**:
    - Pilih tipe tansaksi (Pembelian atau Penjualan).
    - Pilih tipe pelanggan, aksi ini akan mempengaruhi daftar pelanggan pada aksi selanjutnya.
-   - Pilih pelanggan dari daftar pelanggan yang tersedia atau pengguna juga dapat [menambahkan pelanggan baru]("/pelanggan/pengaturan-pelanggan")
+   - Pilih pelanggan dari daftar pelanggan yang tersedia atau pengguna juga dapat [menambahkan pelanggan baru](/pelanggan/pengaturan-pelanggan)
    - Pilih sumber dana tujuan transaksi.
    - Tambahkan catatan jika diperlukan, aksi ini bersifat opsional.
    - Pengguna juga dapat mengaktifkan transaksi modal dengan catatan Transaksi Modal tidak akan terhitung pada perhitungan laba.
@@ -63,4 +63,4 @@ Halaman **Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan un
 
 ## Lainnya
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/daftar-valas).
+Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).

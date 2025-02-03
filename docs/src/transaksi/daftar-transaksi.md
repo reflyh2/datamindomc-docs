@@ -54,4 +54,4 @@ Halaman **Daftar Transaksi Valas** adalah bagian dari sistem aplikasi yang digun
 
 ## Lainnya
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/daftar-valas).
+Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).

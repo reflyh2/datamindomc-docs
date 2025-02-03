@@ -79,4 +79,4 @@ Halaman **Pengaturan Pelanggan** adalah bagian dari sistem aplikasi yang digunak
 
 ## Lainnya
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/daftar-valas).
+Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).

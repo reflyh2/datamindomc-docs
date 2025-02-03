@@ -63,4 +63,4 @@ Halaman **Ringkasan Valas** adalah bagian dari sistem aplikasi yang digunakan un
 
 ## Lainnya
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/daftar-valas).
+Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).

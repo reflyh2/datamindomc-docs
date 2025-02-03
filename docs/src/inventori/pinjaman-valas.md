@@ -40,4 +40,4 @@ Halaman **Pinjaman Valas** adalah bagian dari sistem aplikasi yang digunakan unt
 
 ## Lainnya
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/daftar-valas).
+Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
