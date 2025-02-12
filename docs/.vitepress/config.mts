@@ -37,7 +37,7 @@ export default defineConfig({
 
     nav: [
       { text: "Beranda", link: "/" },
-      { text: "Referensi", link: "/markdown-examples" },
+      { text: "Dokumentasi", link: "/transaksi/informasi-kurs" },
     ],
 
     footer: {
