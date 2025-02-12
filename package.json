@@ -9,6 +9,7 @@
     "preview": "vitepress preview docs"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {
