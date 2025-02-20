@@ -110,15 +110,15 @@ export default {
             ],
           },
 
-          {
-            text: "Staff",
-            collapsed: false,
-            items: [
-              { text: "Daftar Pengguna", link: "/staff/daftar-pengguna" },
-              { text: "Daftar Jabatan", link: "/staff/daftar-jabatan" },
-              { text: "Daftar Akses", link: "/staff/daftar-akses" },
-            ],
-          },
+          // {
+          //   text: "Staff",
+          //   collapsed: false,
+          //   items: [
+          //     { text: "Daftar Pengguna", link: "/staff/daftar-pengguna" },
+          //     { text: "Daftar Jabatan", link: "/staff/daftar-jabatan" },
+          //     { text: "Daftar Akses", link: "/staff/daftar-akses" },
+          //   ],
+          // },
 
           {
             text: "Manajemen Cabang",
