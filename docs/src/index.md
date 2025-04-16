@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Datamindo MC
+  name: ValasPro
   text: Dokumentasi Penggunaan Aplikasi.
 
   actions:
