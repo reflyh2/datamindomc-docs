@@ -44,6 +44,7 @@ export default {
                 link: "/transaksi/daftar-transaksi",
               },
               { text: "Pembayaran Valas", link: "/transaksi/pembayaran-valas" },
+              { text: "Pembayaran Hutang Piutang", link: "/transaksi/pembayaran-hutang-piutang" },
               {
                 text: "Serah Terima Kasir",
                 link: "/transaksi/serah-terima-kasir",
@@ -51,6 +52,10 @@ export default {
               {
                 text: "Penutupan Periode",
                 link: "/transaksi/penutupan-periode",
+              },
+              {
+                text: "Deposit",
+                link: "/transaksi/deposit",
               },
             ],
           },
@@ -77,6 +82,7 @@ export default {
                 link: "/transaksi/daftar-transaksi",
               },
               { text: "Pembayaran Valas", link: "/transaksi/pembayaran-valas" },
+              { text: "Pembayaran Hutang Piutang", link: "/transaksi/pembayaran-hutang-piutang" },
               {
                 text: "Serah Terima Kasir",
                 link: "/transaksi/serah-terima-kasir",
@@ -84,6 +90,10 @@ export default {
               {
                 text: "Penutupan Periode",
                 link: "/transaksi/penutupan-periode",
+              },
+              {
+                text: "Deposit",
+                link: "/transaksi/deposit",
               },
             ],
           },

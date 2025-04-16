@@ -1,14 +1,14 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Datamindo MC",
+  title: "ValasPro",
   description: "Dokumentasi penggunaan Aplikasi.",
   lang: "id-ID",
   srcDir: "src",
   cleanUrls: true,
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/logo.ico" }]],
   themeConfig: {
-    logo: { src: "/logo.svg", alt: "logo" },
+    logo: { src: "/logo.png", alt: "logo" },
 
     darkModeSwitchLabel: "Tampilan",
     lightModeSwitchTitle: "Ubah ke tampilan terang",
@@ -41,7 +41,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: "©2025 | Datamindo",
+      copyright: "©2025 | ValasPro",
     },
   },
 });
