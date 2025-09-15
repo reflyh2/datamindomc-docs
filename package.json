@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "build": "vitepress build docs --debug",
+    "preview": "vitepress preview docs",
+    "export-pdf": "press-export-pdf export /docs"
   },
   "keywords": [],
   "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vitepress-export-pdf": "^1.0.0"
   }
 }
