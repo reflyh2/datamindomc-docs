@@ -22,6 +22,7 @@ function extractLinksFromConfig(config: DefaultTheme.Config) {
   } else {
     // kalau ternyata object (mode multi sidebar)
     for (const key in config.sidebar) {
+      // @ts-ignore
       extractLinks(config.sidebar[key])
     }
   }
@@ -31,7 +32,7 @@ function extractLinksFromConfig(config: DefaultTheme.Config) {
 
 const links = extractLinksFromConfig(userConfig.themeConfig!)
 const routeOrder = [
-  '/index.html',
+  '/index',
   ...links,
 ]
 
@@ -59,7 +60,7 @@ export default defineUserConfig({
       top: 60,
     },
   },
-  urlOrigin: 'https://vitepress.dev/',
+  urlOrigin: "https://mc-docs.datamindo.com/",
   sorter: (pageA, pageB) => {
     const aIndex = routeOrder.findIndex(route => route === pageA.path)
     const bIndex = routeOrder.findIndex(route => route === pageB.path)

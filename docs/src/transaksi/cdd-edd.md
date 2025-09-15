@@ -31,7 +31,7 @@ CDD (Customer Due Diligence) berguna sebagai proses identifikasi dan verifikasi 
 ## Alur Penggunaan
 
 1. **Mengakses Halaman Formulir**:
-   - Pengguna dapat memilih terlebih dahulu transaksi mana yang akan ditampilakan formulirnya melalui menu [Daftar Transaksi Valas](/transaksi/daftar-Transaksi) seperti pada contoh gambar berikut : ![Pratinjau Memilih transaksi](/cdd-edd-button.png)
+   - Pengguna dapat memilih terlebih dahulu transaksi mana yang akan ditampilakan formulirnya melalui menu [Daftar Transaksi Valas](/transaksi/daftar-transaksi) seperti pada contoh gambar berikut : ![Pratinjau Memilih transaksi](/cdd-edd-button.png)
 2. **Menampilkan Halaman Formulir**:
    - Jika pengguna sudah memilih transaksi yang akan ditampilkan, selanjutnya akan tampil halaman seperti berikut : ![Pratinjau halaman formulir CDD/EDD](/cdd-edd-preview.png)
    - Isi dari form bisa berubah sesuai dengan jenis transaksi, untuk transaksi dengan total dibawah Rp 100,000,000.00 akan di kategorikan sebagai CDD apabila data pelanggan tidak tercatat sebagai pelanggan [PEP](/eksternal/daftar-pep), selain kondisi tersebut maka akan dikategorikan sebagai EDD berikut adalah contoh form EDD:
