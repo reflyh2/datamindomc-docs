@@ -168,7 +168,10 @@ export default defineConfig({
               { text: "Lapor Underlying", link: "/eksternal/underlying/lapor-underlying" },
             ]
           },
-          { text: "Laporan Sipesat", link: "/eksternal/laporan-sipesat" }
+          { text: "Laporan Sipesat", link: "/eksternal/laporan-sipesat" },
+          { text: "LKU", link: "/eksternal/lku" },
+          { text: "Laporan KUPVA BI", link: "/eksternal/laporan-kupva-bi" },
+          { text: "Laporan Nasabah KUPVA BI", link: "/eksternal/laporan-nasabah-kupva-bi" }
         ]
       }
     ],
