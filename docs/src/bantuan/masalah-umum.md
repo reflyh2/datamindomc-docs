@@ -28,7 +28,8 @@ Pada perusahaan yang memakai Square Balance atau Rekonsiliasi Harian, Periode ba
 |---|---|
 | Kurs beli dan jual wajib diisi dan lebih dari 0. | Lengkapi kurs di baris yang ditandai merah |
 | Kurs jual tidak boleh lebih rendah dari kurs beli. | Turunkan kurs beli atau naikkan kurs jual |
-| Kurs shift 3 dihitung otomatis dan tidak dapat diubah dari halaman ini. | Ubah parameternya di **Master → Parameter Kurs** |
+| Shift 3 tidak aktif di Jadwal Shift Kurs perusahaan ini. | Shift itu belum dipakai. Tambah jumlah shift lewat **Atur** di kotak **Jadwal shift kurs** |
+| Jam mulai shift 2 harus setelah jam mulai shift 1. | Jam mulai setiap shift harus lebih lambat dari shift sebelumnya |
 
 ### Saat membuat transaksi
 

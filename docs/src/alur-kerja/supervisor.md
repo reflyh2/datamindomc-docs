@@ -8,7 +8,7 @@ Tugas harian supervisor cabang: menerbitkan kurs, mengatur papan kurs, meninjau 
 
 ```
 PAGI         Buka Hari → isi kurs → Terbitkan
-SIANG        Terbitkan kurs shift 2 bila berbeda
+SIANG        Terbitkan kurs shift berikutnya bila berbeda
 SEPANJANG    Tinjau selisih serah terima kasir
 HARI
 AKHIR HARI   Tutup hari (caranya tergantung metode laba, lihat di bawah)
@@ -34,18 +34,33 @@ Selama Anda belum menekan **Terbitkan**, kasir masih memakai kurs lama. Kotak **
 
 ### Langkah
 
-1. Pilih tab **Shift 1** atau **Shift 2**.
+1. Pilih tab shift yang ingin diubah, misalnya **Shift 1** atau **Shift 2**. Perusahaan dengan kurs tunggal hanya punya tab **Kurs**.
 2. Isi kolom **Beli** dan **Jual** untuk setiap valas. Tekan <kbd>Enter</kbd> atau tombol panah untuk pindah baris.
 3. Untuk menaikkan atau menurunkan banyak kurs sekaligus, centang baris-barisnya. Pilih *Beli & jual*, *Beli saja*, atau *Jual saja*, pilih arahnya (*naik* atau *turun*), isi besarnya dalam % atau Rp, lalu klik **Terapkan**. Hasilnya masih berupa isian yang belum disimpan.
 4. Klik **Terbitkan**, lalu periksa konfirmasi yang menyebut berapa valas yang berubah.
 
 Yang perlu diketahui:
 
-- **Menerbitkan shift 1 juga menimpa kurs shift 2** dengan nilai yang sama. Kalau shift 2 perlu kurs berbeda, terbitkan shift 2 sesudahnya.
-- Kurs shift 1 berlaku sebelum pukul 10.00, dan kurs shift 2 sesudahnya, termasuk setelah pukul 21.00.
-- Tab **Shift 3** hanya untuk dilihat. Kursnya dihitung otomatis dari **Master → Parameter Kurs** setiap kali shift 1 atau 2 diterbitkan, tetapi saat ini belum dipakai transaksi.
+- **Menerbitkan satu shift juga menimpa kurs shift sesudahnya.** Shift 2 mendapat nilai yang sama. Shift 3 dihitung dari **Master → Parameter Kurs → Shift 3** bila parameternya diisi, selain itu nilainya disalin. Kalau shift berikutnya perlu kurs berbeda, terbitkan shift itu sesudahnya.
+- Kotak **Kurs berlaku sekarang** menunjukkan shift yang sedang dipakai transaksi beserta jam berlakunya.
 - Kotak **USD kurs BI (jual)** menampilkan kurs acuan Bank Indonesia dan tidak bisa diubah.
 - Kurs beli dan jual wajib diisi dan lebih dari 0. Kurs jual tidak boleh lebih rendah dari kurs beli. Baris yang salah ditandai merah.
+
+### Jadwal shift kurs
+
+Kotak **Jadwal shift kurs** menunjukkan berapa shift kurs yang dipakai perusahaan dan jam mulai masing-masing. Untuk mengubahnya:
+
+1. Klik **Atur** di kotak **Jadwal shift kurs**.
+2. Pilih **Jumlah shift kurs**: *1 (kurs tunggal)*, *2 shift*, atau *3 shift*.
+3. Untuk 2 atau 3 shift, isi **Shift 1 mulai pukul**, **Shift 2 mulai pukul**, dan seterusnya. Jam setiap shift harus lebih lambat dari shift sebelumnya.
+4. Klik **Simpan**. Halaman dimuat ulang dengan tab shift yang baru.
+
+Yang perlu diketahui:
+
+- Setiap shift berlaku sampai shift berikutnya dimulai. Jam sebelum shift 1 (lewat tengah malam) masih memakai shift terakhir. Contoh: dengan jadwal 06.00 / 14.00 / 22.00, transaksi pukul 03.00 memakai kurs shift 3.
+- Jadwal ini berlaku untuk semua cabang perusahaan, dan tidak ada hubungannya dengan shift kasir di menu **Shift**.
+- Saat jumlah shift ditambah, kurs shift yang baru diisi dari shift sebelumnya. Periksa dan terbitkan ulang bila perlu.
+- Isian kurs yang belum disimpan akan hilang saat jadwal disimpan.
 
 ### Riwayat
 

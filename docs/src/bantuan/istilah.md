@@ -11,7 +11,7 @@ outline: false
 | **Pecahan valas** | Satu nominal dari sebuah valas, misalnya USD 100 dan USD 50. Kurs bisa berbeda per pecahan |
 | **Periode** | Tanggal buku tempat transaksi dicatat |
 | **Kurs terbit** | Kurs yang sudah diterbitkan dan sedang dipakai transaksi. Kebalikannya adalah **draf** |
-| **Shift kurs** | Pembagian kurs menurut jam: shift 1 sebelum pukul 10.00, shift 2 sesudahnya |
+| **Shift kurs** | Pembagian kurs menurut jam, diatur di **Jadwal Shift Kurs** (1 sampai 3 shift). Bawaan: shift 1 pukul 04.00–10.00, shift 2 sesudahnya |
 | **Shift kasir** | Giliran kasir di cabang yang memakai lebih dari satu shift. Kembali ke 1 saat Buka Hari, dan naik saat serah terima bertanda ganti shift |
 | **Pemegang kas** | Kasir yang terakhir menerima kas lewat Serah Terima Kasir |
 | **Buka Hari** | Checklist pembukaan hari kerja cabang |

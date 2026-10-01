@@ -57,7 +57,7 @@ Untuk mengecek kurs yang sedang berlaku, buka **Transaksi → Informasi Kurs**. 
 
 ![Informasi Kurs: kurs beli, kurs jual, dan stok USD](/informasi-kurs-papan.png)
 
-Kurs berganti otomatis menurut jam: kurs **shift 1** berlaku sebelum pukul 10.00, dan kurs **shift 2** sesudahnya.
+Kurs berganti otomatis menurut **Jadwal Shift Kurs** perusahaan Anda. Jadwal bawaannya: kurs **shift 1** berlaku pukul 04.00–10.00, dan kurs **shift 2** sesudahnya. Perusahaan yang memakai kurs tunggal hanya punya satu kurs sepanjang hari.
 
 ### Mengecek stok
 

@@ -22,7 +22,7 @@ Papan kurs cabang: kurs beli dan jual yang sedang berlaku, beserta stok setiap v
 | **Akhir (USD)** | Saldo akhir yang disetarakan ke USD memakai kurs BI |
 | **Total Akhir (USD)** | Jumlah kolom Akhir (USD) untuk semua valas |
 
-Kurs yang tampil adalah kurs yang sudah **diterbitkan** di **Master → Pengaturan Kurs**. Kurs yang masih draf belum tampil di sini dan belum dipakai di form transaksi. Kurs berganti otomatis menurut jam: kurs **shift 1** berlaku sebelum pukul 10.00, dan kurs **shift 2** sesudahnya.
+Kurs yang tampil adalah kurs yang sudah **diterbitkan** di **Master → Pengaturan Kurs**. Kurs yang masih draf belum tampil di sini dan belum dipakai di form transaksi. Kurs berganti otomatis menurut **Jadwal Shift Kurs** perusahaan Anda. Jadwal bawaannya: kurs **shift 1** berlaku pukul 04.00–10.00, dan kurs **shift 2** sesudahnya. Perusahaan yang memakai kurs tunggal hanya punya satu kurs sepanjang hari.
 
 ## Melihat riwayat mutasi valas
 
