@@ -4,6 +4,10 @@ outline: deep
 
 # List Underlying
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![List Underlying](/underlying-list.png)
 
 Halaman ini digunakan untuk menampilkan data pelanggan yang sudah melewati limit underlying setiap bulannya.

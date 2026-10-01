@@ -4,6 +4,10 @@ outline: deep
 
 # Daftar Akun
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Daftar Akun](/chart-of-account.png)
 
 Halaman ini digunakan untuk mengelola seluruh akun perusahaan yang sudah disesuaikan dengan standar akuntansi umum.

@@ -4,6 +4,10 @@ outline: deep
 
 # Otorisasi Underlying
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Otorisasi Underlying](/underlying-authorize.png)
 
 Halaman ini digunakan untuk melakukan otorisasi terhadap transaksi yang tercatat sebagai transaksi underlying.

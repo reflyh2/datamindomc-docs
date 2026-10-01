@@ -4,6 +4,10 @@ outline: deep
 
 # Pecahan Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Pecahan Valas](/pecahan-valas.png)
 
 Halaman **Pecahan Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data pecahan valas seperti membuat pecahan valas baru, memperbarui data pecahan valas dan aksi lainnya.

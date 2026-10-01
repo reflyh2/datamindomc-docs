@@ -2,56 +2,63 @@
 outline: deep
 ---
 
-# Daftar Transaksi Valas
+# Daftar Transaksi
 
-![Daftar Transaksi Valas](/daftar-transaksi.png)
+Menu: **Transaksi → Daftar Transaksi** (judul halaman: **Data Transaksi Valas**)
 
-Halaman **Daftar Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data transaksi valas, pengguna dapat memantau seluruh data transaksi, mengekspor data dan beberapa aksi lainnya.
+Semua faktur transaksi valas cabang. Dari sini kasir melihat rincian, mencetak ulang faktur dan formulir CDD/EDD, serta mengubah atau membatalkan faktur.
 
----
+![Daftar Transaksi Valas](/daftar-transaksi-aksi.png)
 
-## Struktur Halaman
+## Isi halaman
 
-### 1. **Judul Halaman**
+| Bagian | Isi |
+|---|---|
+| **Faktur**, **Nilai Beli**, **Nilai Jual** | Jumlah faktur dan total rupiah pembelian serta penjualan, sesuai filter yang aktif |
+| Chip status | **Semua**, **Belum bayar**, **Menunggu**, **Lunas**, **Batal**, masing-masing dengan jumlahnya. Klik untuk menyaring |
+| Filter | Rentang periode, **Semua tipe** (beli atau jual), **Semua kategori** pelanggan, dan kotak cari faktur, pelanggan, atau valas |
+| Kotak centang | Untuk tindakan massal seperti **Hapus Transaksi** dan **Reset Pembayaran** |
+| **Aksi** | Ikon tindakan per faktur. Lihat tabel di bawah |
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: "Daftar Transaksi Valas”.
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Daftar Transaksi Valas”.
+Tombol **Tambah** membuka [Transaksi Valas](/transaksi/transaksi-valas). Fitur tabel lainnya dijelaskan di [Tabel, Filter, dan Ekspor](/mulai/tabel-dan-filter).
 
-### 2. **Form Filter Data Transaksi**
+## Status faktur
 
-- **Fungsi**: Melakukan penyaringan data transaksi berdasarkan kondisi yang ditentukan.
+| Status | Artinya |
+|---|---|
+| **Belum bayar** | Faktur sudah disimpan, tetapi belum dibayar di [Pembayaran Valas](/transaksi/pembayaran-valas) |
+| **Menunggu** | Transaksi **Antar Cabang** yang menunggu diproses cabang tujuan. Lihat [Antar Cabang](/transaksi/transaksi-antarcabang) |
+| **Lunas** | Faktur sudah dibayar. Stok brankas dan kas sudah bergerak |
+| **Batal** | Faktur sudah dihapus. Tetap tersimpan sebagai arsip di [Transaksi Batal](/transaksi/transaksi-batal) |
 
-### 3. **Tabel Transaksi**
+## Ikon aksi
 
-- **Fungsi**: Menampilkan data transaksi.
+| Ikon | Kapan muncul | Fungsi |
+|---|---|---|
+| **Lihat rincian** | Selalu | Membuka **Detail Faktur**: valas, jumlah, kurs, dan total |
+| **Cetak faktur** | Faktur selain Batal, untuk pelanggan Retail, Corporate, Money Changer, atau Bank | Mencetak ulang faktur |
+| **Cetak CDD** / **Cetak EDD** | Sama dengan Cetak faktur | Membuka [formulir CDD/EDD](/transaksi/cdd-edd). Labelnya EDD bila pelanggan PEP atau pekerjaannya berisiko tinggi |
+| **Tandai transaksi mencurigakan (LTKM)** | Bila Anda punya akses laporan PPATK | Menandai faktur untuk dilaporkan sebagai LTKM. Bendera berubah bila sudah ditandai atau dilaporkan |
+| **Ubah faktur** | Belum bayar | Membuka form transaksi untuk diubah |
+| **Hapus faktur** | Belum bayar atau Menunggu | Membatalkan faktur. Statusnya menjadi Batal |
+| **Reset pembayaran** | Lunas, dan Anda punya aksesnya | Membatalkan pembayaran supaya faktur kembali Belum bayar. Semua jurnal transaksi itu ikut dihapus |
 
-### 4. **Aksi dan Tombol**
+![Jendela Detail Faktur](/daftar-transaksi-rincian.png)
 
-- **Tombol "Create"**:
-  - **Fungsi**: Digunakan untuk navigasi ke halaman pembuatan transaksi baru.
-  - **Lokasi**: Di bagian bawah menu filter kategori.
-- **Tombol "Export"**:
-  - **Fungsi**: Digunakan untuk mengekspor data transaksi dalam bentuk file csv, excel atau pdf.
-  - **Lokasi**: Di bagian bawah form menu filter kategori.
-- **Tombol "Print"**:
-  - **Fungsi**: Digunakan untuk mencetak data transaksi.
-  - **Lokasi**: Di bagian bawah form menu filter kategori.
-- **Tombol "Reload"**:
-  - **Fungsi**: Digunakan untuk mendapatkan data transaksi terbaru.
-  - **Lokasi**: Di bagian bawah form menu filter kategori.
+## Mengubah faktur yang sudah lunas
 
----
+1. Klik **Reset pembayaran**, lalu konfirmasi. Status faktur kembali **Belum bayar**.
+2. Klik **Ubah faktur**, perbaiki, lalu simpan.
+3. Bayar lagi di [Pembayaran Valas](/transaksi/pembayaran-valas).
 
-## Alur Penggunaan
+## Aturan
 
-1. **Memantau Data Transaksi**:
-   - Pengguna dapat melihat daftar transaksi secara keseluruhan atau hanya transaksi tertentu.
-   - Pengguna juga dapat melakukan beberapa aksi seperti melihat detail transaksi, melihat faktur transaksi, dan menghhapus transaksi jika memiliki akses.
-2. **Melakukan Filter Data Transaksi**:
-   - Pengguna dapat melakukan peyaringan data berdasarkan beberapa kondisi seperti periode, tipe transaksi, status, kategori pelanggan dan pencarian.
-   - data akan otomatis disaring berdasarkan kondisi yang diterapkan.
+- **Hapus berarti batal.** Faktur yang dihapus tidak bisa dikembalikan, tetapi tetap tercatat di Transaksi Batal.
+- **Periode tertutup terkunci.** Faktur pada tanggal yang sudah direkonsiliasi atau ditutup tidak bisa diubah, dihapus, atau di-reset.
+- **Faktur hasil penyelesaian deposit valas** tidak bisa diubah atau dihapus dari sini.
 
-## Lainnya
+## Terkait
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+- [Alur Kerja Kasir](/alur-kerja/kasir#mengubah-atau-membatalkan)
+- [Pembayaran Valas](/transaksi/pembayaran-valas)
+- [Transaksi Batal](/transaksi/transaksi-batal)

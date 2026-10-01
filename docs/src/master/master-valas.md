@@ -4,6 +4,10 @@ outline: deep
 
 # Master Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Master Valas](/master-valas.png)
 
 Halaman **Master Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data utama valas seperti membuat valas baru, memperbarui data valas dan aksi lainnya.

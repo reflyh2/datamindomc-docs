@@ -4,45 +4,66 @@ outline: deep
 
 # Pembayaran Valas
 
-![Pembayaran Valas](/pembayaran-valas.png)
+Menu: **Transaksi → Pembayaran Valas**
 
-Halaman **Pembayaran Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data transaksi valas yang memerlukan pembayaran.
+Daftar faktur yang belum lunas, sekaligus tempat membayarnya. Faktur dibayar setelah uang dan valas benar-benar berpindah tangan dengan pelanggan. Angka hijau di menu menunjukkan jumlah faktur yang menunggu.
 
----
+<Alur :langkah="[
+  { judul: 'Faktur disimpan', ket: 'Status Belum Bayar. Faktur muncul di daftar ini.' },
+  { judul: 'Klik ikon uang', ket: 'Jendela Pembayaran valas terbuka.' },
+  { judul: 'Atur akun pembayaran', ket: 'Kas terisi otomatis. Tambahkan bank bila sebagian atau seluruhnya ditransfer.' },
+  { judul: 'Bayar sekarang', ket: 'Bisa ditekan setelah Sisa bernilai Rp 0,00 (Pas).', cabang: [
+    { jika: 'Berhasil', judul: 'Status Lunas, stok dan kas bergerak', nada: 'ok' },
+  ] },
+]" />
 
-## Struktur Halaman
+![Pembayaran Valas dengan dua faktur belum lunas](/pembayaran-valas-daftar.png)
 
-### 1. **Judul Halaman**
+## Isi halaman
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: "Pembayaran Valas”.
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pembayaran Valas”.
+| Bagian | Isi |
+|---|---|
+| **Belum Lunas** | Jumlah faktur yang belum dibayar |
+| **Nilai Transaksi** | Total rupiah faktur yang belum dibayar |
+| **Saldo Kas** | Saldo akun kas cabang saat ini |
+| **Saldo Bank** | Saldo rekening bank yang dipilih di daftar |
+| Filter | **Rentang periode** dan **Tipe** (beli atau jual). Tanpa rentang periode, semua faktur belum lunas ditampilkan |
+| Kolom **Lama** | Sudah berapa lama faktur menunggu dibayar |
 
-### 2. **Informasi Saldo dan Tipe Transaksi**
+Fitur tabel lainnya dijelaskan di [Tabel, Filter, dan Ekspor](/mulai/tabel-dan-filter).
 
-- **Fungsi**: Memberikan informasi tentang saldo kas dan bank, dan filter data transaksi berdasarakan tipe transaksi.
+## Membayar satu faktur
 
-### 3. **Tabel Data Transaksi**
+1. Klik ikon uang di kolom paling kanan baris faktur.
+2. Periksa **Faktur**, **Pelanggan**, dan **Rincian Valas** di jendela **Pembayaran valas**.
+3. Di **Dibayar dari akun**, akun **Kas** sudah terisi sebesar tagihan.
+   - Untuk transfer, klik **Tambah bank**, pilih rekeningnya, lalu bagi nominalnya.
+   - Klik **×** untuk mengosongkan baris akun.
+4. Bila pembayaran lewat rekening pelanggan, tambahkan di **Rekening Bank Pelanggan** lewat **Dari daftar** atau **Rekening baru**.
+5. Pastikan **Sisa** bernilai Rp 0,00 dengan tanda **Pas**.
+6. Klik **Bayar sekarang**.
 
-- **Fungsi**: Menampilkan data transaksi.
+![Jendela Pembayaran valas](/pembayaran-valas-form-baru.png)
 
-### 4. **Aksi dan Tombol**
+Bila berhasil, muncul pesan *Pembayaran transaksi Faktur No : … telah berhasil*.
 
-- **Tombol "Payment"**:
-  - **Fungsi**: Digunakan untuk membuka form pembayaran.
-  - **Lokasi**: Di bagian paling kanan di setiap baris data.
+![Pesan pembayaran berhasil](/pembayaran-valas-berhasil.png)
 
----
+Ringkasan di bawah jendela membaca **Tagihan − Dialokasikan = Sisa**. **Tagihan** sudah termasuk biaya transaksi bila ada.
 
-## Alur Penggunaan
+## Membayar semua faktur sekaligus
 
-1. **Melakukan pembayaran Valas**:
-   - Pengguna dapat melakukan pembayaran valas dengan menekan tombol "Payment" pada transaksi yang ingin dilakukan pembayaran.
-   - Form pembayaran akan muncul seperti pada gambar berikut :
-     ![Form Pembayaran Valas](/form-pembayaran-valas.png)
-   - Pilih metode pembayaran dan tekan tombol "Payment".
-   - Pembayaran telah selesai, dan status transaksi akan berubah dari unpaid ke paid.
+Pengguna dengan peran Super Admin melihat tombol **Bayar semua faktur belum lunas**. Tombol ini membayar **semua** faktur belum lunas di cabang, lintas periode, bukan hanya yang tampil di filter. Pakai dengan hati-hati.
 
-## Lainnya
+## Aturan
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+- **Stok brankas dan kas bergerak saat dibayar.** Sebelum dibayar, faktur sudah dihitung di stok akhir tetapi belum mengubah stok brankas.
+- **Faktur belum lunas menahan proses lain.** Serah terima kasir, rekonsiliasi, dan tutup periode tidak bisa dijalankan selama masih ada faktur belum dibayar atau menunggu.
+- **Faktur dengan label underlying tidak bisa dibayar.** Dokumen underlying pelanggan perlu didaftarkan lebih dulu. Lihat [Menangani Batas Underlying](/alur-kerja/underlying).
+- **Pembayaran bisa dibatalkan.** Pakai ikon **Reset pembayaran** di [Daftar Transaksi](/transaksi/daftar-transaksi). Jurnal pembayarannya ikut dihapus.
+
+## Terkait
+
+- [Alur Kerja Kasir](/alur-kerja/kasir#membayar-faktur)
+- [Transaksi Valas](/transaksi/transaksi-valas)
+- [Daftar Transaksi](/transaksi/daftar-transaksi)

@@ -4,40 +4,51 @@ outline: deep
 
 # Formulir CDD / EDD
 
-![Formulir CDD / EDD](/cdd-edd.png)
+Menu: dibuka dari ikon **Cetak CDD** atau **Cetak EDD** di **Transaksi → Daftar Transaksi** (judul halaman: **Formulir CDD** atau **Formulir EDD**)
 
-CDD (Customer Due Diligence) berguna sebagai proses identifikasi dan verifikasi identitas nasabah melalui dokumen resmi, pencatatan profil, serta pemantauan transaksi untuk memastikan kesesuaian dengan prinsip KYC dan mencegah pencucian uang maupun pendanaan terorisme. Sementara itu, EDD (Enhanced Due Diligence) merupakan pemeriksaan lebih mendalam yang diterapkan pada nasabah atau transaksi berisiko tinggi, misalnya dengan nilai sangat besar, berasal dari negara berisiko, atau tidak sesuai profil nasabah, sehingga money changer perlu meminta dokumen tambahan seperti bukti sumber dana dan tujuan penggunaan untuk memitigasi risiko keuangan ilegal.
+Formulir data nasabah untuk satu transaksi, siap dicetak dan ditandatangani pelanggan. Formulir ini adalah bukti uji tuntas nasabah yang diminta regulator.
 
----
+- **CDD** (*Customer Due Diligence*): identifikasi dan verifikasi identitas nasabah, untuk nasabah berisiko biasa.
+- **EDD** (*Enhanced Due Diligence*): pemeriksaan lebih mendalam untuk nasabah berisiko tinggi. Biasanya perlu dokumen tambahan, misalnya bukti sumber dana dan tujuan penggunaan.
 
-## Struktur Halaman
+![Formulir CDD untuk transaksi pembelian](/cdd-edd-formulir.png)
 
-### 1. **Judul Halaman**
+## CDD atau EDD?
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: "Formulir CDD/EDD”.
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Daftar Transaksi Valas > CDD / EDD”.
+Aplikasi memilih jenis formulir dari data pelanggan, bukan dari nilai transaksi:
 
-### 2. **Aksi dan Tombol**
+| Kondisi pelanggan | Formulir |
+|---|---|
+| Berstatus **PEP**, atau **Pekerjaan**-nya tergolong berisiko tinggi | **EDD** |
+| Selain itu | **CDD** |
 
-- **Tombol "Download"**:
-  - **Fungsi**: Digunakan untuk mengekspor data transaksi dalam bentuk file pdf.
-  - **Lokasi**: Di bagian pojok kanan atas halaman.
-- **Tombol "Print"**:
-  - **Fungsi**: Digunakan untuk mencetak formulir.
-  - **Lokasi**: Di bagian pojok kanan atas halaman.
----
+Label ikon di Daftar Transaksi sudah menunjukkan jenisnya: **Cetak CDD** atau **Cetak EDD**. Status PEP diatur di [PEP](/pelanggan/skrining/pep), sedangkan pekerjaan diisi di data pelanggan.
 
-## Alur Penggunaan
+Contoh formulir EDD:
 
-1. **Mengakses Halaman Formulir**:
-   - Pengguna dapat memilih terlebih dahulu transaksi mana yang akan ditampilakan formulirnya melalui menu [Daftar Transaksi Valas](/transaksi/daftar-transaksi) seperti pada contoh gambar berikut : ![Pratinjau Memilih transaksi](/cdd-edd-button.png)
-2. **Menampilkan Halaman Formulir**:
-   - Jika pengguna sudah memilih transaksi yang akan ditampilkan, selanjutnya akan tampil halaman seperti berikut : ![Pratinjau halaman formulir CDD/EDD](/cdd-edd-preview.png)
-   - Isi dari form bisa berubah sesuai dengan jenis transaksi, untuk transaksi dengan total dibawah Rp 100,000,000.00 akan di kategorikan sebagai CDD apabila data pelanggan tidak tercatat sebagai pelanggan [PEP](/eksternal/daftar-pep), selain kondisi tersebut maka akan dikategorikan sebagai EDD berikut adalah contoh form EDD:
-  ![Pratinjau halaman formulir EDD](/edd-preview.png)
-3. **Mencetak Transaksi**
-  - Pengguna dapat mencetak formulir dengan menekan tombol "Print" di pojok kanan atas halaman yang akan memunculkan halaman preview seperti berikut :   ![Pratinjau print](/cdd-edd-print.png)
-## Lainnya
+![Contoh formulir EDD](/edd-preview.png)
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+## Isi formulir
+
+| Bagian | Isi |
+|---|---|
+| **A. Informasi Nasabah** | Nama, jenis dan nomor identitas, alamat, jenis kelamin, serta jenis transaksi (pembelian atau penjualan). Diambil dari data pelanggan |
+| **B. Informasi Beneficial Owner** | Diisi bila transaksi dilakukan untuk pihak lain. Bagian yang kosong diisi tangan saat dicetak |
+| **Sumber Dana**, **Tujuan Transaksi** | Diambil dari isian di form transaksi |
+| **C. Pernyataan dan Tanda Tangan** | Pernyataan nasabah bahwa informasinya benar, dengan kolom tanda tangan |
+
+Kalau ada data pelanggan yang salah, perbaiki di [Daftar Pelanggan](/pelanggan/daftar-pelanggan), lalu buka formulirnya lagi.
+
+## Mencetak atau mengunduh
+
+1. Di **Transaksi → Daftar Transaksi**, klik ikon **Cetak CDD** atau **Cetak EDD** pada baris faktur.
+2. Klik **Print** untuk mencetak, atau **Download** untuk mengunduh PDF.
+3. Minta pelanggan menandatangani formulir, lalu arsipkan bersama salinan identitasnya.
+
+Ikon ini hanya ada untuk faktur yang tidak batal dengan pelanggan Retail, Corporate, Money Changer, atau Bank.
+
+## Terkait
+
+- [Alur Kerja Kasir](/alur-kerja/kasir#formulir-cdd-edd)
+- [Daftar Transaksi](/transaksi/daftar-transaksi)
+- [PEP](/pelanggan/skrining/pep)

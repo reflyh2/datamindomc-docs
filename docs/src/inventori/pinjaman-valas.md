@@ -4,6 +4,10 @@ outline: deep
 
 # Pinjaman Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Pinjaman Valas](/pinjaman-valas.png)
 
 Halaman **Pinjaman Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data pinjaman valas, pengguna dapat memantau daftar pinjaman dan membuat pinjaman keluar baru.

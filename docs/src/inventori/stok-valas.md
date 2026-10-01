@@ -4,6 +4,10 @@ outline: deep
 
 # Stok Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Stok Valas](/stok-valas.png)
 
 Halaman **Stok Valas** adalah bagian dari sistem aplikasi yang digunakan untuk memantau daftar stok valas.
