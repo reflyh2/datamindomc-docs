@@ -17,6 +17,16 @@ Menutup setiap hari kerja dengan dua langkah:
 
 Proses ini tidak membuat jurnal dan tidak mengoreksi stok. Tujuannya mencatat bahwa hitungan fisik sudah dicocokkan, lalu mengunci hari yang sudah selesai.
 
+<Alur judul="Menutup satu hari kerja" :langkah="[
+  { judul: 'Lunasi atau batalkan semua faktur', menu: 'Transaksi → Pembayaran Valas', ket: 'Rekonsiliasi tidak bisa dimulai selama masih ada faktur belum dibayar atau menunggu.' },
+  { judul: 'Rekonsiliasi', menu: 'Rekonsiliasi tanggal', peran: 'Teller', ket: 'Hitung fisik valas dan kas IDR tanpa melihat angka sistem, lalu Cocokkan.', cabang: [
+    { jika: 'Semua cocok', judul: 'Simpan Rekonsiliasi', nada: 'ok' },
+    { jika: 'Ada selisih', judul: 'Hitung ulang, isi alasan, lalu simpan', nada: 'warn' },
+  ] },
+  { judul: 'Tinjau selisih', menu: 'Detail Rekonsiliasi → Tandai Ditinjau', peran: 'Supervisor', ket: 'Hanya bila rekonsiliasi berstatus Ada Selisih.' },
+  { judul: 'Tutup Periode', menu: 'Tutup Hari', peran: 'Supervisor', ket: 'Semua butir checklist harus hijau. Periode cabang maju ke tanggal berikutnya, dan tanggal lama terkunci.', nada: 'ok' },
+]" />
+
 ## Periode menjadi manual
 
 Selama fitur ini aktif:
@@ -36,6 +46,8 @@ Selama fitur ini aktif:
 
 Tabel **Riwayat Rekonsiliasi** bisa disaring menurut **Tanggal**, **Status**, dan **Cabang** (khusus supervisor).
 
+![Halaman Rekonsiliasi & Tutup Hari dengan riwayat rekonsiliasi](/rekonsiliasi-riwayat.png)
+
 ## Langkah 1: Rekonsiliasi (teller)
 
 Syarat: tidak ada faktur **belum dibayar** atau **menunggu** di Periode aktif.
@@ -49,6 +61,8 @@ Syarat: tidak ada faktur **belum dibayar** atau **menunggu** di Periode aktif.
    - **Semua cocok.**: klik **Simpan Rekonsiliasi**.
    - **Ada selisih:**: baris yang berbeda ditandai merah. Hitung ulang dulu. Kalau selisihnya memang nyata, isi **Alasan selisih** di setiap baris itu (dan **Alasan selisih kas** bila kasnya berbeda), lalu klik **Simpan Rekonsiliasi**.
 
+![Hasil Cocokkan: stok USD cocok, kas IDR selisih Rp -50.000 sehingga Alasan selisih kas wajib diisi](/rekonsiliasi-cocokkan.png)
+
 Mengubah angka setelah Cocokkan membatalkan hasilnya, jadi Anda perlu menekan Cocokkan lagi. Setiap pencocokan ulang dicatat sebagai *hitung ulang*.
 
 Kalau perusahaan menetapkan **Toleransi Selisih Kas**, selisih kas sampai jumlah itu tetap dianggap cocok. Valas tidak punya toleransi.
@@ -60,6 +74,10 @@ Setelah rekonsiliasi disimpan, transaksi, pembayaran, dan mutasi stok pada tangg
 ## Langkah 2: Tutup Periode (supervisor)
 
 Klik **Tutup Hari**. Halaman **Tutup Periode _tanggal_** berisi empat bagian.
+
+![Halaman Tutup Periode: checklist, preview stok valas, preview kas IDR, dan periode berikutnya](/rekonsiliasi-tutup-periode.png)
+
+Pada contoh di atas, teller belum merekonsiliasi, jadi tiga butir masih merah dan tombol **Tutup Periode** belum bisa ditekan.
 
 ### Checklist Tutup Periode
 

@@ -4,74 +4,38 @@ outline: deep
 
 # Informasi Kurs
 
-::: info Tampilan versi sebelumnya
-Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
-:::
+Menu: **Transaksi → Informasi Kurs**
 
-![Informasi Kurs](/informasi-kurs.png)
+Papan kurs cabang: kurs beli dan jual yang sedang berlaku, beserta stok setiap valas. Kasir biasanya membukanya di awal hari dan menjadikannya pegangan sepanjang hari.
 
-Halaman **Informasi Kurs** adalah bagian dari sistem aplikasi yang menampilkan data terkait nilai tukar mata uang (kurs), stok valuta asing, serta data transaksi yang relevan. Halaman ini dirancang untuk membantu pengguna dalam memantau data kurs valas dan transaksi keuangan.
+![Informasi Kurs: papan kurs cabang](/informasi-kurs-papan.png)
 
----
+## Isi halaman
 
-## Struktur Halaman
+| Kolom | Artinya |
+|---|---|
+| **Valas** | Kode dan nama valas |
+| **Beli** | Kurs saat cabang membeli valas dari pelanggan |
+| **Jual** | Kurs saat cabang menjual valas ke pelanggan |
+| **Brankas** | Saldo berjalan di brankas, termasuk titipan valas pelanggan |
+| **Akhir** | Saldo akhir periode, termasuk transaksi yang belum dibayar. Klik angkanya untuk membuka riwayat mutasi valas itu |
+| **Akhir (USD)** | Saldo akhir yang disetarakan ke USD memakai kurs BI |
+| **Total Akhir (USD)** | Jumlah kolom Akhir (USD) untuk semua valas |
 
-### 1. **Judul Halaman**
+Kurs yang tampil adalah kurs yang sudah **diterbitkan** di **Master → Pengaturan Kurs**. Kurs yang masih draf belum tampil di sini dan belum dipakai di form transaksi. Kurs berganti otomatis menurut jam: kurs **shift 1** berlaku sebelum pukul 10.00, dan kurs **shift 2** sesudahnya.
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: “Informasi Kurs”.
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Informasi Kurs”.
+## Melihat riwayat mutasi valas
 
-### 2. **Tabel Kurs Valas**
+Klik angka di kolom **Akhir**. Jendela **Riwayat Valas** menampilkan stok awal, setiap faktur yang menambah (**Masuk**) atau mengurangi (**Keluar**) stok, dan stok akhirnya. Klik nomor faktur untuk membuka fakturnya.
 
-- **Fungsi**: Menampilkan nilai tukar mata uang asing dan stok yang tersedia.
-- **Kolom**:
-  - **Valas**: Menunjukkan jenis mata uang (contoh: SGD, USD).
-  - **Kurs Umum**:
-    - **Beli**: Nilai kurs saat pembelian mata uang asing.
-    - **Jual**: Nilai kurs saat penjualan mata uang asing.
-  - **Stok Valas**:
-    - **Brankas**: Jumlah stok mata uang asing yang tersedia.
-    - **Akhir**: Total stok mata uang asing pada akhir periode.
-    - **Akhir (USD)**: Total stok dalam denominasi USD.
+![Jendela Riwayat Valas untuk USD](/informasi-kurs-riwayat.png)
 
-### 3. **Data Transaksi**
+## Mencetak
 
-- **Fungsi**: Menampilkan total transaksi pembelian dan penjualan dalam dua mata uang (USD dan IDR).
-- **Informasi yang Ditampilkan**:
-  - **Total Jual (USD)**: Total nilai transaksi penjualan dalam USD.
-  - **Total Beli (USD)**: Total nilai transaksi pembelian dalam USD.
-  - **Total Jual (IDR)**: Total nilai transaksi penjualan dalam Rupiah.
-  - **Total Beli (IDR)**: Total nilai transaksi pembelian dalam Rupiah.
+Klik **Ekspor Cetak** untuk membuka papan kurs dalam tampilan siap cetak.
 
-### 4. **Data Valas**
+## Terkait
 
-- **Fungsi**: Menampilkan informasi terkait saldo dan modal valuta asing.
-- **Informasi yang Ditampilkan**:
-  - **Saldo Valas (USD)**: Jumlah saldo valuta asing dalam USD.
-  - **Modal Valas (USD)**: Modal yang tersedia dalam USD.
-  - **Nett**: Perhitungan akhir saldo dikurangi modal.
-
-### 5. **Aksi dan Tombol**
-
-- **Tombol "Print"**:
-  - **Fungsi**: Digunakan untuk mencetak informasi yang ditampilkan pada halaman.
-  - **Lokasi**: Di bagian kanan atas halaman.
-
----
-
-## Alur Penggunaan
-
-1. **Melihat Kurs Valas**:
-   - Pengguna dapat melihat nilai kurs beli dan jual untuk setiap mata uang yang terdaftar.
-2. **Memantau Transaksi Valas**:
-   - Total transaksi penjualan dan pembelian ditampilkan dalam USD dan IDR.
-   - Data ini memberikan gambaran keseluruhan terkait aktivitas keuangan yang dilakukan.
-3. **Memantau Data Valas**:
-   - Pengguna dapat memonitor saldo dan modal valuta asing serta melihat nilai “Nett” sebagai hasil dari saldo dikurangi modal.
-4. **Mencetak Laporan**:
-   - Klik tombol “Print” untuk mencetak laporan informasi kurs yang ditampilkan di halaman.
-
-## Lainnya
-
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/daftar-transaksi).
+- [Alur Kerja Kasir](/alur-kerja/kasir#memastikan-kurs-sudah-terbit)
+- [Menerbitkan kurs](/alur-kerja/supervisor#menerbitkan-kurs)
+- [Transaksi Valas](/transaksi/transaksi-valas)

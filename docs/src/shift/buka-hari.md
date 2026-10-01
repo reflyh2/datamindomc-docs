@@ -8,6 +8,8 @@ Menu: **Shift → Buka Hari**
 
 Checklist pembukaan hari kerja cabang. Biasanya dijalankan supervisor atau kasir pertama, sebelum transaksi pertama hari itu.
 
+![Halaman Buka Hari: status, checklist pembukaan, saldo awal sistem, dan riwayat](/buka-hari-checklist.png)
+
 ## Isi halaman
 
 | Bagian | Isi |
@@ -36,6 +38,8 @@ Checklist ini hanya pengingat. Hari tetap bisa dibuka walaupun masih ada butir b
 2. Periksa Saldo Awal Sistem.
 3. Isi **Catatan** bila perlu.
 4. Klik **Buka Hari _tanggal_**.
+
+Setelah dibuka, kotak **Status** berubah menjadi **Dibuka _jam_** beserta nama yang membukanya, dan tombol Buka Hari hilang sampai tanggal berikutnya. Kotak **Pemegang kas** menunjukkan siapa yang memegang kas saat ini. Isinya **Belum ada** bila cabang belum pernah melakukan serah terima.
 
 ## Aturan
 

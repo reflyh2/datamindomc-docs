@@ -37,6 +37,7 @@ The groups that are not menu references are `Mulai` (orientation), `Alur Kerja` 
 
 - Frontmatter usually sets `outline: deep` or `outline: [2, 3]`.
 - Callouts use VitePress containers: `::: info`, `::: tip`, `::: warning`.
+- Flow diagrams use the global `<Alur>` component (`docs/.vitepress/theme/components/Alur.vue`), not Mermaid or image files. Pass steps as a `:langkah` array: `{ fase }` is an unnumbered phase label; a step takes `judul`, `menu`, `ket`, `peran`, `nada` (`ok`/`warn`/`alert`) and optional `cabang` outcomes. Colors come from theme variables, so it follows dark mode and the PDF export. See `alur-kerja/kasir.md` for an example.
 - Pages whose screenshots come from the old UI start with this notice, placed right under the H1:
   ```md
   ::: info Tampilan versi sebelumnya

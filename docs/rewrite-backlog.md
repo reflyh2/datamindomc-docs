@@ -18,7 +18,7 @@ Total ada 88 halaman konten (tanpa `index.md`).
 | **L** | Template lama + screenshot versi lama | `::: info Tampilan versi sebelumnya` | 24 |
 | **B** | Sudah gaya baru | – | 17 |
 
-Halaman yang sudah gaya baru: `mulai/*` (4), `alur-kerja/kasir`, `supervisor`, `underlying`, `bantuan/*` (2), `shift/*` (3), `periode/*` (3), `staff/*` (2).
+Halaman yang sudah gaya baru: `mulai/*` (4), `alur-kerja/kasir`, `supervisor`, `underlying`, `bantuan/*` (2), `shift/*` (3), `periode/*` (3), `staff/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6).
 
 Jadi **71 dari 88 halaman (81%)** masih perlu ditulis ulang. Untuk mengecek ulang:
 
@@ -39,12 +39,12 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | ✓ | Halaman | Kondisi | Peran | Bahan yang sudah ada / catatan | Upaya |
 |---|---|---|---|---|---|
 | [ ] | `master/pengaturan-kurs` | U | Supervisor | ⚠️ **Isinya salah**: halaman ini salinan "Mutasi Valas" (H1 `# Mutasi Valas`). Bahan: `alur-kerja/supervisor#menerbitkan-kurs` | S |
-| [ ] | `transaksi/transaksi-valas` | L | Kasir | `alur-kerja/kasir#membuat-transaksi`. Dirujuk 33 halaman lain | S |
-| [ ] | `transaksi/pembayaran-valas` | L | Kasir | `alur-kerja/kasir#membayar-faktur` | S |
-| [ ] | `transaksi/daftar-transaksi` | L | Kasir | `alur-kerja/kasir#mencetak-faktur`, `#mengubah-atau-membatalkan` | M |
-| [ ] | `transaksi/transaksi-batal` | K | Kasir, Supervisor | Belum ada bahan | M |
-| [ ] | `transaksi/informasi-kurs` | L | Kasir | `alur-kerja/kasir#memastikan-kurs-sudah-terbit` | S |
-| [ ] | `transaksi/cdd-edd` | L | Kasir | `alur-kerja/kasir#formulir-cdd-edd` | M |
+| [x] | `transaksi/transaksi-valas` | L | Kasir | `alur-kerja/kasir#membuat-transaksi`. Dirujuk 33 halaman lain | S |
+| [x] | `transaksi/pembayaran-valas` | L | Kasir | `alur-kerja/kasir#membayar-faktur` | S |
+| [x] | `transaksi/daftar-transaksi` | L | Kasir | `alur-kerja/kasir#mencetak-faktur`, `#mengubah-atau-membatalkan` | M |
+| [x] | `transaksi/transaksi-batal` | K | Kasir, Supervisor | Belum ada bahan | M |
+| [x] | `transaksi/informasi-kurs` | L | Kasir | `alur-kerja/kasir#memastikan-kurs-sudah-terbit` | S |
+| [x] | `transaksi/cdd-edd` | L | Kasir | `alur-kerja/kasir#formulir-cdd-edd` | M |
 | [ ] | `pelanggan/daftar-pelanggan` | L | Kasir | `alur-kerja/kasir#memilih-pelanggan`. H1 masih "Pengaturan Pelanggan" | M |
 | [ ] | `pelanggan/skrining/ringkasan` | K | Kepatuhan | `alur-kerja/kasir#indikasi-dttot` | M |
 | [ ] | `pelanggan/skrining/dttot` | U | Kepatuhan | `alur-kerja/kasir#indikasi-dttot` | M |
