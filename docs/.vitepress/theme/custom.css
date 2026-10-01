@@ -1,0 +1,301 @@
+/*
+Tema ValasPro untuk manual pengguna.
+
+Palet, font, dan geometri disalin dari aplikasi (valaspro:
+resources/views/layouts/partials/_frame-style.blade.php dan
+docs/UI_STYLE_GUIDE.md) supaya manual terasa satu produk dengan aplikasinya.
+
+Token aplikasi memakai prefix --vp-* yang bentrok dengan namespace VitePress,
+jadi di sini diberi prefix --valas-* dan dipetakan ke variabel VitePress.
+*/
+
+/* Plus Jakarta Sans (OFL), berkas yang sama dengan aplikasi. */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/plus-jakarta-sans-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/plus-jakarta-sans-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/plus-jakarta-sans-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/plus-jakarta-sans-latin-700-normal.woff2") format("woff2");
+}
+
+/* ---------- token aplikasi ---------- */
+
+:root {
+  --valas-forest: #0e4d36;
+  --valas-forest-deep: #0a3a29;
+  --valas-mint: #6fd39c;
+  --valas-leaf: #0f8a47;
+  --valas-leaf-deep: #0c7a3e;
+  --valas-ink: #1c2a24;
+  --valas-muted: #6b7a72;
+  --valas-line: #d9e0dc;
+  --valas-canvas: #f6f8f7;
+  --valas-head-bg: #eef2f0;
+  --valas-alert: #c0392b;
+  --valas-alert-bg: #fbeeec;
+  --valas-ok-bg: #e8f5ee;
+  --valas-warn: #f39c12;
+  --valas-warn-ink: #99610a;
+  --valas-warn-bg: #fdf3e3;
+  --valas-neutral: #4a5560;
+  --valas-neutral-bg: #eef0f2;
+}
+
+/* ---------- pemetaan ke VitePress: mode terang ---------- */
+
+:root {
+  --vp-font-family-base: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+
+  --vp-c-brand-1: var(--valas-leaf);
+  --vp-c-brand-2: var(--valas-leaf-deep);
+  --vp-c-brand-3: var(--valas-leaf);
+  --vp-c-brand-soft: rgba(15, 138, 71, 0.12);
+
+  --vp-c-text-1: var(--valas-ink);
+  --vp-c-text-2: var(--valas-muted);
+  --vp-c-text-3: #8f9c95;
+
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: var(--valas-canvas);
+  --vp-c-bg-soft: var(--valas-canvas);
+  --vp-c-divider: var(--valas-line);
+  --vp-c-border: var(--valas-line);
+  --vp-c-gutter: var(--valas-line);
+
+  /* Callout: tip = ok, warning = warn, danger = alert, info = netral. */
+  --vp-c-tip-1: var(--valas-leaf);
+  --vp-c-tip-2: var(--valas-leaf-deep);
+  --vp-c-tip-3: var(--valas-leaf);
+  --vp-c-tip-soft: var(--valas-ok-bg);
+
+  --vp-c-warning-1: var(--valas-warn-ink);
+  --vp-c-warning-2: var(--valas-warn-ink);
+  --vp-c-warning-3: var(--valas-warn);
+  --vp-c-warning-soft: var(--valas-warn-bg);
+
+  --vp-c-danger-1: var(--valas-alert);
+  --vp-c-danger-2: var(--valas-alert);
+  --vp-c-danger-3: var(--valas-alert);
+  --vp-c-danger-soft: var(--valas-alert-bg);
+
+  --vp-c-default-soft: var(--valas-neutral-bg);
+
+  /* Tombol hero "Mulai" = tombol primer aplikasi. */
+  --vp-button-brand-bg: var(--valas-leaf);
+  --vp-button-brand-hover-bg: var(--valas-leaf-deep);
+  --vp-button-brand-active-bg: var(--valas-leaf-deep);
+
+  /* Sidebar hijau gelap seperti aplikasi, di kedua mode. */
+  --vp-sidebar-bg-color: var(--valas-forest-deep);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    var(--valas-leaf) 30%,
+    #1f6fd0
+  );
+}
+
+/* ---------- mode gelap ---------- */
+/* Aplikasi belum punya mode gelap; ini turunan dari palet yang sama. */
+
+.dark {
+  --vp-c-brand-1: var(--valas-mint);
+  --vp-c-brand-2: #8fdfb3;
+  --vp-c-brand-3: var(--valas-leaf);
+  --vp-c-brand-soft: rgba(111, 211, 156, 0.14);
+
+  --vp-c-text-1: #e6ede9;
+  --vp-c-text-2: #a7b4ad;
+  --vp-c-text-3: #74827a;
+
+  --vp-c-bg: #0f1714;
+  --vp-c-bg-alt: #0b120f;
+  --vp-c-bg-soft: #16211c;
+  --vp-c-divider: #24332c;
+  --vp-c-border: #2c3d35;
+  --vp-c-gutter: #0b120f;
+
+  --vp-c-tip-1: var(--valas-mint);
+  --vp-c-tip-2: #8fdfb3;
+  --vp-c-tip-3: var(--valas-leaf);
+  --vp-c-tip-soft: rgba(111, 211, 156, 0.1);
+
+  --vp-c-warning-1: #f5b957;
+  --vp-c-warning-2: #f5b957;
+  --vp-c-warning-3: var(--valas-warn);
+  --vp-c-warning-soft: rgba(243, 156, 18, 0.12);
+
+  --vp-c-danger-1: #ec8579;
+  --vp-c-danger-2: #ec8579;
+  --vp-c-danger-3: var(--valas-alert);
+  --vp-c-danger-soft: rgba(192, 57, 43, 0.16);
+
+  --vp-c-default-soft: #1c2823;
+
+  --vp-button-brand-text: #ffffff;
+
+  --vp-sidebar-bg-color: #0a2a1f;
+
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    var(--valas-mint) 30%,
+    #6aa8f0
+  );
+}
+
+/* ---------- sidebar ---------- */
+/* Warna teks VitePress didefinisikan ulang di dalam sidebar supaya semua
+   komponen di dalamnya otomatis terbaca di atas latar gelap. */
+
+.VPSidebar {
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: rgba(255, 255, 255, 0.72);
+  --vp-c-text-3: rgba(255, 255, 255, 0.42);
+  --vp-c-brand-1: var(--valas-mint);
+  --vp-c-divider: rgba(255, 255, 255, 0.1);
+
+  background: linear-gradient(
+    180deg,
+    var(--valas-forest) 0%,
+    var(--vp-sidebar-bg-color) 100%
+  );
+}
+
+.dark .VPSidebar {
+  background: var(--vp-sidebar-bg-color);
+}
+
+/* Scrollbar tipis tanpa track, sama dengan sidebar aplikasi. */
+.VPSidebar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
+.VPSidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Judul grup: huruf kapital kecil seperti header menu aplikasi. */
+.VPSidebar .VPSidebarItem.level-0 > .item .text {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Item aktif: latar tipis + garis kiri mint, sama dengan menu aktif aplikasi. */
+.VPSidebar .VPSidebarItem.is-link.is-active > .item {
+  margin: 0 -12px;
+  padding: 0 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 3px 0 0 var(--valas-mint);
+}
+
+.VPSidebar .VPSidebarItem.is-link.is-active > .item .text {
+  color: #ffffff;
+}
+
+.VPSidebar .VPSidebarItem .indicator {
+  display: none;
+}
+
+/* ---------- header ---------- */
+
+@media (min-width: 960px) {
+  /* Judul situs duduk di atas sidebar gelap: logo dijadikan putih,
+     seperti logo-white.png di header aplikasi. */
+  .VPNav .VPNavBar.has-sidebar .container > .title {
+    background-color: var(--valas-forest);
+  }
+
+  .dark .VPNav .VPNavBar.has-sidebar .container > .title {
+    background-color: var(--vp-sidebar-bg-color);
+  }
+
+  .VPNav .VPNavBarTitle.has-sidebar .title {
+    color: #ffffff;
+    border-bottom-color: transparent;
+  }
+
+  .VPNav .VPNavBarTitle.has-sidebar .logo {
+    filter: brightness(0) invert(1);
+  }
+}
+
+/* ---------- konten ---------- */
+
+.vp-doc a {
+  text-underline-offset: 3px;
+}
+
+.vp-doc img {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.vp-doc table {
+  font-size: 14px;
+}
+
+.vp-doc th {
+  background-color: var(--valas-head-bg);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-2);
+}
+
+.dark .vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-doc .custom-block {
+  border-radius: 8px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 1px;
+}
