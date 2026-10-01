@@ -4,6 +4,10 @@ outline: deep
 
 # Ringkasan Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Ringkasan Valas](/ringkasan-valas.png)
 
 Halaman **Ringkasan Valas** adalah bagian dari sistem aplikasi yang digunakan untuk menampilkan laporan terkait transaksi valas secara keseluruhan secara ringkas.

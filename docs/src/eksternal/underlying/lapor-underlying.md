@@ -4,6 +4,10 @@ outline: deep
 
 # Lapor Underlying
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Lapor Underlying](/ppatk-list.png)
 
 Halaman ini digunakan untuk mengelola data pelaporan underlying pelanggan.

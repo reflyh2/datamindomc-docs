@@ -4,6 +4,10 @@ outline: deep
 
 # Laporan Sipesat
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Laporan Sipesat](/sipesat.png)
 
 Halaman ini menyediakan data terkait atau diperuntukkan pelaporan SIPESAT, yang otomatis diambil dari riwayat transaksi yang ada di sistem.

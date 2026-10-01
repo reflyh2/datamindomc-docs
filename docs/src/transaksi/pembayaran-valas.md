@@ -4,6 +4,10 @@ outline: deep
 
 # Pembayaran Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Pembayaran Valas](/pembayaran-valas.png)
 
 Halaman **Pembayaran Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data transaksi valas yang memerlukan pembayaran.

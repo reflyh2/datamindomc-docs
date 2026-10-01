@@ -4,6 +4,10 @@ outline: deep
 
 # LKU
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![LKU](/lku.png)
 
 Halaman ini menyediakan data terkait LKU (Laporan Kegiatan Usaha), data pada laporan ini diambil berdasarkan transaksi pada periode bulan yang tertentu.

@@ -4,6 +4,10 @@ outline: deep
 
 # Transaksi Antar Cabang
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Transaksi Valas](/transaksi-valas.png)
 
 Halaman **Transaksi Antar Cabang** adalah bagian dari sistem aplikasi yang digunakan untuk menambahkan transaksi valas baru. Terdapat dua form yang haru dilengkapi yaitu informasi umum dan data valas.
@@ -44,7 +48,7 @@ Halaman **Transaksi Antar Cabang** adalah bagian dari sistem aplikasi yang digun
 1. **Menginput data informasi umum**:
    - Pilih tipe tansaksi (Pembelian atau Penjualan).
    - Pilih tipe pelanggan, aksi ini akan mempengaruhi daftar pelanggan pada aksi selanjutnya.
-   - Pilih pelanggan dari daftar pelanggan yang tersedia atau pengguna juga dapat [menambahkan pelanggan baru](/pelanggan/pengaturan-pelanggan)
+   - Pilih pelanggan dari daftar pelanggan yang tersedia atau pengguna juga dapat [menambahkan pelanggan baru](/pelanggan/daftar-pelanggan)
    - Pilih sumber dana tujuan transaksi.
    - Tambahkan catatan jika diperlukan, aksi ini bersifat opsional.
    - Pengguna juga dapat mengaktifkan transaksi modal dengan catatan Transaksi Modal tidak akan terhitung pada perhitungan laba.

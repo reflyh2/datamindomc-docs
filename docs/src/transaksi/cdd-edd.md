@@ -4,6 +4,10 @@ outline: deep
 
 # Formulir CDD / EDD
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Formulir CDD / EDD](/cdd-edd.png)
 
 CDD (Customer Due Diligence) berguna sebagai proses identifikasi dan verifikasi identitas nasabah melalui dokumen resmi, pencatatan profil, serta pemantauan transaksi untuk memastikan kesesuaian dengan prinsip KYC dan mencegah pencucian uang maupun pendanaan terorisme. Sementara itu, EDD (Enhanced Due Diligence) merupakan pemeriksaan lebih mendalam yang diterapkan pada nasabah atau transaksi berisiko tinggi, misalnya dengan nilai sangat besar, berasal dari negara berisiko, atau tidak sesuai profil nasabah, sehingga money changer perlu meminta dokumen tambahan seperti bukti sumber dana dan tujuan penggunaan untuk memitigasi risiko keuangan ilegal.
@@ -34,7 +38,7 @@ CDD (Customer Due Diligence) berguna sebagai proses identifikasi dan verifikasi 
    - Pengguna dapat memilih terlebih dahulu transaksi mana yang akan ditampilakan formulirnya melalui menu [Daftar Transaksi Valas](/transaksi/daftar-transaksi) seperti pada contoh gambar berikut : ![Pratinjau Memilih transaksi](/cdd-edd-button.png)
 2. **Menampilkan Halaman Formulir**:
    - Jika pengguna sudah memilih transaksi yang akan ditampilkan, selanjutnya akan tampil halaman seperti berikut : ![Pratinjau halaman formulir CDD/EDD](/cdd-edd-preview.png)
-   - Isi dari form bisa berubah sesuai dengan jenis transaksi, untuk transaksi dengan total dibawah Rp 100,000,000.00 akan di kategorikan sebagai CDD apabila data pelanggan tidak tercatat sebagai pelanggan [PEP](/eksternal/daftar-pep), selain kondisi tersebut maka akan dikategorikan sebagai EDD berikut adalah contoh form EDD:
+   - Isi dari form bisa berubah sesuai dengan jenis transaksi, untuk transaksi dengan total dibawah Rp 100,000,000.00 akan di kategorikan sebagai CDD apabila data pelanggan tidak tercatat sebagai pelanggan [PEP](/pelanggan/skrining/pep), selain kondisi tersebut maka akan dikategorikan sebagai EDD berikut adalah contoh form EDD:
   ![Pratinjau halaman formulir EDD](/edd-preview.png)
 3. **Mencetak Transaksi**
   - Pengguna dapat mencetak formulir dengan menekan tombol "Print" di pojok kanan atas halaman yang akan memunculkan halaman preview seperti berikut :   ![Pratinjau print](/cdd-edd-print.png)

@@ -4,6 +4,10 @@ outline: deep
 
 # Mutasi Valas
 
+::: warning Belum disesuaikan
+Alur dan tampilan menu ini sudah berubah sejak halaman ini ditulis. Isinya sedang diperbarui; jangan jadikan satu-satunya acuan.
+:::
+
 ![Mutasi Valas](/riwayat-valas.png)
 
 Halaman **Mutasi Valas** adalah bagian dari sistem aplikasi yang digunakan untuk memantau mutasi atau riwayat valas.

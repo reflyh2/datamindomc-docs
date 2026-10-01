@@ -25,7 +25,7 @@ There are no tests or linters.
 
 ## Sidebar mirrors the app
 
-The "Referensi Menu" groups in the sidebar (Transaksi, Pelanggan, Shift, … ECSys) deliberately copy the **order and names of the ValasPro app's own sidebar** (`valaspro: resources/views/layouts/partials/sidebar.blade.php` in the separate app repo). The folder structure under `docs/src/` follows the same menu hierarchy (e.g. `hutang-piutang/rupiah/deposit.md`, `pengaturan/pengaturan-perusahaan/cabang.md`). When a menu is added, renamed or moved in the app:
+The "Referensi Menu" groups in the sidebar (Transaksi, Pelanggan, Shift, … Pengaturan) deliberately copy the **order and names of the ValasPro app's own sidebar** (`valaspro: resources/views/layouts/partials/sidebar.blade.php` in the separate app repo). The folder structure under `docs/src/` follows the same menu hierarchy (e.g. `laporan-umum/laba/per-cabang.md`, `pengaturan/pengaturan-perusahaan/cabang.md`). When a menu is added, renamed or moved in the app:
 
 1. Add, rename or move the `.md` file so its path matches the new menu location.
 2. Update the matching entry in `config.ts`.
@@ -44,4 +44,5 @@ The groups that are not menu references are `Mulai` (orientation), `Alur Kerja` 
   :::
   ```
 - Refer to menu paths in bold with arrows, e.g. **Shift → Buka Hari**, and to buttons and fields in bold.
+- Templates for rewritten pages are in `docs/templates/` (`halaman-menu.md` for menu references, `halaman-tugas.md` for task pages). The prioritized rewrite list is `docs/rewrite-backlog.md`. Both sit outside `srcDir`, so they are not built.
 - The newer `alur-kerja/` and `mulai/` pages are written as direct second-person guidance ("Anda"). Several older menu pages still use a rigid "Struktur Halaman / Alur Penggunaan" template. Follow the newer style when rewriting.

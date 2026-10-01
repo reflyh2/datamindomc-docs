@@ -4,6 +4,10 @@ outline: deep
 
 # Jurnal
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Jurnal](/jurnal.png)
 
 Halaman ini digunakan untuk melakukan pengelolaan jurnal akuntansi seperti pembuatan jurnal umum, kas hingga antar cabang, seluruh jurnal akan tercatat dan ditampilkan pada menu ini.

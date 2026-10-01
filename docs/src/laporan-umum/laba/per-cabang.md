@@ -4,6 +4,10 @@ outline: deep
 
 # Laporan Laba Cabang
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Laporan Laba Cabang](/per-cabang.png)
 
 Halaman **Laporan Laba Cabang** adalah bagian dari sistem aplikasi yang digunakan untuk menampilkan laporan terkait laba tiap cabang.

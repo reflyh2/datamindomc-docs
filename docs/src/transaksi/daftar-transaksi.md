@@ -4,6 +4,10 @@ outline: deep
 
 # Daftar Transaksi Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Daftar Transaksi Valas](/daftar-transaksi.png)
 
 Halaman **Daftar Transaksi Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data transaksi valas, pengguna dapat memantau seluruh data transaksi, mengekspor data dan beberapa aksi lainnya.

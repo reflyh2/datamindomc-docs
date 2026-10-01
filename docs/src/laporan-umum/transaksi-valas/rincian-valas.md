@@ -4,6 +4,10 @@ outline: deep
 
 # Rincian Valas
 
+::: info Tampilan versi sebelumnya
+Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
+:::
+
 ![Rincian Valas](/rincian-valas.png)
 
 Halaman **Rincian Valas** adalah bagian dari sistem aplikasi yang digunakan untuk menampilkan laporan terkait transaksi valas secara rinci.
