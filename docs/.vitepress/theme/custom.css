@@ -299,3 +299,202 @@ jadi di sini diberi prefix --valas-* dan dipetakan ke variabel VitePress.
   outline: 2px solid var(--vp-c-brand-1);
   outline-offset: 1px;
 }
+
+/* ---------- beranda ---------- */
+
+/* Hero: mockup aplikasi (public/hero-mockup.webp) dengan glow hijau-biru di
+   belakangnya, warna diambil dari gradient nama "ValasPro". */
+:root {
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #1f6fd0 30%,
+    var(--valas-mint) 70%
+  );
+  --vp-home-hero-image-filter: blur(48px);
+}
+
+.dark {
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #2a6fc9 30%,
+    var(--valas-leaf) 70%
+  );
+  --vp-home-hero-image-filter: blur(64px);
+}
+
+.VPHero.has-image .image-bg {
+  opacity: 0.85;
+}
+
+.dark .VPHero.has-image .image-bg {
+  opacity: 1;
+}
+
+/* Mockup lebar (rasio ~16:10), jadi wadahnya dibuat lebar, bukan persegi. */
+.VPHero.has-image .image {
+  margin: 32px 0 0;
+  order: 2;
+}
+
+.VPHero.has-image .image-container {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 1600 / 1018;
+}
+
+.VPHero.has-image .image-src {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  filter: drop-shadow(0 20px 32px rgba(10, 58, 41, 0.25));
+}
+
+@media (min-width: 960px) {
+  .VPHero.has-image .main {
+    width: 46%;
+    flex-shrink: 0;
+  }
+
+  .VPHero.has-image .image {
+    margin: 0 -48px 0 0;
+    align-self: center;
+  }
+
+  .VPHero.has-image .image-container {
+    max-width: none;
+    transform: translateX(16px);
+  }
+
+  .VPHero.has-image .image-bg {
+    width: 85%;
+    height: 95%;
+  }
+}
+
+.home-guide {
+  display: grid;
+  gap: 48px;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 16px 0 96px;
+}
+
+@media (min-width: 960px) {
+  .home-guide {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 64px;
+  }
+}
+
+.home-guide h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.home-lede {
+  max-width: 60ch;
+  margin: 8px 0 20px;
+  color: var(--vp-c-text-2);
+}
+
+.home-guide ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-guide li + li {
+  margin-top: 0;
+}
+
+.role-list {
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.role-list li {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.role-list a {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px 24px;
+  padding: 16px 12px;
+  margin: 0 -12px;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+
+@media (min-width: 640px) {
+  .role-list a {
+    grid-template-columns: 160px 1fr;
+    align-items: baseline;
+  }
+}
+
+.role-list a:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.role-name {
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+}
+
+.role-desc {
+  color: var(--vp-c-text-2);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.role-badge {
+  justify-self: start;
+  margin-top: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--vp-c-warning-1);
+  background: var(--vp-c-warning-soft);
+}
+
+@media (min-width: 640px) {
+  .role-badge {
+    grid-column: 2;
+  }
+}
+
+.side-block + .side-block {
+  margin-top: 40px;
+}
+
+.side-block ul {
+  margin-top: 12px;
+}
+
+.side-block li {
+  padding: 6px 0;
+}
+
+.side-block a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.side-block a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .role-list a {
+    transition: none;
+  }
+}
