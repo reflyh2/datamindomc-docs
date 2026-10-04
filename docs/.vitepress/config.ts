@@ -142,28 +142,11 @@ export default defineConfig({
 
       // ============ Referensi Menu: Laporan ============
       {
-        text: "Laporan Umum",
+        text: "Operasional",
         collapsed: true,
         items: [
-          {
-            text: "Transaksi Valas",
-            collapsed: true,
-            items: [
-              { text: "Rincian Valas", link: "/laporan-umum/transaksi-valas/rincian-valas" },
-              { text: "Ringkasan Valas", link: "/laporan-umum/transaksi-valas/ringkasan-valas" },
-              { text: "Laporan IDR", link: "/laporan-umum/transaksi-valas/laporan-idr" },
-              { text: "Per Valas", link: "/laporan-umum/transaksi-valas/per-valas" },
-              { text: "Per Faktur", link: "/laporan-umum/transaksi-valas/per-faktur" },
-            ],
-          },
-          {
-            text: "Laba",
-            collapsed: true,
-            items: [
-              { text: "Per Cabang", link: "/laporan-umum/laba/per-cabang" },
-              { text: "Per Valas", link: "/laporan-umum/laba/per-valas" },
-            ],
-          },
+          { text: "Laporan Transaksi", link: "/laporan-umum/laporan-transaksi" },
+          { text: "Laba Transaksi", link: "/laporan-umum/laporan-laba" },
         ],
       },
       {
