@@ -197,6 +197,7 @@ export default defineConfig({
         items: [
           { text: "Pengguna & Jabatan", link: "/staff/pengguna-jabatan" },
           { text: "Daftar Akses", link: "/staff/daftar-akses" },
+          { text: "Log Aktivitas", link: "/staff/log-aktivitas" },
         ],
       },
       {
