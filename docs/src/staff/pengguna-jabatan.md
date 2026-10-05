@@ -150,18 +150,36 @@ Klik **⋮ → Atur hak akses** pada barisnya.
 
 | Bagian | Isi |
 |---|---|
-| Kotak atas | **Hak Akses Aktif** (jumlah yang diberikan / seluruhnya), **Kategori**, dan **Keterangan** jabatan |
-| **Cari Hak Akses** | Menyaring menurut nama atau kode. Kategori yang berisi hasil terbuka sendiri |
+| Kotak atas | **Hak Akses Aktif** (jumlah yang diberikan / seluruhnya), **Dipakai** (jumlah pengguna jabatan ini), dan **Keterangan** jabatan |
+| **Cari Hak Akses** | Menyaring menurut nama, kode, atau menu yang dibuka. Kategori yang berisi hasil terbuka sendiri |
 | **Hanya yang aktif** | Menampilkan hak akses yang sudah diberikan saja |
 | **Buka semua** / **Tutup semua** | Membuka atau menutup semua kategori |
-| Kategori | Klik judulnya untuk membuka. Angka di sebelahnya = jumlah yang diberikan / jumlah di kategori itu |
+| **Bandingkan Jabatan** | Membuka tabel perbandingan semua jabatan (lihat di bawah) |
+| Kategori | Urutannya sama dengan menu di sidebar. Klik judulnya untuk membuka. Angka di sebelahnya = jumlah yang diberikan / jumlah di kategori itu |
+| Hak akses | Nama, keterangan singkat menu atau tombol yang dibukanya, dan kodenya |
+| **Riwayat Perubahan** | Sepuluh perubahan hak akses terakhir jabatan ini: kapan, oleh siapa, dan apa yang diberikan atau dicabut |
 
 - **Centang** satu hak akses untuk memberikannya, hilangkan centang untuk mencabutnya. Perubahan **langsung tersimpan**. Tidak ada tombol Simpan.
 - **Pilih semua** / **Kosongkan** di sebuah kategori memberikan atau mencabut semua hak akses yang sedang tampil di kategori itu sekaligus.
 - Bila penyimpanan gagal, centangnya kembali seperti semula dan muncul pesan di kanan atas.
 - Hak akses bertanda **Khusus Super Admin** hanya bisa diberikan oleh Super Admin.
+- Beberapa hak akses hanya berguna bersama hak akses lain. Contohnya **Serah Terima Kasir — Tinjau Selisih** butuh **Serah Terima Kasir**. Saat Anda mencentangnya, hak akses yang dibutuhkan ikut tercentang. Saat Anda mencabut hak akses yang dibutuhkan, muncul pilihan **Cabut ini saja** atau **Cabut semuanya**.
+- Hak akses bertanda **Fitur nonaktif** milik modul yang belum dinyalakan di perusahaan Anda, misalnya Hutang Piutang. Hak akses ini tetap bisa dicentang dan baru berlaku setelah modulnya dinyalakan.
+- Anda hanya bisa memberikan hak akses yang Anda miliki sendiri. Yang belum Anda miliki bertanda **Tidak Anda miliki** dan tidak bisa dicentang.
+- Hak akses **jabatan Anda sendiri** tidak bisa Anda ubah. Halamannya hanya bisa dilihat, dengan pesan *"Ini jabatan Anda sendiri."* Minta Super Admin bila perlu diubah.
 
 Pengguna dengan jabatan itu mendapat hak akses barunya pada halaman berikutnya yang ia buka.
+
+### Membandingkan jabatan
+
+Klik **Bandingkan** di tab Jabatan, atau **Bandingkan Jabatan** di halaman Hak Akses. Tabelnya berisi semua hak akses (baris) dan semua jabatan (kolom). Tanda ✓ berarti jabatan itu punya hak akses tersebut.
+
+- **Cari Hak Akses** menyaring baris.
+- **Hanya yang berbeda** menampilkan hak akses yang dimiliki sebagian jabatan saja.
+- **Unduh CSV** mengunduh seluruh tabel.
+- Klik nama jabatan di kepala kolom untuk membuka halaman Hak Akses-nya.
+
+Halaman ini hanya untuk dilihat. Hak akses tetap diubah di halaman Hak Akses tiap jabatan.
 
 ### Menghapus jabatan
 
