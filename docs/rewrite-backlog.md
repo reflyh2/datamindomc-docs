@@ -84,7 +84,7 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | [ ] | `keuangan/jurnal` | L | Akunting | 5 screenshot lama | M |
 | [ ] | `keuangan/laporan-keuangan` | U | Akunting | H1 masih "Laporan Akunting". 7 screenshot lama | L |
 | [ ] | `keuangan/hutang-piutang-cabang` | K | Akunting | | M |
-| [ ] | `keuangan/penutupan-tahunan` | K | Akunting | | M |
+| [x] | `keuangan/penutupan-tahunan` | K | Akunting | | M |
 | [ ] | `alur-kerja/akunting` | K | Akunting | Tulis setelah halaman keuangan selesai | M |
 | [ ] | `laporan-umum/transaksi-valas/rincian-valas` | L | Supervisor | | S |
 | [ ] | `laporan-umum/transaksi-valas/ringkasan-valas` | L | Supervisor | | S |

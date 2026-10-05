@@ -123,7 +123,14 @@ export default defineConfig({
           { text: "Jurnal", link: "/keuangan/jurnal" },
           { text: "Laporan Keuangan", link: "/keuangan/laporan-keuangan" },
           { text: "Hutang Piutang Cabang", link: "/keuangan/hutang-piutang-cabang" },
-          { text: "Penutupan Tahunan", link: "/keuangan/penutupan-tahunan" },
+          {
+            text: "Tutup Buku",
+            collapsed: true,
+            items: [
+              { text: "Bulanan", link: "/keuangan/tutup-buku-bulanan" },
+              { text: "Tahunan", link: "/keuangan/penutupan-tahunan" },
+            ],
+          },
         ],
       },
       {
