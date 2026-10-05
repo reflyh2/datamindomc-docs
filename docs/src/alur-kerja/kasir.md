@@ -77,7 +77,7 @@ Menu: **Transaksi → Transaksi Valas** (halaman **Buat Transaksi Valas**). Kolo
 |---|---|
 | **Tipe Transaksi** \* | **Transaksi Pembelian** kalau Anda membeli valas dari pelanggan. **Transaksi Penjualan** kalau Anda menjual valas ke pelanggan. Label hijau *Pembelian* atau merah *Penjualan* di judul form ikut berubah |
 | **Periode Transaksi** \* | Tanggal buku. Hanya muncul bila perusahaan mengizinkan tanggal transaksi dipilih. Biasanya sudah terisi otomatis |
-| **Jam Transaksi** | Hanya muncul bila fitur **Jam Transaksi Manual** aktif. Isi jam transaksi sebenarnya kalau Anda mencatatnya belakangan. Kosongkan untuk memakai jam saat disimpan |
+| **Jam Transaksi** | Hanya muncul bila fitur **Jam Transaksi Manual** aktif. Terisi otomatis dengan jam sekarang (WIB); ganti dengan jam transaksi sebenarnya kalau Anda mencatatnya belakangan. Kosongkan untuk memakai jam saat disimpan |
 | **Tipe Pelanggan** \* | Retail, Corporate, Money Changer, Bank, Antar Cabang, atau Square Balance |
 | **Pelanggan** \* | Klik **Cari**. Pelanggan tidak bisa diketik langsung. Lihat [Memilih pelanggan](#memilih-pelanggan) |
 | **Sumber Dana** \*, **Tujuan Transaksi** \* | Pilih dari daftar, atau ketik pilihan baru. Pilihan baru tersimpan untuk transaksi berikutnya |
