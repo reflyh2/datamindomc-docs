@@ -17,7 +17,7 @@ Semua yang dijelaskan di sini hanya berlaku bila **Peringatan Underlying** aktif
 | Dihitung per | Pelanggan, per cabang, per bulan berjalan |
 | Transaksi yang dihitung | Hanya **penjualan** valas (pelanggan membeli valas dari Anda) |
 | Tidak dihitung | Transaksi batal dan transaksi antarcabang |
-| Batas bawaan | USD 10.000, bisa diubah lewat **Limit Underlying** |
+| Batas | Nilai **Limit Underlying** (USD) di **Pengaturan → Pengaturan Umum → Kepatuhan** |
 | Tidak berlaku untuk | Pelanggan kategori **Money Changer** dan **Bank** |
 
 Setiap dokumen underlying yang didaftarkan **menaikkan batas pelanggan** sebesar nilai USD faktur dasarnya. Jadi, mendaftarkan underlying adalah cara membuka kembali faktur yang tertahan.
