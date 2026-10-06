@@ -7,7 +7,7 @@ outline: [2, 3]
 Ketentuan Bank Indonesia mewajibkan pembelian valas di atas jumlah tertentu didukung dokumen dasar (*underlying*), misalnya invoice impor, kontrak, atau bukti kebutuhan lain. Halaman ini menjelaskan apa yang terjadi saat pelanggan melewati batas itu dan bagaimana membukanya kembali.
 
 ::: info Fitur opsional
-Semua yang dijelaskan di sini hanya berlaku bila **Peringatan Underlying** aktif di **Pengaturan → Pengaturan Umum**. Lihat [Fitur Opsional](/mulai/fitur-opsional).
+Semua yang dijelaskan di sini hanya berlaku bila **Peringatan Underlying** aktif di **Pengaturan → Umum**. Lihat [Fitur Opsional](/mulai/fitur-opsional).
 :::
 
 ## Cara batas dihitung

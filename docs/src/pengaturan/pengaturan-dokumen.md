@@ -4,7 +4,7 @@ outline: deep
 
 # Pengaturan Dokumen
 
-Menu **Pengaturan → Pengaturan Dokumen** mengatur tampilan dokumen yang dicetak dari ValasPro. Isinya dua bagian:
+Menu **Pengaturan → Dokumen** mengatur tampilan dokumen yang dicetak dari ValasPro. Isinya dua bagian:
 
 - **Invoice**: template invoice, tanggal yang dicetak, rincian metode pembayaran, dan keterangan di bawah invoice.
 - **Kop Surat & Dokumen**: kop surat untuk dokumen cetak/PDF, misalnya formulir CDD dan EDD.

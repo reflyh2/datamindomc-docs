@@ -205,7 +205,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: "Pengaturan Perusahaan",
+            text: "Perusahaan",
             collapsed: true,
             items: [
               { text: "Perusahaan", link: "/pengaturan/pengaturan-perusahaan/perusahaan" },
@@ -214,8 +214,8 @@ export default defineConfig({
               { text: "Pengaturan Cabang", link: "/pengaturan/pengaturan-perusahaan/pengaturan-cabang" },
             ],
           },
-          { text: "Pengaturan Umum", link: "/pengaturan/pengaturan-umum" },
-          { text: "Pengaturan Dokumen", link: "/pengaturan/pengaturan-dokumen" },
+          { text: "Umum", link: "/pengaturan/pengaturan-umum" },
+          { text: "Dokumen", link: "/pengaturan/pengaturan-dokumen" },
           { text: "Hari Libur", link: "/pengaturan/hari-libur" },
           { text: "Pindah Cabang", link: "/pengaturan/pindah-cabang" },
         ],
