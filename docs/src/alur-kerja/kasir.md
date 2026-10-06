@@ -206,6 +206,8 @@ Faktur yang belum lunas muncul di **Transaksi → Pembayaran Valas**. Angka hija
 
 Setelah dibayar, status faktur menjadi **Lunas**, dan stok serta kas di cabang ikut bergerak. Rincian setiap kolom ada di [Pembayaran Valas](/transaksi/pembayaran-valas).
 
+Beberapa faktur bisa dilunasi sekaligus dari satu akun: centang fakturnya, klik **Bayar terpilih**, pilih akun di **Bayar dari akun**, lalu **Bayar sekarang**. Lihat [Membayar beberapa faktur sekaligus](/transaksi/pembayaran-valas#membayar-beberapa-faktur-sekaligus).
+
 Kalau baris faktur menampilkan label kuning **underlying**, faktur itu belum bisa dibayar. Lihat [Menangani Batas Underlying](/alur-kerja/underlying).
 
 ### Mencetak faktur

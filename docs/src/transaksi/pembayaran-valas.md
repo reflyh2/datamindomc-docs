@@ -51,6 +51,26 @@ Bila berhasil, muncul pesan *Pembayaran transaksi Faktur No : … telah berhasil
 
 Ringkasan di bawah jendela membaca **Tagihan − Dialokasikan = Sisa**. **Tagihan** sudah termasuk biaya transaksi bila ada.
 
+## Membayar beberapa faktur sekaligus
+
+Cara ini dipakai bila beberapa faktur akan dilunasi penuh dari satu akun yang sama.
+
+1. Centang kotak di kolom paling kiri pada setiap faktur yang akan dibayar. Kotak di judul kolom mencentang semua faktur yang tampil.
+2. Bar di atas tabel menampilkan **… faktur dipilih**. Pilihan tetap tersimpan saat pindah halaman tabel atau mengganti filter.
+3. Klik **Bayar terpilih**. Tombol ini aktif setelah minimal dua faktur dicentang.
+4. Periksa ringkasan di jendela **Bayar faktur terpilih**:
+   - **Pembelian**: total yang dibayar ke pelanggan.
+   - **Penjualan**: total yang diterima dari pelanggan.
+   - **Neto**: selisih keduanya.
+5. Di **Bayar dari akun**, pilih **Kas** atau salah satu rekening bank.
+6. Klik **Bayar sekarang**.
+
+Setiap faktur tetap tercatat sebagai pembayaran sendiri, termasuk biaya transaksinya. Bila satu faktur saja gagal, misalnya saldo akun tidak cukup atau faktur sudah dibayar kasir lain, **tidak ada** faktur yang dibayar. Pesan yang muncul menyebutkan nomor faktur penyebabnya.
+
+Pakai **Membayar satu faktur** bila pembayaran perlu dipecah ke Kas dan bank, atau sebagian dijadikan hutang/piutang. Faktur antarcabang boleh ikut dicentang. Faktur itu tetap dijurnal ke akun Hutang/Piutang Antarcabang, bukan ke akun yang dipilih. Faktur berlabel underlying tidak bisa dicentang.
+
+Klik **Kosongkan pilihan** untuk membatalkan semua centang.
+
 ## Membayar semua faktur sekaligus
 
 Pengguna dengan peran Super Admin melihat tombol **Bayar semua faktur belum lunas**. Tombol ini membayar **semua** faktur belum lunas di cabang, lintas periode, bukan hanya yang tampil di filter. Pakai dengan hati-hati.
