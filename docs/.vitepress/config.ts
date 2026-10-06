@@ -26,6 +26,7 @@ export default defineConfig({
           { text: "Mengenal Layar ValasPro", link: "/mulai/mengenal-layar" },
           { text: "Masuk ke Aplikasi", link: "/mulai/masuk" },
           { text: "Tabel, Filter, dan Ekspor", link: "/mulai/tabel-dan-filter" },
+          { text: "Mengatur Tampilan", link: "/mulai/tampilan" },
           { text: "Fitur Opsional", link: "/mulai/fitur-opsional" },
         ],
       },
@@ -149,28 +150,11 @@ export default defineConfig({
 
       // ============ Referensi Menu: Laporan ============
       {
-        text: "Laporan Umum",
+        text: "Operasional",
         collapsed: true,
         items: [
-          {
-            text: "Transaksi Valas",
-            collapsed: true,
-            items: [
-              { text: "Rincian Valas", link: "/laporan-umum/transaksi-valas/rincian-valas" },
-              { text: "Ringkasan Valas", link: "/laporan-umum/transaksi-valas/ringkasan-valas" },
-              { text: "Laporan IDR", link: "/laporan-umum/transaksi-valas/laporan-idr" },
-              { text: "Per Valas", link: "/laporan-umum/transaksi-valas/per-valas" },
-              { text: "Per Faktur", link: "/laporan-umum/transaksi-valas/per-faktur" },
-            ],
-          },
-          {
-            text: "Laba",
-            collapsed: true,
-            items: [
-              { text: "Per Cabang", link: "/laporan-umum/laba/per-cabang" },
-              { text: "Per Valas", link: "/laporan-umum/laba/per-valas" },
-            ],
-          },
+          { text: "Laporan Transaksi", link: "/laporan-umum/laporan-transaksi" },
+          { text: "Laba Transaksi", link: "/laporan-umum/laporan-laba" },
         ],
       },
       {
@@ -221,6 +205,7 @@ export default defineConfig({
         items: [
           { text: "Pengguna & Jabatan", link: "/staff/pengguna-jabatan" },
           { text: "Daftar Akses", link: "/staff/daftar-akses" },
+          { text: "Log Aktivitas", link: "/staff/log-aktivitas" },
         ],
       },
       {
@@ -228,7 +213,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: "Pengaturan Perusahaan",
+            text: "Perusahaan",
             collapsed: true,
             items: [
               { text: "Perusahaan", link: "/pengaturan/pengaturan-perusahaan/perusahaan" },
@@ -237,7 +222,8 @@ export default defineConfig({
               { text: "Pengaturan Cabang", link: "/pengaturan/pengaturan-perusahaan/pengaturan-cabang" },
             ],
           },
-          { text: "Pengaturan Umum", link: "/pengaturan/pengaturan-umum" },
+          { text: "Umum", link: "/pengaturan/pengaturan-umum" },
+          { text: "Dokumen", link: "/pengaturan/pengaturan-dokumen" },
           { text: "Hari Libur", link: "/pengaturan/hari-libur" },
           { text: "Pindah Cabang", link: "/pengaturan/pindah-cabang" },
         ],

@@ -22,7 +22,7 @@ Panduan ini dibagi tiga:
 | Chip bergambar gedung | **Cabang** tempat transaksi Anda dicatat |
 | Chip bergambar kalender | **Periode**, yaitu tanggal buku yang sedang berjalan. Transaksi baru dicatat pada tanggal ini |
 | **Cari menu…** | Kotak pencarian menu. Tekan tombol <kbd>/</kbd> di papan ketik untuk membukanya dengan cepat |
-| Foto dan nama Anda | Klik untuk melihat jabatan, cabang, waktu masuk terakhir, serta tautan **Profil** dan **Keluar** |
+| Foto dan nama Anda | Klik untuk melihat jabatan, cabang, waktu masuk terakhir, tombol tema **Terang/Gelap/Sistem** ([Mengatur Tampilan](/mulai/tampilan)), serta tautan **Profil** dan **Keluar** |
 
 ::: tip Selalu periksa Periode sebelum bertransaksi
 Pada sebagian perusahaan, Periode tidak otomatis mengikuti tanggal hari ini. Periode baru maju setelah supervisor menutup hari atau periode. Kalau tanggalnya tidak sesuai harapan, tanyakan ke supervisor sebelum membuat transaksi.

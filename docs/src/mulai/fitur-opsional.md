@@ -6,9 +6,9 @@ outline: deep
 
 Setiap perusahaan bisa menyalakan atau mematikan beberapa fitur ValasPro. Akibatnya, menu, kolom, dan tombol di layar Anda bisa berbeda dengan perusahaan lain, dan juga dengan gambar di panduan ini.
 
-Setelan-setelan ini ada di **Pengaturan → Pengaturan Umum**. Sebagian hanya bisa diubah oleh penyedia aplikasi. Kalau ragu fitur mana yang aktif di perusahaan Anda, tanyakan ke admin perusahaan.
+Setelan-setelan ini ada di **Pengaturan → Umum**. Sebagian hanya bisa diubah oleh penyedia aplikasi. Kalau ragu fitur mana yang aktif di perusahaan Anda, tanyakan ke admin perusahaan.
 
-Setelan dikelompokkan dalam tab **Umum**, **Transaksi & Stok**, **Akuntansi**, **Invoice**, **Kepatuhan**, dan **Kop Surat & Dokumen**. Setelan yang hanya bisa diubah penyedia aplikasi tidak tampil di layar Anda.
+Setelan dikelompokkan dalam bagian **Umum**, **Transaksi**, **Stok & Periode**, **Akuntansi**, dan **Kepatuhan**. Pengaturan invoice dan kop surat ada di menu terpisah, **Pengaturan → Dokumen**. Setelan yang hanya bisa diubah penyedia aplikasi tidak tampil di layar Anda.
 
 ![Tab Transaksi & Stok di halaman Pengaturan Umum](/fitur-pengaturan-umum.png)
 
@@ -36,4 +36,4 @@ Setelan dikelompokkan dalam tab **Umum**, **Transaksi & Stok**, **Akuntansi**, *
 |---|---|
 | **Nilai Stok dalam IDR** | Halaman stok menampilkan harga satuan dan nilai stok dalam rupiah |
 | **Hari Libur Mingguan** | Hari tersebut ditandai sebagai hari libur, misalnya di checklist Buka Hari |
-| **Template Invoice**, **Tanggal Invoice**, **Keterangan Invoice** | Mengatur bentuk faktur yang dicetak |
+| **Template Invoice**, **Tanggal Invoice**, **Keterangan Invoice** | Mengatur bentuk faktur yang dicetak. Letaknya di **Pengaturan → Dokumen** |

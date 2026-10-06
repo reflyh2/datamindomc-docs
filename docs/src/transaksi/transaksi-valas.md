@@ -37,7 +37,7 @@ Form untuk mencatat pembelian atau penjualan valas dengan satu pelanggan. Dipaka
 |---|---|
 | **Tipe Transaksi** \* | **Transaksi Pembelian** bila Anda membeli valas dari pelanggan. **Transaksi Penjualan** bila Anda menjual valas ke pelanggan |
 | **Periode Transaksi** \* | Hanya muncul bila perusahaan mengizinkan tanggal transaksi dipilih. Pada perusahaan dengan periode manual, transaksi selalu dicatat di Periode aktif |
-| **Jam Transaksi** | Hanya muncul bila **Jam Transaksi Manual** aktif. Kosongkan untuk memakai jam saat disimpan |
+| **Jam Transaksi** | Hanya muncul bila **Jam Transaksi Manual** aktif. Terisi otomatis dengan jam sekarang (WIB) dan ikut berjalan sampai Anda mengubahnya. Kosongkan untuk memakai jam saat disimpan |
 | **Tipe Pelanggan** \* | Menentukan daftar pelanggan yang muncul saat Anda klik **Cari** |
 | **Pelanggan** \* | Klik **Cari**. Lihat [Memilih pelanggan](/alur-kerja/kasir#memilih-pelanggan) |
 | **Sumber Dana** \*, **Tujuan Transaksi** \* | Pilih dari daftar, atau ketik pilihan baru |
