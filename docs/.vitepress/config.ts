@@ -215,6 +215,7 @@ export default defineConfig({
             ],
           },
           { text: "Pengaturan Umum", link: "/pengaturan/pengaturan-umum" },
+          { text: "Pengaturan Dokumen", link: "/pengaturan/pengaturan-dokumen" },
           { text: "Hari Libur", link: "/pengaturan/hari-libur" },
           { text: "Pindah Cabang", link: "/pengaturan/pindah-cabang" },
         ],
