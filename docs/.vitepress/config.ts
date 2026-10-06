@@ -26,6 +26,7 @@ export default defineConfig({
           { text: "Mengenal Layar ValasPro", link: "/mulai/mengenal-layar" },
           { text: "Masuk ke Aplikasi", link: "/mulai/masuk" },
           { text: "Tabel, Filter, dan Ekspor", link: "/mulai/tabel-dan-filter" },
+          { text: "Mengatur Tampilan", link: "/mulai/tampilan" },
           { text: "Fitur Opsional", link: "/mulai/fitur-opsional" },
         ],
       },
