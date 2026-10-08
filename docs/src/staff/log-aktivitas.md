@@ -12,6 +12,8 @@ Catatan di halaman ini tidak bisa diubah maupun dihapus.
 
 ::: tip Siapa yang bisa membuka
 Pengguna yang jabatannya punya hak akses **Log Aktivitas**. Jabatan yang sudah boleh mengatur **Pengaturan Jabatan** otomatis mendapatkannya.
+
+Aktivitas yang dilakukan akun **Super Admin**, atau yang menyangkut akun dan jabatan Super Admin (termasuk login gagal ke akun itu), hanya terlihat oleh Super Admin. Pengguna lain juga tidak melihat nama Super Admin di penyaring **Pengguna**.
 :::
 
 ## Isi halaman
