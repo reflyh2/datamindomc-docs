@@ -34,6 +34,7 @@ Setelan dikelompokkan dalam bagian **Umum**, **Transaksi**, **Stok & Periode**, 
 
 | Setelan | Kalau aktif |
 |---|---|
+| **Persetujuan Atasan** (hapus faktur, reset pembayaran, terbitkan kurs) | Sebelum aksi itu dijalankan, muncul jendela **Persetujuan Atasan**. Atasan mengetik username atau email dan kata sandinya sendiri, lalu klik **Setujui**. Atasan harus pengguna lain yang jabatannya punya hak akses **Setujui Hapus Faktur**, **Setujui Reset Pembayaran**, atau **Setujui Terbitkan Kurs**. Nama atasan tercatat di Log Aktivitas |
 | **Nilai Stok dalam IDR** | Halaman stok menampilkan harga satuan dan nilai stok dalam rupiah |
 | **Hari Libur Mingguan** | Hari tersebut ditandai sebagai hari libur, misalnya di checklist Buka Hari |
 | **Template Invoice**, **Tanggal Invoice**, **Keterangan Invoice** | Mengatur bentuk faktur yang dicetak. Letaknya di **Pengaturan → Dokumen** |

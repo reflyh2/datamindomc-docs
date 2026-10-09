@@ -39,8 +39,8 @@ Tombol **Tambah** membuka [Transaksi Valas](/transaksi/transaksi-valas). Fitur t
 | **Cetak faktur** | Faktur selain Batal, untuk pelanggan Retail, Corporate, Money Changer, atau Bank | Mencetak ulang faktur |
 | **Cetak CDD** / **Cetak EDD** | Sama dengan Cetak faktur | Membuka [formulir CDD/EDD](/transaksi/cdd-edd). Labelnya EDD bila pelanggan PEP atau pekerjaannya berisiko tinggi |
 | **Tandai transaksi mencurigakan (LTKM)** | Bila Anda punya akses laporan PPATK | Menandai faktur untuk dilaporkan sebagai LTKM. Bendera berubah bila sudah ditandai atau dilaporkan |
-| **Ubah faktur** | Belum bayar | Membuka form transaksi untuk diubah |
-| **Hapus faktur** | Belum bayar atau Menunggu | Membatalkan faktur. Statusnya menjadi Batal |
+| **Ubah faktur** | Belum bayar, dan Anda punya akses **Ubah Faktur** | Membuka form transaksi untuk diubah |
+| **Hapus faktur** | Belum bayar atau Menunggu, dan Anda punya akses **Hapus Faktur** | Membatalkan faktur. Statusnya menjadi Batal |
 | **Reset pembayaran** | Lunas, dan Anda punya aksesnya | Membatalkan pembayaran supaya faktur kembali Belum bayar. Semua jurnal transaksi itu ikut dihapus |
 
 ![Jendela Detail Faktur](/daftar-transaksi-rincian.png)
@@ -56,6 +56,8 @@ Tombol **Tambah** membuka [Transaksi Valas](/transaksi/transaksi-valas). Fitur t
 - **Hapus berarti batal.** Faktur yang dihapus tidak bisa dikembalikan, tetapi tetap tercatat di Transaksi Batal.
 - **Periode tertutup terkunci.** Faktur pada tanggal yang sudah direkonsiliasi atau ditutup tidak bisa diubah, dihapus, atau di-reset.
 - **Faktur hasil penyelesaian deposit valas** tidak bisa diubah atau dihapus dari sini.
+- **Ubah dan hapus punya hak akses sendiri.** Bisa membuka Daftar Transaksi tidak otomatis berarti bisa mengubah atau menghapus faktur. Admin mengaturnya di Staff → Daftar Jabatan → Hak Akses, kategori Transaksi: **Ubah Faktur** dan **Hapus Faktur**. Tombol **Hapus Transaksi** untuk faktur yang dicentang juga butuh **Hapus Faktur**.
+- **Bisa wajib disetujui atasan.** Bila perusahaan menyalakan [Persetujuan Atasan](/mulai/fitur-opsional#fitur-lain), hapus faktur dan reset pembayaran membuka jendela **Persetujuan Atasan**. Atasan mengisi username dan kata sandinya sendiri, lalu klik **Setujui**. Untuk faktur yang dicentang, satu persetujuan berlaku untuk semuanya. Bila salah 5 kali, tunggu beberapa menit sebelum mencoba lagi.
 
 ## Terkait
 

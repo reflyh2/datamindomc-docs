@@ -236,6 +236,8 @@ Pakai ikon di kolom **Aksi** di **Transaksi → Daftar Transaksi**. Ikon yang ta
 
 Faktur yang dihapus tidak benar-benar hilang. Statusnya menjadi **Batal**, dan faktur itu tercatat di [Transaksi Batal](/transaksi/transaksi-batal). Kalau hari atau periodenya sudah ditutup, transaksi tidak bisa diubah lagi. Hubungi supervisor.
 
+Kalau **Ubah faktur** atau **Hapus faktur** tidak muncul sama sekali, jabatan Anda belum diberi akses **Ubah Faktur** atau **Hapus Faktur**. Minta admin menambahkannya, atau minta supervisor yang punya akses melakukannya.
+
 ## Serah Terima Kasir
 
 Menu: **Shift → Serah Terima Kasir**. Serah terima dilakukan saat kasir berganti atau saat pulang, supaya kas dan valas berpindah tangan dengan jelas.
