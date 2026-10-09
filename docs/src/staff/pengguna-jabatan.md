@@ -166,6 +166,7 @@ Klik **⋮ → Atur hak akses** pada barisnya.
 - Beberapa hak akses hanya berguna bersama hak akses lain. Contohnya **Serah Terima Kasir — Tinjau Selisih** butuh **Serah Terima Kasir**. Saat Anda mencentangnya, hak akses yang dibutuhkan ikut tercentang. Saat Anda mencabut hak akses yang dibutuhkan, muncul pilihan **Cabut ini saja** atau **Cabut semuanya**.
 - Hak akses bertanda **Fitur nonaktif** milik modul yang belum dinyalakan di perusahaan Anda, misalnya Hutang Piutang. Hak akses ini tetap bisa dicentang dan baru berlaku setelah modulnya dinyalakan.
 - Anda hanya bisa memberikan hak akses yang Anda miliki sendiri. Yang belum Anda miliki bertanda **Tidak Anda miliki** dan tidak bisa dicentang.
+- Bila jabatan memegang pasangan hak akses yang membuat satu orang bisa memeriksa pekerjaannya sendiri, muncul kotak kuning **Pemisahan tugas**. Pasangannya: **Buat Transaksi** + **Hapus Faktur**, **Buat Transaksi** + **Reset Pembayaran**, **Pengaturan Kurs** + **Buat Transaksi**, serta Rekonsiliasi Harian **Hitung & Simpan** + **Tinjau Selisih**. Kotak ini hanya peringatan. Hak aksesnya tetap tersimpan, karena di outlet kecil satu orang memang sering memegang semuanya. Untuk tiga pasangan pertama, risikonya berkurang bila [Persetujuan Atasan](/mulai/fitur-opsional#fitur-lain) untuk aksi itu dinyalakan.
 - Hak akses **jabatan Anda sendiri** tidak bisa Anda ubah. Halamannya hanya bisa dilihat, dengan pesan *"Ini jabatan Anda sendiri."* Minta Super Admin bila perlu diubah.
 
 Pengguna dengan jabatan itu mendapat hak akses barunya pada halaman berikutnya yang ia buka.
@@ -178,6 +179,7 @@ Klik **Bandingkan** di tab Jabatan, atau **Bandingkan Jabatan** di halaman Hak A
 - **Hanya yang berbeda** menampilkan hak akses yang dimiliki sebagian jabatan saja.
 - **Unduh CSV** mengunduh seluruh tabel.
 - Klik nama jabatan di kepala kolom untuk membuka halaman Hak Akses-nya.
+- Badge **Pemisahan tugas: N** di bawah nama jabatan menunjukkan jumlah pasangan hak akses berisiko yang dipegangnya dan belum diredam Persetujuan Atasan. Arahkan kursor ke badge untuk membaca risikonya.
 
 Halaman ini hanya untuk dilihat. Hak akses tetap diubah di halaman Hak Akses tiap jabatan.
 
