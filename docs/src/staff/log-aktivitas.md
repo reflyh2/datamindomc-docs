@@ -12,6 +12,8 @@ Catatan di halaman ini tidak bisa diubah maupun dihapus.
 
 ::: tip Siapa yang bisa membuka
 Pengguna yang jabatannya punya hak akses **Log Aktivitas**. Jabatan yang sudah boleh mengatur **Pengaturan Jabatan** otomatis mendapatkannya.
+
+Tanpa hak akses **Log Aktivitas Semua Pengguna**, halaman ini hanya menampilkan aktivitas Anda sendiri dan penyaring **Pengguna** terkunci ke nama Anda. Jabatan yang sebelumnya sudah bisa membuka Log Aktivitas otomatis mendapatkan hak akses ini.
 :::
 
 ## Isi halaman
