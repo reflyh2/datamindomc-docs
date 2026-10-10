@@ -55,7 +55,7 @@ Langkahnya:
 Angka kas dan valas diambil dari sistem saat Anda menekan Serahkan. Penerima tidak melihat angka ini sampai selesai menghitung.
 
 ::: warning Transaksi terkunci sementara
-Selama serah terima belum diterima atau ditolak, transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang tidak bisa dibuat. Di form transaksi, tombol **Simpan** nonaktif dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* Di tempat lain, misalnya Pindah Pecahan, permintaan ditolak dengan pesan *Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Transaksi Tidak Dapat Dilakukan*.
+Selama serah terima belum diterima atau ditolak, transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang tidak bisa dibuat. Di form transaksi, tombol **Simpan** nonaktif dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* Halaman Pindah Pecahan menampilkan peringatan *Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Pindah Pecahan Tidak Dapat Dilakukan*, dan **Simpan** maupun **Batalkan** di sana ditolak dengan pesan *Serah terima kasir sedang berlangsung, jadi stok valas belum bisa dipindahkan.*
 :::
 
 ![Tombol Simpan di form transaksi nonaktif selama serah terima menunggu](/transaksi-valas-terkunci.png)
