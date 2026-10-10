@@ -91,7 +91,7 @@ Faktur baru berstatus **Belum Bayar**. Stok brankas dan kas baru bergerak setela
 
 | Yang muncul | Penyebab | Yang dilakukan |
 |---|---|---|
-| *Stok valas USD tidak mencukupi pada/sesudah tanggal transaksi (tersedia …)* atau *Jumlah penjualan valas USD melebihi stok yang tersedia* | Stok kurang dari jumlah yang dijual | Kurangi jumlahnya, atau minta tambahan stok lewat **Inventori → PB Valas** |
+| *Stok valas USD tidak mencukupi pada/sesudah tanggal transaksi (tersedia …)* atau *Jumlah penjualan valas USD melebihi stok yang tersedia* | Stok kurang dari jumlah yang dijual | Kurangi jumlahnya, atau minta tambahan stok lewat **Inventori → Pindah Pecahan** |
 | *Rate Pembelian harus diotorisasi* / *Rate Penjualan harus diotorisasi* | Kurs terlalu jauh dari kurs terbit | Minta supervisor mengisi nama pengguna dan kata sandi di **Identifikasi Petugas Otorisasi** |
 | Tombol Simpan nonaktif: *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* | Ada serah terima yang belum diterima | Tunggu sampai serah terima diterima atau ditolak |
 | *Diblokir! Pelanggan ini diblacklist (tipe diblokir)…* | Pelanggan diblokir perusahaan | Arahkan pelanggan ke petugas kepatuhan |

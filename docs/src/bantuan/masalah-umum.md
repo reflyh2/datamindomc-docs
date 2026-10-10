@@ -35,7 +35,7 @@ Pada perusahaan yang memakai Square Balance atau Rekonsiliasi Harian, Periode ba
 
 | Pesan | Solusi |
 |---|---|
-| Stok valas tidak cukup | Periksa **Inventori → Stok Valas**. Kurangi jumlahnya atau ajukan PB Valas |
+| Stok valas tidak cukup | Periksa **Inventori → Stok Valas**. Kurangi jumlahnya atau ajukan Pindah Pecahan |
 | Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Transaksi Tidak Dapat Dilakukan | Tunggu sampai serah terima kasir diterima atau ditolak |
 | Rate Pembelian harus diotorisasi / Rate Penjualan harus diotorisasi | Minta supervisor mengisi jendela **Identifikasi Petugas Otorisasi** |
 | Tombol Simpan tidak aktif, dan ada kotak merah **Mirip** atau **Sangat mirip** | Periksa kecocokannya, lalu isi konfirmasi beserta alasannya. Lihat [Indikasi DTTOT](/alur-kerja/kasir#indikasi-dttot) |

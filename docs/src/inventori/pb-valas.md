@@ -2,15 +2,15 @@
 outline: deep
 ---
 
-# PB Valas
+# Pindah Pecahan
 
 ::: info Tampilan versi sebelumnya
 Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
 :::
 
-![PB Valas](/pb-valas.png)
+![Pindah Pecahan](/pb-valas.png)
 
-Halaman **PB Valas** adalah bagian dari sistem aplikasi yang digunakan untuk memantau daftar stok valas.
+Halaman **Pindah Pecahan** adalah bagian dari sistem aplikasi yang digunakan untuk memantau daftar stok valas.
 
 ---
 

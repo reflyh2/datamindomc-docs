@@ -10,7 +10,7 @@ Mencatat perpindahan kas IDR dan valas dari satu kasir ke kasir lain, misalnya s
 
 <Alur judul="Perjalanan satu serah terima" :langkah="[
   { judul: 'Serahkan Kas', peran: 'Pemegang kas', ket: 'Pilih kasir penerima. Angka kas dan valas diambil dari sistem saat itu.' },
-  { judul: 'Menunggu Diterima', ket: 'Transaksi baru, PB Valas, dan pinjaman valas di cabang terkunci. Penyerah masih bisa membatalkan.', nada: 'warn' },
+  { judul: 'Menunggu Diterima', ket: 'Transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang terkunci. Penyerah masih bisa membatalkan.', nada: 'warn' },
   { judul: 'Hitung & Terima', peran: 'Kasir penerima', ket: 'Hitung fisik tanpa melihat angka sistem, lalu Cocokkan.', cabang: [
     { jika: 'Semua cocok', judul: 'Diterima', ket: 'Penerima menjadi pemegang kas.', nada: 'ok' },
     { jika: 'Ada selisih, diberi alasan', judul: 'Diterima, Perlu Ditinjau', ket: 'Supervisor menandai ditinjau.', nada: 'warn' },
@@ -55,7 +55,7 @@ Langkahnya:
 Angka kas dan valas diambil dari sistem saat Anda menekan Serahkan. Penerima tidak melihat angka ini sampai selesai menghitung.
 
 ::: warning Transaksi terkunci sementara
-Selama serah terima belum diterima atau ditolak, transaksi baru, PB Valas, dan pinjaman valas di cabang tidak bisa dibuat. Di form transaksi, tombol **Simpan** nonaktif dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* Di tempat lain, misalnya PB Valas, permintaan ditolak dengan pesan *Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Transaksi Tidak Dapat Dilakukan*.
+Selama serah terima belum diterima atau ditolak, transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang tidak bisa dibuat. Di form transaksi, tombol **Simpan** nonaktif dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* Di tempat lain, misalnya Pindah Pecahan, permintaan ditolak dengan pesan *Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Transaksi Tidak Dapat Dilakukan*.
 :::
 
 ![Tombol Simpan di form transaksi nonaktif selama serah terima menunggu](/transaksi-valas-terkunci.png)

@@ -118,7 +118,7 @@ Ada juga tombol **Simpan & Buat Lagi**. Tombol ini menyimpan transaksi, lalu lan
 
 | Yang muncul | Artinya | Yang dilakukan |
 |---|---|---|
-| *Stok valas USD tidak mencukupi pada/sesudah tanggal transaksi (tersedia …)* atau *Jumlah penjualan valas USD melebihi stok yang tersedia* | Stok tidak cukup untuk dijual | Kurangi jumlahnya, atau minta tambahan stok lewat **Inventori → PB Valas** |
+| *Stok valas USD tidak mencukupi pada/sesudah tanggal transaksi (tersedia …)* atau *Jumlah penjualan valas USD melebihi stok yang tersedia* | Stok tidak cukup untuk dijual | Kurangi jumlahnya, atau minta tambahan stok lewat **Inventori → Pindah Pecahan** |
 | *Rate Pembelian harus diotorisasi* / *Rate Penjualan harus diotorisasi* | Kurs yang Anda ketik terlalu jauh dari kurs terbit | Minta supervisor mengisi nama pengguna dan kata sandinya di jendela **Identifikasi Petugas Otorisasi** |
 | Tombol **Simpan** nonaktif, dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* | Masih ada serah terima kasir yang belum diterima | Tunggu sampai penerima menerima atau menolaknya |
 | *Diblokir! Pelanggan ini diblacklist (tipe diblokir)…* | Pelanggan diblokir perusahaan | Transaksi tidak bisa dilanjutkan. Arahkan pelanggan ke petugas kepatuhan |
@@ -261,7 +261,7 @@ Langkahnya:
 ![Halaman Serahkan Kas: kasir penerima, aktivitas sejak serah terima terakhir, dan valas diserahkan](/serah-terima-kasir-serahkan.png)
 
 ::: warning Transaksi terkunci sementara
-Selama serah terima belum diterima atau ditolak, transaksi baru, PB Valas, dan pinjaman valas di cabang tidak bisa dibuat.
+Selama serah terima belum diterima atau ditolak, transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang tidak bisa dibuat.
 :::
 
 Serah terima yang belum diterima masih bisa **dibatalkan** oleh penyerahnya.
