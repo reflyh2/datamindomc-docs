@@ -90,6 +90,9 @@ function lebarGambar(path) {
 function ubahHalaman(link) {
   let md = readFileSync(join(SRC, `${link}.md`), 'utf8')
   md = md.replace(/^---\n[\s\S]*?\n---\n/, '')
+  // `---` tepat di bawah butir daftar adalah garis pemisah bagi VitePress,
+  // tetapi Pandoc membacanya sebagai judul setext. Sisipkan baris kosong.
+  md = md.replace(/^(\s*(?:[-*+]|\d+\.) .*)\n(-{3,}[ \t]*)$/gm, '$1\n\n$2')
   md = ubahAlur(md)
   md = ubahCallout(md)
   // Gambar dari public/ dirujuk dari akar proyek Typst (--root), dengan lebar
@@ -110,6 +113,15 @@ for (const b of bab) {
 }
 
 // --- Pandoc → Typst → PDF ---------------------------------------------------
+
+for (const [nama, bin] of [['pandoc', PANDOC], ['typst', TYPST]]) {
+  try {
+    execFileSync(bin, ['--version'], { stdio: 'ignore' })
+  } catch {
+    console.error(`\`${bin}\` tidak ditemukan. Pasang ${nama} lalu ulangi, atau tunjuk lokasinya lewat env ${nama.toUpperCase()}.`)
+    process.exit(1)
+  }
+}
 
 mkdirSync(BUILD, { recursive: true })
 mkdirSync(dirname(outFile), { recursive: true })
