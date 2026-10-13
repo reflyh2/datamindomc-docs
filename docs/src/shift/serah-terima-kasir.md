@@ -10,7 +10,7 @@ Mencatat perpindahan kas IDR dan valas dari satu kasir ke kasir lain, misalnya s
 
 <Alur judul="Perjalanan satu serah terima" :langkah="[
   { judul: 'Serahkan Kas', peran: 'Pemegang kas', ket: 'Pilih kasir penerima. Angka kas dan valas diambil dari sistem saat itu.' },
-  { judul: 'Menunggu Diterima', ket: 'Transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang terkunci. Penyerah masih bisa membatalkan.', nada: 'warn' },
+  { judul: 'Menunggu Diterima', ket: 'Transaksi baru dan Pindah Pecahan di cabang terkunci. Penyerah masih bisa membatalkan.', nada: 'warn' },
   { judul: 'Hitung & Terima', peran: 'Kasir penerima', ket: 'Hitung fisik tanpa melihat angka sistem, lalu Cocokkan.', cabang: [
     { jika: 'Semua cocok', judul: 'Diterima', ket: 'Penerima menjadi pemegang kas.', nada: 'ok' },
     { jika: 'Ada selisih, diberi alasan', judul: 'Diterima, Perlu Ditinjau', ket: 'Supervisor menandai ditinjau.', nada: 'warn' },
@@ -55,7 +55,7 @@ Langkahnya:
 Angka kas dan valas diambil dari sistem saat Anda menekan Serahkan. Penerima tidak melihat angka ini sampai selesai menghitung.
 
 ::: warning Transaksi terkunci sementara
-Selama serah terima belum diterima atau ditolak, transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang tidak bisa dibuat. Di form transaksi, tombol **Simpan** nonaktif dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* Halaman Pindah Pecahan menampilkan peringatan *Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Pindah Pecahan Tidak Dapat Dilakukan*, dan **Simpan** maupun **Batalkan** di sana ditolak dengan pesan *Serah terima kasir sedang berlangsung, jadi stok valas belum bisa dipindahkan.*
+Selama serah terima belum diterima atau ditolak, transaksi baru dan Pindah Pecahan di cabang tidak bisa dibuat. Di form transaksi, tombol **Simpan** nonaktif dengan keterangan *Serah terima kasir sedang berlangsung — transaksi tidak dapat disimpan.* Halaman Pindah Pecahan menampilkan peringatan *Peringatan!! Proses Serah Terima Kasir Sedang Berlansung Pindah Pecahan Tidak Dapat Dilakukan*, dan **Simpan** maupun **Batalkan** di sana ditolak dengan pesan *Serah terima kasir sedang berlangsung, jadi stok valas belum bisa dipindahkan.*
 :::
 
 ![Tombol Simpan di form transaksi nonaktif selama serah terima menunggu](/transaksi-valas-terkunci.png)
@@ -105,4 +105,4 @@ Setiap serah terima punya tombol **Cetak Berita Acara** di halaman detailnya, un
 ## Terkait
 
 - [Alur Kerja Kasir](/alur-kerja/kasir#serah-terima-kasir)
-- [Mencetak faktur](/alur-kerja/kasir#mencetak-faktur): nama kasir di faktur diambil dari pemegang kas terakhir.
+- [Mencetak faktur](/alur-kerja/kasir#mencetak-faktur): nama kasir di faktur diambil dari penerima serah terima pada hari itu, lalu Kasir Default cabang.

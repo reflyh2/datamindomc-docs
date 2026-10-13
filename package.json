@@ -7,7 +7,8 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs --debug",
     "preview": "vitepress preview docs",
-    "export-pdf": "press-export-pdf export /docs"
+    "export-pdf": "press-export-pdf export /docs",
+    "export-buku": "node docs/buku/export-buku.mjs"
   },
   "keywords": [],
   "type": "module",

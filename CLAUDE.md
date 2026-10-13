@@ -14,6 +14,7 @@ Package manager is pnpm (`pnpm-lock.yaml`).
 - `pnpm build` makes the production build into `docs/.vitepress/dist`. VitePress fails the build on dead internal links, so run this after renaming, moving or deleting pages.
 - `pnpm preview` serves the built site
 - `pnpm export-pdf` exports the whole manual to one PDF via `vitepress-export-pdf` (output goes to `pdf-vitepress/`, which is gitignored)
+- `pnpm export-buku` builds a book-style PDF (Pandoc → Typst) from `docs/buku/`, one chapter per sidebar group. Needs `pandoc` and `typst` on PATH (or env `PANDOC`/`TYPST`). Options: `--bab "Mulai,Shift"`, `--out nama.pdf`. Output goes to `pdf-vitepress/`, intermediates to `docs/buku/.build/` (gitignored)
 
 There are no tests or linters.
 
