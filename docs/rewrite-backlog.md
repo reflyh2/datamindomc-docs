@@ -72,7 +72,6 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | [ ] | `master/papan-kurs` | K | Supervisor | Bahan: `alur-kerja/supervisor#papan-kurs` | S |
 | [ ] | `transaksi/transaksi-antarcabang` | L | Kasir, Supervisor | | M |
 | [ ] | `inventori/pb-valas` | L | Supervisor | Dirujuk dari `kasir.md` (stok tidak cukup) | M |
-| [ ] | `inventori/pinjaman-valas` | L | Supervisor | | M |
 | [ ] | `eksternal/laporan-sipesat` | L | Kepatuhan | | M |
 | [ ] | `eksternal/lku` | L | Kepatuhan | | M |
 | [ ] | `eksternal/laporan-kupva` | U | Kepatuhan | H1 masih "Laporan KUPVA BI" | M |

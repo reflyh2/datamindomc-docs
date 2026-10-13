@@ -99,7 +99,6 @@ export default defineConfig({
         items: [
           { text: "Stok Valas", link: "/inventori/stok-valas" },
           { text: "Riwayat Valas", link: "/inventori/riwayat-valas" },
-          { text: "Pinjaman Valas", link: "/inventori/pinjaman-valas" },
           { text: "Pindah Pecahan", link: "/inventori/pb-valas" },
         ],
       },

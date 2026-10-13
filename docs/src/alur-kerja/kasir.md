@@ -261,7 +261,7 @@ Langkahnya:
 ![Halaman Serahkan Kas: kasir penerima, aktivitas sejak serah terima terakhir, dan valas diserahkan](/serah-terima-kasir-serahkan.png)
 
 ::: warning Transaksi terkunci sementara
-Selama serah terima belum diterima atau ditolak, transaksi baru, Pindah Pecahan, dan pinjaman valas di cabang tidak bisa dibuat.
+Selama serah terima belum diterima atau ditolak, transaksi baru dan Pindah Pecahan di cabang tidak bisa dibuat.
 :::
 
 Serah terima yang belum diterima masih bisa **dibatalkan** oleh penyerahnya.
