@@ -29,6 +29,9 @@ Daftar faktur yang belum lunas, sekaligus tempat membayarnya. Faktur dibayar set
 | **Saldo Bank** | Saldo rekening bank yang dipilih di daftar |
 | Filter | **Rentang periode** dan **Tipe** (beli atau jual). Tanpa rentang periode, semua faktur belum lunas ditampilkan |
 | Kolom **Lama** | Sudah berapa lama faktur menunggu dibayar |
+| Kolom **Valas** | Mata uang dan jumlah tiap faktur, mis. *SGD 150 · USD 353*. Bila lebih dari dua, sisanya diringkas jadi *+N lainnya*; arahkan kursor ke sel untuk melihat daftar lengkapnya. Kotak pencarian juga mencari kode valas |
+
+Daftar memuat ulang sendiri tiap menit agar faktur baru dari teller ikut muncul. Pemuatan ulang ditahan selama jendela pembayaran atau konfirmasi masih terbuka, dan halaman tabel yang sedang dibuka tidak berpindah.
 
 Fitur tabel lainnya dijelaskan di [Tabel, Filter, dan Ekspor](/mulai/tabel-dan-filter).
 
@@ -53,7 +56,7 @@ Ringkasan di bawah jendela membaca **Tagihan − Dialokasikan = Sisa**. **Tagiha
 
 ## Membayar semua faktur sekaligus
 
-Pengguna dengan peran Super Admin melihat tombol **Bayar semua faktur belum lunas**. Tombol ini membayar **semua** faktur belum lunas di cabang, lintas periode, bukan hanya yang tampil di filter. Pakai dengan hati-hati.
+Tombol **Bayar semua faktur belum lunas** hanya tampil bagi pengguna yang jabatannya diberi izin **Bayar Semua Faktur Valas** (di Hak Akses). Bawaannya izin ini hanya dimiliki Super Admin. Tombol ini membayar **semua** faktur belum lunas di cabang, lintas periode, bukan hanya yang tampil di filter. Pakai dengan hati-hati.
 
 ## Aturan
 
