@@ -50,7 +50,7 @@ Untuk akun Anda sendiri, menu hanya berisi **Detail** dan **Ubah**.
 1. Klik **Tambah**.
 2. Isi **Nama** dan, bila mau, **Foto Profil** (JPG, PNG, atau GIF, maksimal 2 MB).
 3. Pilih **Cabang** dan **Jabatan**.
-4. Isi **Username**, **Email**, **Kata Sandi**, dan **Ulangi Kata Sandi** (minimal 6 karakter). Klik ikon mata untuk melihat kata sandi yang diketik.
+4. Isi **Username**, **Email**, **Kata Sandi**, dan **Ulangi Kata Sandi** (minimal 8 karakter). Klik ikon mata untuk melihat kata sandi yang diketik.
 5. Klik **Simpan**.
 
 ![Tambah Pengguna](/tambah-pengguna.png)
