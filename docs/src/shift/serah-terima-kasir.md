@@ -105,4 +105,4 @@ Setiap serah terima punya tombol **Cetak Berita Acara** di halaman detailnya, un
 ## Terkait
 
 - [Alur Kerja Kasir](/alur-kerja/kasir#serah-terima-kasir)
-- [Mencetak faktur](/alur-kerja/kasir#mencetak-faktur): nama kasir di faktur diambil dari pemegang kas terakhir.
+- [Mencetak faktur](/alur-kerja/kasir#mencetak-faktur): nama kasir di faktur diambil dari penerima serah terima pada hari itu, lalu Kasir Default cabang.

@@ -212,7 +212,7 @@ Kalau baris faktur menampilkan label kuning **underlying**, faktur itu belum bis
 
 Halaman faktur berjudul **Faktur _nomor_**, lengkap dengan status (Lunas, Menunggu, Belum Bayar, atau Dibatalkan). Klik **Cetak** di kanan atas, lalu serahkan satu lembar kepada pelanggan. Dari **Daftar Transaksi**, faktur yang sama bisa dicetak ulang lewat ikon **Cetak faktur**.
 
-- Nama kasir di faktur diambil dari pemegang kas terakhir di Serah Terima Kasir.
+- Nama kasir di faktur diambil dari kasir yang menerima kas lewat Serah Terima Kasir **pada hari itu**. Kalau hari itu belum ada serah terima, yang dicetak adalah **Kasir Default** cabang (diatur di [Cabang](/pengaturan/pengaturan-perusahaan/cabang#kasir-default)), atau nama teller bila Kasir Default belum diisi.
 - Kalau tombol **Cetak** tidak ada dan muncul *"Peringatan! Pelanggan ini telah melebihi transaksi …"*, pelanggan sudah melewati batas underlying. Lihat [Menangani Batas Underlying](/alur-kerja/underlying).
 - Faktur transaksi yang dibatalkan hanya arsip dan tidak boleh dicetak untuk pelanggan.
 

@@ -76,6 +76,14 @@ Halaman **Cabang** adalah bagian dari sistem aplikasi yang digunakan untuk menge
      ![Hapus Cabang](/hapus-cabang.png)
    - Pengguna dapat menekan tombol "Ok" jika ingin melanjutkan hapus data, namun jika tidak pengguna dapat menekan tombol "Cancel" untuk membatalkan aksi.
 
+## Kasir Default
+
+Isian **Kasir Default** ada di jendela **Ubah Cabang** (tidak muncul saat menambah cabang, karena cabang baru belum punya pengguna). Pilihannya adalah pengguna di cabang tersebut.
+
+Kasir Default dicetak sebagai **Kasir** di faktur bila pada hari transaksi belum ada serah terima kas yang diterima di [Serah Terima Kasir](/shift/serah-terima-kasir). Begitu ada serah terima yang diterima hari itu, faktur berikutnya mencetak nama penerimanya. Pilih **- Tidak ada -** untuk mengosongkannya; faktur lalu mencetak nama teller.
+
+Bila **Nama Teller/Kasir Manual** di Pengaturan → Transaksi aktif dan kasir dipilih di form transaksi, pilihan itu yang dicetak.
+
 ## Lainnya
 
 Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
