@@ -25,6 +25,9 @@ Halaman **Stok Valas** adalah bagian dari sistem aplikasi yang digunakan untuk m
 ### 2. **Tabel Daftar Stok Valas**
 
 - **Fungsi**: Memberikan informasi tentang stok valas mulai dari stok brangkas, stok akhir dan informasi lainnya.
+- **Melihat asal angka**: klik angka stok untuk membuka jendela **Riwayat Valas**. Isinya mutasi valas itu pada tanggal yang dipilih, dari Stok Awal sampai Stok Akhir.
+  - Saat satu cabang ditampilkan, angka di kolom **Stok Akhir** (dan **Stok Fisik**, bila ada) bisa diklik.
+  - Saat beberapa cabang ditampilkan, klik angka di kolom nama cabang untuk melihat riwayat cabang itu saja. Klik angka di kolom **Total Stok Akhir** untuk melihat riwayat gabungan semua cabang yang dipilih. Judul jendela menampilkan *Gabungan N cabang*, dan kolom **Cabang** menunjukkan asal tiap baris.
 
 ### 4. **Aksi dan Tombol**
 
