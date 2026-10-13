@@ -3,3 +3,4 @@ docs/.vitepress/cache
 docs/.vitepress/dist
 pdf-vitepress
 docs/src/.vitepress/.temp
+docs/buku/.build

@@ -45,7 +45,7 @@ const footerTemplate = `<div style="margin-bottom: -0.4cm; height: 70%; width: 1
 </div>`
 
 export default defineUserConfig({
-  outFile: 'vitepress-example.pdf',
+  outFile: 'panduan-valaspro.pdf',
   outDir: 'pdf-vitepress',
   pdfOptions: {
     format: 'A4',
