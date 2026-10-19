@@ -14,6 +14,8 @@ Catatan di halaman ini tidak bisa diubah maupun dihapus.
 Pengguna yang jabatannya punya hak akses **Log Aktivitas**. Jabatan yang sudah boleh mengatur **Pengaturan Jabatan** otomatis mendapatkannya.
 
 Tanpa hak akses **Log Aktivitas Semua Pengguna**, halaman ini hanya menampilkan aktivitas Anda sendiri dan penyaring **Pengguna** terkunci ke nama Anda. Jabatan yang sebelumnya sudah bisa membuka Log Aktivitas otomatis mendapatkan hak akses ini.
+
+Aktivitas yang dilakukan akun **Super Admin**, atau yang menyangkut akun dan jabatan Super Admin (termasuk login gagal ke akun itu), hanya terlihat oleh Super Admin. Pengguna lain juga tidak melihat nama Super Admin di penyaring **Pengguna**.
 :::
 
 ## Isi halaman

@@ -24,10 +24,12 @@ Akun yang bisa masuk ke ValasPro di perusahaan Anda: siapa, di cabang mana, deng
 
 | Bagian | Isi |
 |---|---|
-| Kotak atas | **Pengguna** (jumlah pengguna / batas paket, beserta sisa kursi), **Nonaktif**, dan **Belum Pernah Masuk** |
-| Penyaring | **Cabang**, **Jabatan**, **Status** (Aktif / Nonaktif), dan **Cari** (nama, username, atau email). Tabel langsung berubah saat penyaring diganti |
-| Tabel | **Nama** (dengan foto dan username), **Email**, **Cabang**, **Jabatan**, **Status**, **Login Terakhir**, dan **Aksi** |
+| Kotak atas | **Pengguna** (jumlah pengguna / batas paket, beserta sisa kursi), **Sedang Online**, **Nonaktif**, dan **Belum Pernah Masuk** |
+| Penyaring | **Cabang**, **Jabatan**, **Status** (Aktif / Nonaktif / Sedang online), dan **Cari** (nama, username, atau email). Tabel langsung berubah saat penyaring diganti |
+| Tabel | **Nama** (dengan foto dan username), **Email**, **Cabang**, **Jabatan**, **Status**, **Terakhir Aktif**, **Login Terakhir**, dan **Aksi** |
 | **Ekspor** | Unduh tabel sesuai penyaring yang aktif ke Excel, CSV, atau Cetak |
+
+Kolom **Terakhir Aktif** menampilkan **Online** bila pengguna membuka aplikasi dalam 5 menit terakhir dan belum keluar. Selain itu kolom ini menampilkan kapan ia terakhir aktif, misalnya *25 menit lalu*. Ini perkiraan: pengguna yang membiarkan halaman terbuka tanpa mengklik apa pun, atau yang langsung menutup browser tanpa **Keluar**, baru tampil tidak online setelah 5 menit.
 
 Jabatan bertanda **SISTEM** adalah jabatan bawaan ValasPro (Super Admin, Support, Demo). Pengguna dengan jabatan ini tidak dihitung terhadap batas paket.
 
