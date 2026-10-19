@@ -51,6 +51,36 @@ Tombol **Tambah** membuka [Transaksi Valas](/transaksi/transaksi-valas). Fitur t
 2. Klik **Ubah faktur**, perbaiki, lalu simpan.
 3. Bayar lagi di [Pembayaran Valas](/transaksi/pembayaran-valas).
 
+## Mengimpor transaksi dari Excel
+
+Dipakai untuk memindahkan transaksi lama dari aplikasi lain. Untuk transaksi harian, tetap pakai [Transaksi Valas](/transaksi/transaksi-valas). Tombol **Impor Excel** hanya tampil untuk Super Admin.
+
+Impor dengan urutan ini: [pecahan valas](/master/pecahan-valas), lalu [pelanggan](/pelanggan/daftar-pelanggan#mengimpor-pelanggan-dari-excel), baru transaksi. Pelanggan dan valas tidak dibuat otomatis.
+
+1. Klik **Impor Excel**, lalu klik **Unduh Template**.
+2. Isi template. Klik **Panduan Kolom** untuk melihat aturannya:
+   - Kolom wajib: `customer_id_number`, `period`, `transaction_type`, `forex`, `quantity`, `rate`. Kolom `sub_total` boleh kosong; isinya dihitung dari `quantity` × `rate`.
+   - `transaction_type` diisi `buy`/`beli` atau `sell`/`jual`. `period` ditulis `yyyy-mm-dd` (`dd/mm/yyyy` juga diterima). `forex` diisi kode pecahan, misalnya `USD-100`.
+   - Baris dengan pelanggan, tanggal, dan tipe yang sama digabung menjadi **satu faktur**.
+   - Berkas harus .xlsx atau .xls dengan satu sheet saja.
+3. Tarik berkas ke jendela **Impor Transaksi Valas**, atau klik kotaknya untuk memilih. Berkas langsung diperiksa; belum ada yang disimpan.
+4. Periksa hasilnya. Jendela menampilkan jumlah faktur **Siap diimpor**, **Bermasalah**, dan **Mungkin duplikat**, nilai beli dan jual yang akan masuk, serta tabel per faktur dengan nomor baris Excel dan pesannya.
+   - Pakai chip **Bermasalah**, **Mungkin duplikat**, **Ada catatan**, atau **Siap** untuk menyaring tabel.
+   - Klik **Unduh daftar masalah (.csv)** untuk memperbaiki berkas di Excel, lalu klik **Periksa ulang** atau **Ganti berkas**.
+5. Klik **Impor N faktur**. Hanya faktur yang siap yang disimpan. Nomor faktur yang terbentuk ditampilkan, dan daftar transaksi langsung diperbarui.
+
+| Status | Artinya |
+|---|---|
+| **Siap** | Faktur akan diimpor. Bila ada catatan di bawahnya (misalnya pecahan sedang nonaktif, atau `sub_total` berbeda dengan `quantity` × `rate`), cek dulu sebelum mengimpor |
+| **Mungkin duplikat** | Cabang ini sudah punya faktur dengan pelanggan, tanggal, tipe, dan total yang sama. Pesannya menyebut nomor faktur tersebut. Hanya diimpor bila Anda mencentang **Tetap impor faktur yang mungkin duplikat** |
+| **Bermasalah** | Faktur tidak diimpor. Pesannya menyebut baris mana yang salah dan apa salahnya |
+
+::: warning Satu baris salah, satu faktur dilewati
+Bila satu baris dalam faktur bermasalah, **seluruh faktur** itu dilewati, bukan hanya barisnya. Perbaiki baris tersebut lalu impor ulang berkas yang sama. Faktur yang sudah masuk sebelumnya akan muncul sebagai **Mungkin duplikat**, jadi tidak tergandakan.
+:::
+
+Faktur hasil impor berstatus **Belum bayar** dan tidak melalui pemeriksaan stok. Selesaikan pembayarannya di [Pembayaran Valas](/transaksi/pembayaran-valas). Tanggal yang sudah ditutup ditolak, dan batas faktur bulanan paket langganan tetap berlaku. Setiap impor tercatat di [Log Aktivitas](/staff/log-aktivitas).
+
 ## Aturan
 
 - **Hapus berarti batal.** Faktur yang dihapus tidak bisa dikembalikan, tetapi tetap tercatat di Transaksi Batal.

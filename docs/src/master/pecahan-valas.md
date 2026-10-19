@@ -70,6 +70,14 @@ Halaman **Pecahan Valas** adalah bagian dari sistem aplikasi yang digunakan untu
    - Pengguna dapat menekan tombol "Delete" pada kolom "action" untuk data pecahan valas yang akan dihapus dan selanjutnya akan tampil dialog konfirmasi seperti berikut:
      ![Hapus Pecahan Valas](/hapus-pecahan-valas.png)
    - Pengguna dapat menekan tombol "Ok" jika ingin melanjutkan hapus data, namun jika tidak pengguna dapat menekan tombol "Cancel" untuk membatalkan aksi.
+4. **Tindakan Massal (banyak pecahan sekaligus)**:
+   - Centang kotak di kolom paling kiri pada pecahan yang ingin diubah. Kotak di judul kolom memilih semua pecahan di halaman yang sedang tampil. Pilihan tetap tersimpan saat Anda pindah halaman atau mengganti saringan.
+   - Di atas tabel muncul bar "_n_ pecahan dipilih" dengan tombol berikut:
+     - **Atur Potongan**: mengisi Potongan Beli dan/atau Potongan Jual untuk semua pecahan terpilih. Kolom yang dikosongkan tidak diubah.
+     - **Nonaktifkan**: menyembunyikan pecahan terpilih dari form transaksi. Pecahan yang stoknya belum 0 di semua cabang akan dilewati, dan namanya beserta stok per cabang ditampilkan setelah proses selesai.
+     - **Aktifkan kembali**: muncul bila ada pecahan nonaktif yang dipilih (saring Status ke "Nonaktif" atau "Semua status").
+     - **Batalkan pilihan**: mengosongkan semua centang.
+   - Setelah proses selesai, halaman dimuat ulang dan angka ringkasan di atas tabel ikut diperbarui.
 
 ## Lainnya
 

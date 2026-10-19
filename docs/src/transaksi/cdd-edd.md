@@ -22,7 +22,7 @@ Aplikasi memilih jenis formulir dari data pelanggan, bukan dari nilai transaksi:
 | Berstatus **PEP**, atau **Pekerjaan**-nya tergolong berisiko tinggi | **EDD** |
 | Selain itu | **CDD** |
 
-Label ikon di Daftar Transaksi sudah menunjukkan jenisnya: **Cetak CDD** atau **Cetak EDD**. Status PEP diatur di [PEP](/pelanggan/skrining/pep), sedangkan pekerjaan diisi di data pelanggan.
+Label ikon di Daftar Transaksi sudah menunjukkan jenisnya: **Cetak CDD** atau **Cetak EDD**. Status PEP dan pekerjaan diisi di data pelanggan, lewat [Daftar Pelanggan](/pelanggan/daftar-pelanggan). Daftar pelanggan PEP bisa dilihat di [PEP](/pelanggan/skrining/pep).
 
 Contoh formulir EDD:
 

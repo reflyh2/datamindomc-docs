@@ -2,66 +2,41 @@
 outline: deep
 ---
 
-# Database Pelanggan
+# Laporan
 
-::: info Tampilan versi sebelumnya
-Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
-:::
+Menu: **Pelanggan → Laporan** (judul halaman: **Rekap Transaksi per Nasabah**)
 
-![Database Pelanggan](/database-pelanggan.png)
+Rekap transaksi lunas per pelanggan pada cabang dan periode tertentu, diurutkan dari total transaksi terbesar. Dipakai untuk melihat siapa pelanggan terbesar, atau menyaring pelanggan dengan nilai transaksi di atas batas tertentu untuk keperluan kepatuhan.
 
-Halaman **Database Pelanggan** adalah bagian dari sistem aplikasi yang digunakan untuk memantau atau mendapatkan rincian dari data pelanggan secara lebih spesifik.
+![Halaman Rekap Transaksi per Nasabah: filter dan tabel rekap](/pelanggan-laporan-rekap.png)
 
----
+## Isi halaman
 
-## Struktur Halaman
+| Bagian | Isi |
+|---|---|
+| **Cabang** | Cabang yang direkap. Pilih **-- Semua Cabang --** untuk menggabungkan semua cabang |
+| **Periode** | Rentang tanggal transaksi |
+| **Min. Transaksi (Rp)** | Hanya tampilkan pelanggan yang total transaksinya paling sedikit sebesar ini. Isi `0` untuk semua |
+| **Cari** | Nama, telepon, atau pekerjaan |
+| **Nama** | Klik untuk membuka [detail pelanggan](/pelanggan/daftar-pelanggan#melihat-detail-pelanggan) |
+| **Total Transaksi** | Jumlah nilai rupiah transaksi lunas. Klik untuk membuka rincian per faktur di tab baru |
+| **J.Faktur** | Jumlah faktur lunas |
+| **Valas Transaksi** | Valas yang ditransaksikan, mis. *(USD)*. Klik untuk membuka jendela **Valas yang Ditransaksikan** |
+| **Transaksi Terakhir** | Tanggal transaksi terakhir pelanggan di periode itu |
 
-### 1. **Judul Halaman**
+Hanya transaksi berstatus **lunas** yang dihitung. Faktur yang belum dibayar, menunggu, atau batal tidak masuk rekap.
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: "Database Pelanggan”.
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Database Pelanggan”.
+## Menyaring rekap
 
-### 2. **Tabel Rincian Pelanggan**
+1. Pilih **Cabang** dan **Periode**.
+2. Isi **Min. Transaksi (Rp)** bila hanya ingin melihat pelanggan bernilai besar.
+3. Tabel langsung menyesuaikan. Ketik di **Cari** untuk mempersempit lagi.
 
-- **Fungsi**: Memberikan informasi pelanggan secara rinci, terdiri dari beberapa kolom seperti nama, no telpon, pekerjaan, total transaksi, j.faktur, valas transaksi,serta transaksi terakhir.
+## Mengekspor dan mencetak
 
-### 3. **Aksi dan Tombol**
+Klik **Ekspor**, lalu pilih **Excel**, **CSV**, atau **Cetak**. Hasilnya mengikuti filter yang sedang dipakai. Lihat [Tabel, Filter, dan Ekspor](/mulai/tabel-dan-filter).
 
-- **Kolom "Cabang"**:
+## Terkait
 
-  - **Fungsi**: Digunakan untuk melakukan penyaringan data pelanggan berdasarkan cabang tertentu.
-  - **Lokasi**: Di bagian atas tabel.
-
-- **Kolom "periode"**:
-
-  - **Fungsi**: Digunakan untuk melakukan penyaringan data pelanggan berdasarkan periode tertentu.
-  - **Lokasi**: Di bagian atas tabel.
-
-- **Kolom "Minimal Transaksi"**:
-
-  - **Fungsi**: Digunakan untuk melakukan penyaringan data pelanggan berdasarkan jumlah minimal transaksi tertentu.
-  - **Lokasi**: Di bagian atas tabel.
-
-- **Tombol "Print"**:
-
-  - **Fungsi**: Digunakan untuk mencetak data pelanggan.
-  - **Lokasi**: Di bagian atas tabel.
-
-- **Kolom "Search"**:
-
-  - **Fungsi**: Digunakan untuk melakukan pencarian data pelanggan secara spesifik.
-  - **Lokasi**: Di bagian kanan atas tabel.
-
----
-
-## Alur Penggunaan
-
-1. **Menyaring Data**:
-
-   - Pengguna dapat menambahkan beberapa kondisi untuk menampilkan data secara spesifik.
-   - Pengguna dapat mengisi kolom yang tersedia, maka data akan otomatis tampil sesuai dengan kondisi yang diberikan.
-
-## Lainnya
-
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+- [Daftar Pelanggan](/pelanggan/daftar-pelanggan)
+- [Matriks Resiko](/pelanggan/skrining/tingkat-resiko), untuk penilaian risiko dari nominal dan frekuensi transaksi

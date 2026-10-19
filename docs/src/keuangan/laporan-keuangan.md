@@ -20,21 +20,38 @@ Halaman **Laporan Akunting** adalah bagian dari sistem aplikasi money changer ya
 ![Pratinjau](/laporan-jurnal.png)
 - **Fungsi**: Menampilkan seluruh pencatatan transaksi keuangan yang sudah diinput ke sistem sesuai urutan waktu.
 - **Detail**:
-  - Setiap transaksi ditampilkan dengan informasi debit dan kredit.
-  - Dapat difilter berdasarkan periode tertentu.
+  - Setiap jurnal ditampilkan dengan baris debit dan kreditnya.
+  - Dapat difilter berdasarkan periode, cabang, jenis jurnal, dan kata kunci.
+  - Layar menampilkan 50 jurnal per halaman. Pindah halaman lewat tombol nomor di bawah tabel; keterangan "Jurnal 1–50 dari …" menunjukkan posisinya. Satu jurnal tidak pernah terpotong ke halaman berikutnya.
+  - Kotak ringkasan di atas (Jumlah jurnal, Total debit, Total kredit, Jurnal tidak seimbang) dan baris **Total seluruh periode** selalu menghitung seluruh periode, bukan hanya halaman yang sedang dibuka.
 - **Aksi**:
-  - Export ke Excel/PDF.
-  - Cetak langsung laporan.
+  - Ekspor ke Excel/PDF dan Cetak. Ekspor selalu berisi seluruh periode, tidak per halaman (lihat [Batas ekspor](#batas-ekspor)).
 
 ### 2. **Buku Besar**
 ![Pratinjau](/buku-besar.png)
 - **Fungsi**: Menyajikan ringkasan transaksi yang dikelompokkan berdasarkan akun.
 - **Detail**:
-  - Setiap akun memiliki daftar transaksi debit dan kredit.
-  - Menunjukkan saldo berjalan tiap akun.
+  - Tanpa akun dipilih, layar menampilkan **ringkasan per akun**: jumlah mutasi, saldo awal, debit, kredit, dan saldo akhir. Gunakan kotak **Cari akun...** untuk menyaring daftar.
+  - Klik nama akun (atau pilih akun di kolom **Akun**) untuk melihat rincian mutasinya beserta saldo berjalan.
+  - Rincian ditampilkan 100 baris per halaman. Halaman kedua dan seterusnya dibuka dengan baris **Saldo pindahan dari halaman sebelumnya**, sehingga saldo berjalan tetap bersambung. Baris **Mutasi & saldo akhir** muncul di halaman terakhir akun tersebut; di halaman lain tertulis "Berlanjut di halaman berikutnya".
 - **Aksi**:
-  - Navigasi antar akun.
-  - Export dan cetak.
+  - Ekspor ke Excel/PDF dan Cetak berisi rincian semua akun dalam periode, tidak per halaman (lihat [Batas ekspor](#batas-ekspor)).
+
+#### Batas ekspor
+
+Supaya laporan yang sangat besar tidak membuat sistem lambat, Laporan Jurnal dan Buku Besar membatasi jumlah baris per ekspor:
+
+| Ekspor | Batas baris |
+|---|---|
+| PDF | 1.000 |
+| Cetak | 5.000 |
+| Excel | 30.000 |
+
+Jika laporan melebihi batas, Anda dikembalikan ke layar laporan dengan pesan seperti:
+
+> Laporan ini berisi 18.290 baris, melebihi batas 1.000 baris untuk PDF. Persempit periode atau akun, atau gunakan Cetak atau Ekspor Excel.
+
+Persempit periode (misalnya per minggu atau per bulan), pilih akun tertentu di Buku Besar, atau gunakan format dengan batas lebih besar.
 
 ### 3. **Neraca**
 ![Pratinjau](/neraca.png)

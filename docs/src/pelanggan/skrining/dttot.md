@@ -2,50 +2,56 @@
 outline: deep
 ---
 
-# Daftar DTTOT
+# DTTOT
 
-::: warning Belum disesuaikan
-Alur dan tampilan menu ini sudah berubah sejak halaman ini ditulis. Isinya sedang diperbarui; jangan jadikan satu-satunya acuan.
-:::
+Menu: **Pelanggan → Skrining → DTTOT**
 
-![Daftar DTTOT](/dttot.png)
+Daftar Terduga Teroris dan Organisasi Teroris terbitan Kepolisian RI melalui PPATK. Nama pelanggan dicocokkan otomatis dengan daftar ini setiap kali transaksi disimpan. Halaman ini dipakai untuk melihat isi daftar dan mengecek tanggal pembaruannya.
 
-Halaman ini menyediakan tentang daftar DTTOT (Daftar Terduga Teroris dan Organisasi Teroris) sesuai dengan data dari Bank Indonesia. Pengguna dapat dengan mudah mengecek informasi pelanggan yang terafiliasi dengan daftar DTTOT melalui menu ini, serta daftar ini sudah terkoneksi dengan data [pelanggan](/pelanggan/daftar-pelanggan) sehingga akan lebih mudah dalam pengecekan DTTOT ketika bertransaksi.
+![Tab DTTOT: kotak ringkasan dan tabel Daftar DTTOT](/pelanggan-skrining-dttot.png)
 
----
+## Isi halaman
 
-## Struktur Halaman
+| Bagian | Isi |
+|---|---|
+| **Entri Daftar** | Jumlah nama terduga teroris dan organisasi di daftar |
+| **Terakhir Diperbarui** | Tanggal impor terakhir. Bandingkan dengan tanggal terbitan terbaru PPATK |
+| **Kecocokan 30 Hari** | Jumlah kecocokan pelanggan Anda dengan daftar ini dalam 30 hari terakhir. Klik **lihat riwayat skrining** untuk membuka tab [Riwayat](/pelanggan/skrining/riwayat) |
+| **Cari** | Nama, kode, atau kewarganegaraan |
+| **Nama** | Nama beserta aliasnya |
+| **Deskripsi** | Keterangan dari PPATK, mis. nomor paspor dan afiliasi |
+| **Terduga** | **Orang** atau **Korporasi** |
+| **Kode** | Kode entri dari PPATK |
+| **W N** | Kewarganegaraan |
 
-### 1. **Judul Halaman**
+Klik **⋮ → Detail** di ujung baris untuk melihat seluruh data satu entri.
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: "Daftar DTTOT".
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Daftar DTTOT".
+## Menambah entri
 
-### 2. **Aksi dan Tombol**
+Tombol **Tambah** hanya tampil bila Anda punya hak akses mengelola DTTOT.
 
-- **Tombol "Contoh Template"**:
-  - **Fungsi**: Digunakan untuk mengunduh format csv jika pengguna akan menambahkan data DTTOT baru.
-  - **Lokasi**: Di bagian pojok kanan atas halaman.
-- **Tombol "Import File"**:
-  - **Fungsi**: Digunakan untuk menambahkan daftar DTTOT baru.
-  - **Lokasi**: Di bagian pojok kanan atas halaman.
-- **Tombol "Choose File"**:
-  - **Fungsi**: Digunakan untuk memilih file daftar DTTOT yang akan ditambahkan.
-  - **Lokasi**: Di bagian pojok kanan atas halaman.
-- **Tombol "Export"**:
-  - **Fungsi**: Digunakan untuk mengekspor data DTTOT dalam bentuk file csv, pdf atau excel.
-  - **Lokasi**: Di bagian pojok kiri atas halaman.
-- **Tombol "Print"**:
-  - **Fungsi**: Digunakan untuk mencetak laporan data DTTOT.
-  - **Lokasi**: Di bagian pojok kiri atas halaman.
----
+1. Klik **Tambah**.
+2. Isi **Nama** (wajib) dan data lain yang tersedia.
+3. Klik **Simpan**.
 
-## Alur Penggunaan
+## Mengekspor daftar
 
-1. **Melakukan Validasi Data Pelanggan di Menu Transaksi**:
-   - Untuk validasi data pelanggan akan dilakukan secara otomatis oleh sistem, ketika data pelanggan dinilai memiliki kemiripan dengan data DTTOT maka sistem akan memberikan peringatan seperti contoh berikut : ![Pratinjau peringatan pelanggan DTTOT](/dttot-warning.png)
-   - Pengguna juga dapat melihat detail pelanggan terindikasi dengan menekan tombol peringatan DTTOT maka akan muncul dialog seperti berikut : ![Pratinjau dialog peringatan pelanggan DTTOT](/dttot-warning-dialog.png)
-## Lainnya
+Klik **Ekspor**, lalu pilih formatnya. Lihat [Tabel, Filter, dan Ekspor](/mulai/tabel-dan-filter).
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+## Aturan
+
+- **Satu daftar untuk semua perusahaan.** DTTOT adalah daftar nasional. Karena itu, mengubah, menghapus, dan mengimpor daftar hanya bisa dilakukan oleh pengelola sistem ValasPro. Bila daftar terlihat belum diperbarui, hubungi pengelola.
+- **Impor menggantikan seluruh daftar.** Pengelola mengunggah berkas CSV terbaru lewat **Impor Daftar DTTOT**, dan isinya menggantikan daftar lama.
+- **Pencocokan berdasarkan kemiripan nama.** Nama yang umum bisa ikut tersaring. Petugas tetap harus membandingkan tanggal lahir, alamat, dan kewarganegaraan. Lihat [Cara kerja skrining](/pelanggan/skrining/ringkasan#cara-kerja-skrining).
+
+## Jika gagal
+
+| Yang muncul | Penyebab | Yang dilakukan |
+|---|---|---|
+| *"Daftar DTTOT berlaku untuk seluruh tenant; hanya role sistem yang dapat mengubahnya."* | Anda mencoba mengubah, menghapus, atau mengimpor daftar | Minta pengelola sistem memperbarui daftar |
+
+## Terkait
+
+- [Indikasi DTTOT di form transaksi](/alur-kerja/kasir#indikasi-dttot)
+- [Riwayat Skrining](/pelanggan/skrining/riwayat)
+- [DPPSPM](/pelanggan/skrining/dppspm)

@@ -68,7 +68,10 @@ export default defineConfig({
             items: [
               { text: "Ringkasan", link: "/pelanggan/skrining/ringkasan" },
               { text: "DTTOT", link: "/pelanggan/skrining/dttot" },
+              { text: "DPPSPM", link: "/pelanggan/skrining/dppspm" },
               { text: "PEP", link: "/pelanggan/skrining/pep" },
+              { text: "Matriks Resiko", link: "/pelanggan/skrining/tingkat-resiko" },
+              { text: "Riwayat", link: "/pelanggan/skrining/riwayat" },
             ],
           },
           { text: "Blacklist", link: "/pelanggan/blacklist" },

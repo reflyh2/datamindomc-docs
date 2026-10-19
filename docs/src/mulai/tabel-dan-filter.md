@@ -45,4 +45,4 @@ Sebagian tabel juga punya kotak centang di kolom pertama untuk **tindakan massal
 
 Beberapa menu berisi beberapa halaman sekaligus dalam bentuk tab. Contohnya **Pelanggan → Skrining** (DTTOT, DPPSPM, PEP, dan lainnya) dan **Keuangan → Laporan Keuangan**. Tab yang tampil hanya tab yang boleh Anda buka.
 
-![Tab DTTOT, DPPSPM, PEP, Tingkat Resiko, dan Riwayat di halaman Skrining](/tabel-tab.png)
+![Tab DTTOT, DPPSPM, PEP, Matriks Resiko, dan Riwayat di halaman Skrining](/tabel-tab.png)
