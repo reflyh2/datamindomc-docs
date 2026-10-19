@@ -14,8 +14,9 @@ hero:
       text: Mulai membaca
       link: /mulai/mengenal-layar
     - theme: alt
-      text: Buka aplikasi
-      link: https://mc.datamindo.com
+      text: Download Panduan
+      link: /valaspro-guide.pdf
+      target: _blank
 ---
 
 <div class="home-guide">

@@ -8,6 +8,10 @@
 //   node docs/buku/export-buku.mjs --bab "Mulai,Shift"    hanya bab tertentu
 //   node docs/buku/export-buku.mjs --out nama.pdf
 //
+// Buku lengkap tanpa --out disimpan ke docs/src/public/valaspro-guide.pdf,
+// file yang diunduh lewat tombol "Download Panduan" di beranda. Dengan --bab
+// atau --out, hasilnya masuk ke pdf-vitepress/ agar file publik tidak tertimpa.
+//
 // Butuh `pandoc` dan `typst` di PATH, atau tunjuk lewat env PANDOC / TYPST.
 
 import { execFileSync } from 'node:child_process'
@@ -29,7 +33,9 @@ const opt = name => {
   return i >= 0 ? args[i + 1] : undefined
 }
 const pilihBab = opt('bab')?.split(',').map(s => s.trim().toLowerCase())
-const outFile = join(ROOT, 'pdf-vitepress', opt('out') || 'panduan-valaspro-buku.pdf')
+const outFile = pilihBab || opt('out')
+  ? join(ROOT, 'pdf-vitepress', opt('out') || 'valaspro-guide.pdf')
+  : join(SRC, 'public', 'valaspro-guide.pdf')
 
 // --- Sidebar → daftar bab dan halaman --------------------------------------
 
