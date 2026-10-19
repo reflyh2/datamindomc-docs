@@ -17,7 +17,7 @@ Tutup buku dilakukan **per cabang**. Untuk menutup cabang lain, masuk ke cabang 
 | **Tahun terakhir ditutup** | Tahun terakhir yang ditutup di cabang ini beserta tanggal penutupannya, atau "belum pernah tutup buku". |
 | **Siap ditutup** | Tahun terlama yang masih terbuka. Bila "—", tahun berjalan belum berakhir sehingga belum ada yang bisa ditutup. |
 | **Laba/rugi bersih terakhir** | Laba (hijau) atau rugi (merah) yang dipindahkan ke Laba Ditahan pada penutupan terakhir. |
-| **Akun Laba Ditahan** | Akun tujuan laba/rugi, yaitu akun **30002 Laba Ditahan**. Bila tertulis **Belum diatur**, buat akun itu dulu di [Daftar Akun](/keuangan/daftar-akun). |
+| **Akun Laba Ditahan** | Akun tujuan laba/rugi (lihat [Akun Laba Ditahan](#akun-laba-ditahan)). Bila tertulis **Belum diatur**, pilih akunnya di **Pengaturan Umum › Akuntansi** atau buat akun **30002 Laba Ditahan** di [Daftar Akun](/keuangan/daftar-akun). |
 | **Riwayat Penutupan** | Semua penutupan, termasuk yang sudah dibuka kembali. Kolom **Status** menunjukkan **Aktif** atau **Dibuka kembali** (lengkap dengan tanggal, siapa, dan alasannya). |
 | **Status Cabang** | Hanya muncul bila perusahaan punya lebih dari satu cabang. Menampilkan tahun terakhir ditutup dan tahun siap ditutup di setiap cabang. Hanya untuk dilihat. |
 
@@ -38,6 +38,12 @@ Setelah berhasil, halaman detail penutupan terbuka. Jurnal penutup bernomor **AC
 ::: tip Belum ada yang disimpan sampai tombol ditekan
 Pratinjau dan checklist hanya menampilkan apa yang akan terjadi. Anda bisa membuka halaman ini kapan saja untuk melihat perkiraan laba/rugi tanpa menutup buku.
 :::
+
+## Akun Laba Ditahan
+
+Laba atau rugi tahun yang ditutup dipindahkan ke akun Laba Ditahan. Akun ini dipilih di **Pengaturan Umum › Akuntansi**, isian **Akun Laba Ditahan**. Kalau isian itu kosong, ValasPro memakai akun 30002 bernama "Laba Ditahan" di jenis Ekuitas.
+
+Kalau keduanya tidak ditemukan untuk cabang yang ditutup, pemeriksaan **Akun Laba Ditahan tersedia** gagal dan penutupan tidak bisa diproses.
 
 ## Melihat detail dan mencetak jurnal
 
@@ -74,7 +80,7 @@ Penutupan yang dibuat dengan versi lama ValasPro bisa ditandai **Perlu ditinjau*
 | *"Tahun &lt;tahun&gt; belum berakhir. Tutup buku baru bisa dilakukan mulai 1 Januari …"* | Tahun yang dipilih adalah tahun berjalan. | Tunggu sampai tahun itu berakhir. |
 | *"Tahun &lt;tahun&gt; masih terbuka. Tutup buku tahun &lt;tahun&gt; lebih dulu."* | Ada tahun sebelumnya yang belum ditutup. | Tutup buku tahun itu lebih dulu. |
 | *"Tahun &lt;tahun&gt; sudah ditutup. Buka kembali dulu bila perlu menutup ulang."* | Tahun itu sudah punya penutupan aktif. | Buka kembali penutupannya bila memang perlu ditutup ulang. |
-| *"Akun Laba Ditahan (30002) di jenis Ekuitas belum ada untuk cabang ini."* | Akun tujuan laba/rugi belum dibuat. | Buat akun **30002 Laba Ditahan** di [Daftar Akun](/keuangan/daftar-akun). |
+| *"Akun Laba Ditahan belum ditemukan untuk cabang ini. …"* | Akun tujuan laba/rugi belum dipilih dan akun 30002 belum ada. | Pilih akunnya di **Pengaturan Umum › Akuntansi**, atau buat akun **30002 Laba Ditahan** di jenis Ekuitas lewat [Daftar Akun](/keuangan/daftar-akun). |
 | *"Centang konfirmasi sebelum menutup buku."* | Kotak konfirmasi belum dicentang. | Centang kotaknya, lalu klik **Tutup Buku** lagi. |
 | *"Hanya penutupan terakhir (tahun &lt;tahun&gt;) yang bisa dibuka kembali."* | Mencoba membuka tahun yang bukan penutupan terakhir. | Buka kembali tahun-tahun sesudahnya lebih dulu. |
 | *"Alasan buka kembali wajib diisi."* | Kolom **Alasan** kosong. | Isi alasannya. |

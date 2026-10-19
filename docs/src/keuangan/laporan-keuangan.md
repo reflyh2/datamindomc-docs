@@ -85,6 +85,16 @@ Persempit periode (misalnya per minggu atau per bulan), pilih akun tertentu di B
   - Beban usaha, beban administrasi, dan beban lainnya.
   - Laba bersih atau rugi bersih periode berjalan.
 
+### 7. **Laporan Modal**
+- **Fungsi**: Menghitung modal per tanggal tertentu dari saldo Kas, Bank, Aset, Stok, Piutang, Kasbon, Hutang, Laba Ditahan, dan Pendapatan Periode Ini.
+- **Tanda angka**:
+  - Hutang, Laba Ditahan, dan Pendapatan Periode Ini **dikurangkan** dari aset, sehingga **Total Modal** menunjukkan modal yang disetor.
+  - Laba ditahan tampil sebagai angka negatif (dalam kurung). Kalau saldonya rugi ditahan, angkanya tampil positif karena rugi itu ditambahkan kembali.
+- **Akun yang dipakai** diatur di **Pengaturan Umum › Akuntansi**, kelompok **Laporan keuangan**:
+  - **Akun Kasbon Karyawan**: akun yang tampil di baris **Kasbon**. Boleh memilih akun induk; semua sub-akunnya ikut dihitung. Akun piutang lain masuk baris **Piutang**. Kalau dibiarkan kosong, baris Kasbon berisi akun piutang yang namanya mengandung kata "kasbon".
+  - **Akun Laba Ditahan**: akun yang tampil di baris **Laba Ditahan**. Akun yang sama menjadi tujuan jurnal [Penutupan Tahunan](/keuangan/penutupan-tahunan). Kalau dibiarkan kosong, dipakai akun 30002 bernama "Laba Ditahan".
+- **Baris Bank** berisi akun yang berada langsung di bawah **Parent Akun Bank** (Pengaturan Umum › Akuntansi). Akun kas lainnya masuk baris **Kas**.
+
 ---
 
 ## Fitur Umum pada Setiap Laporan

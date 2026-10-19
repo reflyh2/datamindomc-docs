@@ -63,6 +63,15 @@ Yang perlu diketahui:
 - Saat jumlah shift ditambah, kurs shift yang baru diisi dari shift sebelumnya. Periksa dan terbitkan ulang bila perlu.
 - Isian kurs yang belum disimpan akan hilang saat jadwal disimpan.
 
+### Kurs BI
+
+Tab **Kurs BI** menampilkan kurs transaksi Bank Indonesia (beli, jual, dan tengah) sebagai acuan saat menentukan kurs. Tab ini hanya untuk dilihat dan tidak bisa diubah.
+
+- Kurs diambil otomatis setiap hari kerja. BI tidak mengumumkan kurs pada akhir pekan dan hari libur.
+- Pilih **Tanggal pengumuman** untuk melihat kurs hari sebelumnya.
+- **Valas perusahaan** hanya menampilkan mata uang yang dipakai valas Anda. Klik **Semua** untuk melihat seluruh mata uang.
+- Kolom **Tengah** adalah rata-rata beli dan jual. Kurs ini juga dipakai di laporan **Kegiatan Usaha (LKU)** dan **Laporan Keuangan** Bank Indonesia.
+
 ### Riwayat
 
 Tab **Riwayat Terbit** mencatat setiap penerbitan: waktu, shift, siapa yang menerbitkan, dan berapa valas yang berubah. Klik barisnya untuk melihat kurs sebelum dan sesudah untuk setiap valas.
