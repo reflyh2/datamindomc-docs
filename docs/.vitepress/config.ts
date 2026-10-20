@@ -112,8 +112,6 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: "Pengaturan Kurs", link: "/master/pengaturan-kurs" },
-          { text: "Parameter Kurs", link: "/master/parameter-kurs" },
-          { text: "Master Valas", link: "/master/master-valas" },
           { text: "Pecahan Valas", link: "/master/pecahan-valas" },
           { text: "Papan Kurs", link: "/master/papan-kurs" },
         ],

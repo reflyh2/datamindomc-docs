@@ -9,23 +9,23 @@ Template untuk menulis ulang:
 
 ## Ringkasan kondisi
 
-Total ada 80 halaman konten (tanpa `index.md`). Sejak audit pertama, halaman Laporan Umum digabung jadi `laporan-umum/laporan-transaksi` dan `laporan-umum/laporan-laba`, menu PB Valas berganti nama jadi Pindah Pecahan, Pinjaman Valas dihapus, dan Tutup Buku Bulanan ditambahkan.
+Total ada 78 halaman konten (tanpa `index.md`). Sejak audit pertama, halaman Laporan Umum digabung jadi `laporan-umum/laporan-transaksi` dan `laporan-umum/laporan-laba`, menu PB Valas berganti nama jadi Pindah Pecahan, Pinjaman Valas dihapus, Tutup Buku Bulanan ditambahkan, serta Parameter Kurs dan Master Valas dikeluarkan dari dokumentasi untuk sementara.
 
 | Kode | Kondisi | Penanda di halaman | Jumlah |
 |---|---|---|---|
-| **K** | Kosong, hanya placeholder | `::: warning Segera diperbarui` | 18 |
+| **K** | Kosong, hanya placeholder | `::: warning Segera diperbarui` | 16 |
 | **U** | Template lama, isi diketahui sudah usang | `::: warning Belum disesuaikan` | 6 |
-| **L** | Template lama + screenshot versi lama | `::: info Tampilan versi sebelumnya` | 10 |
+| **L** | Template lama + screenshot versi lama | `::: info Tampilan versi sebelumnya` | 8 |
 | **S** | Sudah gaya baru, tetapi baru sebagian | – | 1 |
-| **B** | Sudah gaya baru | – | 45 |
+| **B** | Sudah gaya baru | – | 47 |
 
-Halaman yang sudah gaya baru: `mulai/*` (5), `alur-kerja/kasir`, `supervisor`, `underlying`, `bantuan/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6), `pelanggan/*` (10), `inventori/*` (3), `master/pengaturan-kurs`, `shift/*` (3), `periode/*` (3), `staff/*` (3), `laporan-umum/*` (2), `keuangan/hutang-piutang-cabang`, `keuangan/tutup-buku-bulanan`, `keuangan/penutupan-tahunan`, `pengaturan/pengaturan-umum`.
+Halaman yang sudah gaya baru: `mulai/*` (5), `alur-kerja/kasir`, `supervisor`, `underlying`, `bantuan/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6), `pelanggan/*` (10), `inventori/*` (3), `master/*` (3), `shift/*` (3), `periode/*` (3), `staff/*` (3), `laporan-umum/*` (2), `keuangan/hutang-piutang-cabang`, `keuangan/tutup-buku-bulanan`, `keuangan/penutupan-tahunan`, `pengaturan/pengaturan-umum`.
 
 Yang baru sebagian:
 
 - `eksternal/laporan-keuangan-bi`: tab Laba Rugi selesai, tab **Neraca** belum.
 
-Jadi **34 dari 80 halaman (43%)** masih perlu ditulis ulang, ditambah 1 yang belum tuntas. `pengaturan/pengaturan-dokumen` sudah banyak terisi tetapi masih berpenanda, jadi ikut dihitung kosong. Untuk mengecek ulang:
+Jadi **30 dari 78 halaman (38%)** masih perlu ditulis ulang, ditambah 1 yang belum tuntas. `pengaturan/pengaturan-dokumen` sudah banyak terisi tetapi masih berpenanda, jadi ikut dihitung kosong. Untuk mengecek ulang:
 
 ```bash
 grep -rlE "Segera diperbarui|Belum disesuaikan|Tampilan versi sebelumnya" docs/src | sort
@@ -79,8 +79,7 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 
 | ✓ | Halaman | Kondisi | Peran | Catatan | Upaya |
 |---|---|---|---|---|---|
-| [ ] | `master/papan-kurs` | K | Supervisor | Bahan: `alur-kerja/supervisor#papan-kurs` | S |
-| [ ] | `master/parameter-kurs` | K | Supervisor | | M |
+| [x] | `master/papan-kurs` | K | Supervisor | Selesai | S |
 | [ ] | `transaksi/transaksi-antarcabang` | L | Kasir, Supervisor | Satu-satunya halaman Transaksi yang belum ditulis ulang | M |
 | [x] | `inventori/pb-valas` | – | Supervisor | Selesai | – |
 | [ ] | `eksternal/laporan-keuangan-bi` | S | Akunting | Tab Laba Rugi selesai, tab **Neraca** belum | M |
@@ -112,8 +111,7 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | [ ] | `pengaturan/pengaturan-perusahaan/area` | U | | S |
 | [ ] | `pengaturan/pengaturan-perusahaan/cabang` | U | | M |
 | [ ] | `pengaturan/pengaturan-perusahaan/pengaturan-cabang` | U | | M |
-| [ ] | `master/master-valas` | L | | M |
-| [ ] | `master/pecahan-valas` | L | | S |
+| [x] | `master/pecahan-valas` | L | | S |
 | [ ] | `alur-kerja/admin` | K | Tulis setelah halaman pengaturan selesai | M |
 | [ ] | `aset/kategori-aset` | K | 7 halaman aset sebaiknya ditulis sekaligus | M |
 | [ ] | `aset/daftar-aset` | K | | M |
@@ -125,7 +123,7 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 
 ## Temuan lain (perbaiki sambil jalan)
 
-1. **Tautan "Lainnya" hasil salin-tempel.** 15 halaman lama ditutup dengan *"Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas)"*, apa pun topiknya. Ganti dengan bagian **Terkait** yang relevan saat halaman ditulis ulang.
+1. **Tautan "Lainnya" hasil salin-tempel.** 13 halaman lama ditutup dengan *"Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas)"*, apa pun topiknya. Ganti dengan bagian **Terkait** yang relevan saat halaman ditulis ulang.
    ```bash
    grep -rl "cara mengelola transaksi valas" docs/src
    ```
@@ -138,10 +136,11 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
    | `eksternal/underlying/*` | Otorisasi / Lapor / List Underlying | Perlu Underlying / Dokumen / Rekap Bulanan |
 
 3. **22 halaman kosong ikut masuk PDF dan buku.** `export-pdf` mengikuti sidebar, dan `export-buku` mengikuti grup sidebar, jadi keduanya berisi halaman "Segera diperbarui". Pertimbangkan untuk melewati halaman berpenanda itu di `vitepress-pdf.config.ts` dan skrip `export-buku` sampai halaman tersebut terisi.
-4. **35 file tidak dirujuk** di `docs/src/public/`:
+4. **41 file tidak dirujuk** di `docs/src/public/`:
    - Screenshot lama yang tidak dipakai lagi setelah halaman Transaksi ditulis ulang: `cdd-edd.png`, `cdd-edd-button.png`, `cdd-edd-preview.png`, `cdd-edd-print.png`, `daftar-transaksi.png`, `form-pembayaran-valas.png`, `informasi-kurs.png`, `pembayaran-valas.png`.
    - Screenshot lama yang tidak dipakai lagi setelah halaman Pelanggan ditulis ulang: `pengaturan-pelanggan.png`, `tambah-pelanggan.png`, `hapus-pengguna.png`, `database-pelanggan.png`, `dttot.png`, `dttot-warning.png`, `dttot-warning-dialog.png`, `pep.png`, `mark-customer-pep.png`.
-   - Sisa halaman yang dihapus atau dipindah: `nasabah-kupva-bi.png`, `penerimaan-kasir.png`, `penutupan-periode.png`, `penyerahan-kasir.png`, `ppatk-list-detail.png`, `ppatk-report-detail.png`, `ppatk-report.png`, `proses-awal-hari.png`, `serah-terima-kasir.png`, `tambah-jabatan.png`, `terima-penyerahan-kasir.png`, `underlying-report.png`, `riwayat-valas.png`, `stok-valas.png`.
+   - Sisa halaman yang dihapus atau dipindah: `nasabah-kupva-bi.png`, `penerimaan-kasir.png`, `penutupan-periode.png`, `penyerahan-kasir.png`, `ppatk-list-detail.png`, `ppatk-report-detail.png`, `ppatk-report.png`, `proses-awal-hari.png`, `serah-terima-kasir.png`, `tambah-jabatan.png`, `terima-penyerahan-kasir.png`, `underlying-report.png`, `riwayat-valas.png`, `stok-valas.png`, `pecahan-valas.png`, `tambah-pecahan-valas.png`, `hapus-pecahan-valas.png`.
+   - Screenshot Master Valas, yang halamannya dikeluarkan untuk sementara. Simpan sampai menunya didokumentasikan lagi: `master-valas.png`, `tambah-master-valas.png`, `hapus-master-valas.png`.
    - `favicon.ico`, `logo.png`, `logo.svg` juga tidak dirujuk dari markdown atau config (config memakai `logo.ico`). Cek dulu sebelum menghapus, karena bisa saja dipakai dari luar situs.
 
 ## Urutan kerja yang disarankan
@@ -151,6 +150,6 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 3. **P1 upaya S**: tiga halaman underlying (putuskan dulu digabung atau tidak).
 4. **P1 upaya M**: `daftar-pelanggan`, skrining, blacklist, PPATK, lalu tulis `alur-kerja/kepatuhan`.
 5. **P2** per grup: master → eksternal (termasuk tab Neraca) → pelanggan → keuangan, lalu `alur-kerja/akunting`.
-6. **P3**: pengaturan dan master valas, lalu `alur-kerja/admin`. Grup Aset paling akhir, ditulis sekaligus.
+6. **P3**: pengaturan, lalu `alur-kerja/admin`. Grup Aset paling akhir, ditulis sekaligus.
 
 Setelah setiap halaman selesai: hapus penandanya (`Segera diperbarui` / `Belum disesuaikan` / `Tampilan versi sebelumnya`), centang barisnya di sini, lalu jalankan `pnpm build`.

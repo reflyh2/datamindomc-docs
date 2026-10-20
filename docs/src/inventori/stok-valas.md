@@ -125,7 +125,7 @@ Kolom **Kode** dan **Akhir** selalu tampil. Kolom lain bisa disembunyikan lewat 
 | Stok bernilai 0 di tanggal tutup periode | Transaksi Square Balance | Centang **Kecualikan Square Balance** |
 | Stok Akhir lebih kecil dari isi brankas | Ada penjualan yang belum dibayar | Bandingkan dengan **Stok Brangkas**, lalu cek [Pembayaran Valas](/transaksi/pembayaran-valas) |
 | Stok Akhir tidak sama dengan isi brankas, padahal semua sudah dibayar | Ada hutang, piutang, atau deposit valas | Lihat kolom **Stok Fisik** |
-| *Belum ada valas berstatus aktif di perusahaan ini.* | Belum ada valas aktif | Tambahkan valas di [Master Valas](/master/master-valas) |
+| *Belum ada valas berstatus aktif di perusahaan ini.* | Belum ada valas aktif | Tambahkan pecahan di [Pecahan Valas](/master/pecahan-valas) |
 | *Semua valas aktif berstok kosong pada tanggal ini disembunyikan …* | **Sembunyikan Stok Kosong** dicentang | Hapus centangnya |
 
 ## Terkait

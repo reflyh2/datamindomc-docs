@@ -1,84 +1,115 @@
 ---
-outline: deep
+outline: [2, 3]
 ---
 
 # Pecahan Valas
 
-::: info Tampilan versi sebelumnya
-Gambar di halaman ini diambil dari tampilan ValasPro versi sebelumnya. Letak dan warna tombol bisa sedikit berbeda.
-:::
+Menu: **Master → Pecahan Valas**
 
-![Pecahan Valas](/pecahan-valas.png)
+Pecahan valas adalah satuan yang dijual-beli dan dihitung stoknya, misalnya **USD100** (100 Dollar) atau **USD5** (5 Dollar). Satu mata uang bisa punya beberapa pecahan dengan kurs masing-masing. Menu ini dipakai admin atau supervisor untuk menambah, mengubah, menonaktifkan, dan mengimpor pecahan.
 
-Halaman **Pecahan Valas** adalah bagian dari sistem aplikasi yang digunakan untuk mengelola data pecahan valas seperti membuat pecahan valas baru, memperbarui data pecahan valas dan aksi lainnya.
+![Pecahan Valas: ringkasan dan daftar pecahan](/pecahan-valas-daftar.png)
 
----
+## Isi halaman
 
-## Struktur Halaman
+### Ringkasan
 
-### 1. **Judul Halaman**
+| Kotak | Isi |
+|---|---|
+| **Pecahan aktif** | Jumlah pecahan yang tampil di form transaksi |
+| **Mata uang** | Jumlah mata uang yang punya pecahan aktif |
+| **Belum ada kurs** | Pecahan aktif yang kurs beli atau jualnya masih 0. Bila Anda punya akses Pengaturan Kurs, klik **Atur di Pengaturan Kurs** untuk mengisinya |
+| **Nonaktif** | Pecahan yang disembunyikan dari transaksi |
 
-- **Lokasi**: Bagian atas halaman.
-- **Isi**: "Pecahan Valas”.
-- **Navigasi**: Breadcrumb di sebelah kanan atas menunjukkan posisi halaman saat ini, seperti “Dashboard > Pecahan Valas.
+### Tabel
 
-### 2. **Tabel Daftar Pecahan Valas**
+| Kolom | Isi |
+|---|---|
+| **Mata Uang** | Mata uang pecahan itu |
+| **Kode** | Kode yang dicari kasir di form transaksi. Pecahan nonaktif diberi label *Nonaktif* |
+| **Nama** | Nama pecahan, misalnya *100 Dollar* |
+| **Potongan Beli**, **Potongan Jual** | Nilai potongan yang tersimpan untuk pecahan itu |
+| **Kurs Beli / Jual** | Kurs yang berlaku saat ini di cabang Anda, mengikuti shift kurs. Label *Belum ada kurs* berarti kursnya belum diterbitkan |
+| **Stok Cabang Ini** | Stok pecahan di cabang Anda, termasuk transaksi yang belum dibayar |
 
-- **Fungsi**: Memberikan informasi tentang daftar pecahan valas yang ada, terdiri dari beberapa kolom seperti mata uang, kode, nama, potongan beli, potongan jual dan action.
+Saring tabel dengan **Mata uang**, **Status** (awalnya **Aktif**; pilih **Nonaktif** atau **Semua status** untuk melihat yang lain), dan **Cari** (kode atau nama). Tabel dimuat ulang begitu filter berubah. Hasil **Ekspor** mengikuti filter yang sedang dipakai. Lihat [Tabel, Filter, dan Ekspor](/mulai/tabel-dan-filter).
 
-### 3. **Aksi dan Tombol**
+Menu aksi di tiap baris berisi **Lihat**, **Ubah**, dan **Nonaktifkan** (atau **Aktifkan kembali** untuk pecahan nonaktif).
 
-- **Tombol "Create"**:
+### Detail pecahan
 
-  - **Fungsi**: Digunakan untuk navigasi ke halaman form tambah pecahan valas.
-  - **Lokasi**: Di bagian atas tabel.
+**Lihat** membuka detail pecahan: kurs beli dan jual yang berlaku, jumlah transaksi yang memakai pecahan itu, data pecahan, dan tabel **Stok per Cabang**. Tabel ini berguna sebelum menonaktifkan pecahan, karena pecahan hanya bisa dinonaktifkan bila stoknya 0 di semua cabang.
 
-- **Tombol "Export"**:
+## Menambah pecahan
 
-  - **Fungsi**: Digunakan untuk mengekspor data pecahan valas dalam bentuk file CSV, Excel atau PDF.
-  - **Lokasi**: Di bagian atas tabel.
+1. Klik **Tambah**.
+2. Isi kolom berikut. Kolom bertanda \* wajib diisi.
 
-- **Tombol "Print"**:
+   ![Form Identitas Pecahan](/pecahan-valas-tambah.png)
 
-  - **Fungsi**: Digunakan untuk mencetak data pecahan valas.
-  - **Lokasi**: Di bagian atas tabel.
+   | Kolom | Cara mengisi |
+   |---|---|
+   | **Mata Uang** \* | Mata uang pecahan ini |
+   | **Nama** \* | Nama pecahan, misalnya *100 Dollar*. Paling panjang 125 karakter |
+   | **Kode** \* | Terisi otomatis dari kode mata uang dan angka pertama di Nama (USD + *100 Dollar* → **USD100**). Boleh diganti. Harus unik di perusahaan Anda dan disimpan huruf besar. Paling panjang 15 karakter |
+   | **Potongan Beli**, **Potongan Jual** | Kosongkan atau isi 0 bila tidak ada potongan. Tulis tanpa pemisah ribuan |
 
-- **Tombol "Reload"**:
+3. Klik **Simpan**. Muncul pesan *Pecahan … berhasil ditambahkan.* Untuk menambah beberapa pecahan berturut-turut, klik **Simpan & Tambah Lagi**: form kosong terbuka lagi dengan mata uang yang sama.
 
-  - **Fungsi**: Digunakan untuk mendapatkan data pecahan valas terbaru.
-  - **Lokasi**: Di bagian atas tabel.
+Pecahan baru langsung aktif, tetapi kursnya masih 0 dan terhitung di kotak **Belum ada kurs**. Terbitkan kursnya di [Pengaturan Kurs](/master/pengaturan-kurs) sebelum pecahan dipakai bertransaksi.
 
-- **Kolom "Search"**:
+## Mengubah pecahan
 
-  - **Fungsi**: Digunakan untuk mencari data pecahan valas secara spesifik.
-  - **Lokasi**: Di bagian kanan atas tabel.
+Pilih **Ubah** di menu aksi, ganti isinya, lalu klik **Simpan**.
 
----
+**Mata Uang** terkunci bila pecahan sudah pernah dipakai bertransaksi, karena laporan mengelompokkan transaksi menurut mata uang. Bila pecahan itu salah mata uang, nonaktifkan dan buat pecahan baru.
 
-## Alur Penggunaan
+## Menonaktifkan dan mengaktifkan kembali
 
-1. **Menambahkan Data**:
-   - Pengguna dapat menekan tombol "create" dan selanjutnya akan diarahkan ke halaman tambah pecahan valas seperti berikut:
-     ![Tambah Pecahan Valas](/tambah-pecahan-valas.png)
-   - Pengguna dapat melengkapi form pecahan valas yang tersedia.
-   - Apabila data sudah lengkap maka pengguna dapat menekan tombol "Simpan" dan data pecahan valas berhasil di tambahkan.
-2. **Memperbarui Data**:
-   - Pengguna dapat menekan tombol "Edit" pada kolom "action" untuk data pecahan valas yang akan diperbarui dan selanjutnya akan diarahkan ke halaman edit pecahan valas.
-   - Pengguna dapat memperbarui data pecahan valas pada form edit yang tersedia.
-   - Apabila data sudah lengkap maka pengguna dapat menekan tombol "Simpan" dan data pecahan valas berhasil di perbarui.
-3. **Menghapus Data**:
-   - Pengguna dapat menekan tombol "Delete" pada kolom "action" untuk data pecahan valas yang akan dihapus dan selanjutnya akan tampil dialog konfirmasi seperti berikut:
-     ![Hapus Pecahan Valas](/hapus-pecahan-valas.png)
-   - Pengguna dapat menekan tombol "Ok" jika ingin melanjutkan hapus data, namun jika tidak pengguna dapat menekan tombol "Cancel" untuk membatalkan aksi.
-4. **Tindakan Massal (banyak pecahan sekaligus)**:
-   - Centang kotak di kolom paling kiri pada pecahan yang ingin diubah. Kotak di judul kolom memilih semua pecahan di halaman yang sedang tampil. Pilihan tetap tersimpan saat Anda pindah halaman atau mengganti saringan.
-   - Di atas tabel muncul bar "_n_ pecahan dipilih" dengan tombol berikut:
-     - **Atur Potongan**: mengisi Potongan Beli dan/atau Potongan Jual untuk semua pecahan terpilih. Kolom yang dikosongkan tidak diubah.
-     - **Nonaktifkan**: menyembunyikan pecahan terpilih dari form transaksi. Pecahan yang stoknya belum 0 di semua cabang akan dilewati, dan namanya beserta stok per cabang ditampilkan setelah proses selesai.
-     - **Aktifkan kembali**: muncul bila ada pecahan nonaktif yang dipilih (saring Status ke "Nonaktif" atau "Semua status").
-     - **Batalkan pilihan**: mengosongkan semua centang.
-   - Setelah proses selesai, halaman dimuat ulang dan angka ringkasan di atas tabel ikut diperbarui.
+Pecahan tidak bisa dihapus. Pecahan yang tidak dipakai lagi dinonaktifkan.
 
-## Lainnya
+1. Pilih **Nonaktifkan** di menu aksi.
+2. Klik **Nonaktifkan** di konfirmasi.
 
-Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+Pecahan nonaktif tidak muncul lagi di form transaksi, Pengaturan Kurs, dan [Stok Valas](/inventori/stok-valas). Riwayat transaksinya tetap utuh.
+
+Penonaktifan ditolak bila stoknya belum 0 di semua cabang. Pesannya menyebut cabang dan sisa stoknya. Kosongkan dulu stok itu lewat transaksi atau [Pindah Pecahan](/inventori/pb-valas).
+
+Untuk memakainya lagi, pilih **Status: Nonaktif**, lalu pilih **Aktifkan kembali** di menu aksi baris itu. Pecahan yang belum pernah punya kurs perlu diterbitkan kursnya dulu di Pengaturan Kurs.
+
+## Mengimpor pecahan
+
+Untuk menambah banyak pecahan sekaligus:
+
+1. Klik **Impor**, lalu **Unduh Template**.
+2. Isi template. Judul kolom berlatar merah wajib diisi, yang abu-abu opsional:
+
+   | Kolom | Cara mengisi |
+   |---|---|
+   | **name** \* | Nama pecahan |
+   | **code** \* | Kode pecahan, unik |
+   | **currency** \* | Kode mata uang persis, misalnya `USD`, `SGD`, `EUR`. Bukan namanya |
+   | **reduction_buy**, **reduction_sell** | Potongan beli dan jual. Kosong dianggap 0. Tanpa pemisah ribuan |
+
+   Jangan ubah, hapus, atau geser baris 1 (judul kolom), dan hapus baris contoh sebelum mengisi data asli.
+
+3. Pilih berkasnya (.xlsx, .xls, atau .csv), lalu klik **Impor**.
+
+Hasilnya tampil di jendela yang sama: berapa baris masuk, dilewati, dan gagal, beserta alasannya per baris. Kode yang sudah terdaftar, termasuk milik pecahan nonaktif, dilewati dan tidak ditimpa. Semua pecahan hasil impor berkurs 0, jadi terbitkan kursnya di Pengaturan Kurs.
+
+## Jika gagal
+
+| Yang muncul | Penyebab | Yang dilakukan |
+|---|---|---|
+| *Kode … sudah dipakai pecahan lain* | Kode itu sudah ada, mungkin milik pecahan nonaktif | Pakai kode lain, atau aktifkan kembali pecahan lama |
+| *Mata uang tidak bisa diganti: pecahan ini sudah dipakai di … transaksi.* | Pecahan sudah dipakai bertransaksi | Nonaktifkan dan buat pecahan baru |
+| *Pecahan … tidak bisa dinonaktifkan karena stoknya masih ada: …* | Masih ada stok di cabang yang disebut | Kosongkan stoknya lewat transaksi atau Pindah Pecahan |
+| *Potongan beli harus angka.* | Ada huruf atau pemisah ribuan | Tulis angka saja, misalnya `150` |
+| Saat impor: *mata uang '…' tidak dikenal* | Kolom currency diisi nama, bukan kode | Isi dengan kode persis, misalnya `USD` |
+| Saat impor: *Berkas harus .xlsx, .xls, atau .csv.* | Format berkas lain | Simpan ulang dari template |
+
+## Terkait
+
+- [Pengaturan Kurs](/master/pengaturan-kurs)
+- [Stok Valas](/inventori/stok-valas)
+- [Pindah Pecahan](/inventori/pb-valas)

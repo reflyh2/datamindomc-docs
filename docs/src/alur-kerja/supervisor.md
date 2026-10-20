@@ -41,7 +41,7 @@ Selama Anda belum menekan **Terbitkan**, kasir masih memakai kurs lama. Kotak **
 
 Yang perlu diketahui:
 
-- **Menerbitkan satu shift juga menimpa kurs shift sesudahnya.** Shift 2 mendapat nilai yang sama. Shift 3 dihitung dari **Master → Parameter Kurs → Shift 3** bila parameternya diisi, selain itu nilainya disalin. Kalau shift berikutnya perlu kurs berbeda, terbitkan shift itu sesudahnya.
+- **Menerbitkan satu shift juga menimpa kurs shift sesudahnya.** Shift 2 mendapat nilai yang sama. Shift 3 dihitung dari parameter Shift 3 perusahaan bila sudah diatur admin, selain itu nilainya disalin. Kalau shift berikutnya perlu kurs berbeda, terbitkan shift itu sesudahnya.
 - Kotak **Kurs berlaku sekarang** menunjukkan shift yang sedang dipakai transaksi beserta jam berlakunya.
 - Bila perusahaan menyalakan [Persetujuan Atasan](/mulai/fitur-opsional#fitur-lain) untuk terbitkan kurs, **Terbitkan** perlu disetujui pengguna lain yang punya hak akses **Setujui Terbitkan Kurs**. Anda tidak bisa menyetujui terbitan Anda sendiri.
 - Kotak **USD kurs BI (jual)** menampilkan kurs acuan Bank Indonesia dan tidak bisa diubah.
