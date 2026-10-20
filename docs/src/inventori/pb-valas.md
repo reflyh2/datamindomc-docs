@@ -63,7 +63,8 @@ Tombol **Batalkan** hanya muncul bila:
 | *Tidak dapat memindahkan stok valas ! …* / *Tidak dapat membatalkan Pindah Pecahan ! …* | Periode berjalan sudah ditutup | Minta supervisor membuka kembali penutupannya |
 | *Dokumen ini sudah dibatalkan oleh …* | Dokumen sudah pernah dibatalkan | Tidak perlu dibatalkan lagi |
 
-## Lainnya
+## Terkait
 
-- Cek stok seluruh pecahan di [Stok Valas](/inventori/stok-valas).
-- Baca juga tentang [cara mengelola transaksi valas](/transaksi/transaksi-valas).
+- [Stok Valas](/inventori/stok-valas): cek stok seluruh pecahan
+- [Riwayat Valas](/inventori/riwayat-valas): kedua sisi Pindah Pecahan tercatat di sini
+- [Pecahan Valas](/master/pecahan-valas)

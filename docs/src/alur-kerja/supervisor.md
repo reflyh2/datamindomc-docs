@@ -16,7 +16,7 @@ AKHIR HARI   Tutup hari (caranya tergantung metode laba, lihat di bawah)
 
 ## Menerbitkan kurs
 
-Menu: **Master → Pengaturan Kurs** (halaman **Pengaturan Kurs Valas**).
+Menu: **Master → Pengaturan Kurs** (halaman **Pengaturan Kurs Valas**). Rincian lengkap layarnya ada di [Pengaturan Kurs](/master/pengaturan-kurs).
 
 ### Draf dan terbit
 
