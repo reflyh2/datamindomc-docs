@@ -13,19 +13,19 @@ Total ada 78 halaman konten (tanpa `index.md`). Sejak audit pertama, halaman Lap
 
 | Kode | Kondisi | Penanda di halaman | Jumlah |
 |---|---|---|---|
-| **K** | Kosong, hanya placeholder | `::: warning Segera diperbarui` | 16 |
-| **U** | Template lama, isi diketahui sudah usang | `::: warning Belum disesuaikan` | 6 |
-| **L** | Template lama + screenshot versi lama | `::: info Tampilan versi sebelumnya` | 8 |
+| **K** | Kosong, hanya placeholder | `::: warning Segera diperbarui` | 15 |
+| **U** | Template lama, isi diketahui sudah usang | `::: warning Belum disesuaikan` | 5 |
+| **L** | Template lama + screenshot versi lama | `::: info Tampilan versi sebelumnya` | 6 |
 | **S** | Sudah gaya baru, tetapi baru sebagian | – | 1 |
-| **B** | Sudah gaya baru | – | 47 |
+| **B** | Sudah gaya baru | – | 51 |
 
-Halaman yang sudah gaya baru: `mulai/*` (5), `alur-kerja/kasir`, `supervisor`, `underlying`, `bantuan/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6), `pelanggan/*` (10), `inventori/*` (3), `master/*` (3), `shift/*` (3), `periode/*` (3), `staff/*` (3), `laporan-umum/*` (2), `keuangan/hutang-piutang-cabang`, `keuangan/tutup-buku-bulanan`, `keuangan/penutupan-tahunan`, `pengaturan/pengaturan-umum`.
+Halaman yang sudah gaya baru: `mulai/*` (5), `alur-kerja/kasir`, `supervisor`, `underlying`, `akunting`, `bantuan/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6), `pelanggan/*` (10), `inventori/*` (3), `master/*` (3), `shift/*` (3), `periode/*` (3), `staff/*` (3), `laporan-umum/*` (2), `keuangan/*` (6), `pengaturan/pengaturan-umum`.
 
 Yang baru sebagian:
 
 - `eksternal/laporan-keuangan-bi`: tab Laba Rugi selesai, tab **Neraca** belum.
 
-Jadi **30 dari 78 halaman (38%)** masih perlu ditulis ulang, ditambah 1 yang belum tuntas. `pengaturan/pengaturan-dokumen` sudah banyak terisi tetapi masih berpenanda, jadi ikut dihitung kosong. Untuk mengecek ulang:
+Jadi **26 dari 78 halaman (33%)** masih perlu ditulis ulang, ditambah 1 yang belum tuntas. `pengaturan/pengaturan-dokumen` sudah banyak terisi tetapi masih berpenanda, jadi ikut dihitung kosong. Untuk mengecek ulang:
 
 ```bash
 grep -rlE "Segera diperbarui|Belum disesuaikan|Tampilan versi sebelumnya" docs/src | sort
@@ -89,13 +89,13 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | [ ] | `eksternal/master-risiko` | K | Kepatuhan | | M |
 | [x] | `pelanggan/laporan` | – | Kepatuhan | Selesai | – |
 | [x] | `pelanggan/data-duplikat` | – | Kepatuhan | Selesai, ditulis dari kode (akun uji tidak punya akses). Belum ada screenshot | – |
-| [ ] | `keuangan/daftar-akun` | L | Akunting | | M |
-| [ ] | `keuangan/jurnal` | L | Akunting | 5 screenshot lama | M |
-| [ ] | `keuangan/laporan-keuangan` | U | Akunting | H1 masih "Laporan Akunting". 7 screenshot lama | L |
+| [x] | `keuangan/daftar-akun` | L | Akunting | | M |
+| [x] | `keuangan/jurnal` | L | Akunting | 5 screenshot lama | M |
+| [x] | `keuangan/laporan-keuangan` | U | Akunting | H1 masih "Laporan Akunting". 7 screenshot lama | L |
 | [x] | `keuangan/hutang-piutang-cabang` | – | Akunting | Selesai | – |
 | [x] | `keuangan/tutup-buku-bulanan` | – | Akunting | Selesai (halaman baru) | – |
 | [x] | `keuangan/penutupan-tahunan` | – | Akunting | Selesai | – |
-| [ ] | `alur-kerja/akunting` | K | Akunting | Tulis setelah halaman keuangan selesai | M |
+| [x] | `alur-kerja/akunting` | K | Akunting | Tulis setelah halaman keuangan selesai | M |
 | [x] | `laporan-umum/laporan-transaksi` | – | Supervisor | Selesai. Menggantikan 5 halaman laporan transaksi lama | – |
 | [x] | `laporan-umum/laporan-laba` | – | Supervisor | Selesai. Menggantikan 2 halaman laporan laba lama | – |
 
@@ -131,15 +131,15 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 
    | Halaman | H1 sekarang | Nama di sidebar |
    |---|---|---|
-   | `keuangan/laporan-keuangan` | Laporan Akunting | Laporan Keuangan |
    | `eksternal/laporan-kupva` | Laporan KUPVA BI | Laporan KUPVA |
    | `eksternal/underlying/*` | Otorisasi / Lapor / List Underlying | Perlu Underlying / Dokumen / Rekap Bulanan |
 
 3. **22 halaman kosong ikut masuk PDF dan buku.** `export-pdf` mengikuti sidebar, dan `export-buku` mengikuti grup sidebar, jadi keduanya berisi halaman "Segera diperbarui". Pertimbangkan untuk melewati halaman berpenanda itu di `vitepress-pdf.config.ts` dan skrip `export-buku` sampai halaman tersebut terisi.
-4. **41 file tidak dirujuk** di `docs/src/public/`:
+4. **47 file tidak dirujuk** di `docs/src/public/`:
    - Screenshot lama yang tidak dipakai lagi setelah halaman Transaksi ditulis ulang: `cdd-edd.png`, `cdd-edd-button.png`, `cdd-edd-preview.png`, `cdd-edd-print.png`, `daftar-transaksi.png`, `form-pembayaran-valas.png`, `informasi-kurs.png`, `pembayaran-valas.png`.
    - Screenshot lama yang tidak dipakai lagi setelah halaman Pelanggan ditulis ulang: `pengaturan-pelanggan.png`, `tambah-pelanggan.png`, `hapus-pengguna.png`, `database-pelanggan.png`, `dttot.png`, `dttot-warning.png`, `dttot-warning-dialog.png`, `pep.png`, `mark-customer-pep.png`.
    - Sisa halaman yang dihapus atau dipindah: `nasabah-kupva-bi.png`, `penerimaan-kasir.png`, `penutupan-periode.png`, `penyerahan-kasir.png`, `ppatk-list-detail.png`, `ppatk-report-detail.png`, `ppatk-report.png`, `proses-awal-hari.png`, `serah-terima-kasir.png`, `tambah-jabatan.png`, `terima-penyerahan-kasir.png`, `underlying-report.png`, `riwayat-valas.png`, `stok-valas.png`, `pecahan-valas.png`, `tambah-pecahan-valas.png`, `hapus-pecahan-valas.png`.
+   - Screenshot lama yang tidak dipakai lagi setelah halaman Keuangan ditulis ulang: `chart-of-account.png`, `add-account.png`, `tambah-jurnal-umum.png`, `jurnal-detail.png`, `tambah-jurnal-kas.png`, `laporan-akunting.png`.
    - Screenshot Master Valas, yang halamannya dikeluarkan untuk sementara. Simpan sampai menunya didokumentasikan lagi: `master-valas.png`, `tambah-master-valas.png`, `hapus-master-valas.png`.
    - `favicon.ico`, `logo.png`, `logo.svg` juga tidak dirujuk dari markdown atau config (config memakai `logo.ico`). Cek dulu sebelum menghapus, karena bisa saja dipakai dari luar situs.
 

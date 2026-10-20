@@ -48,7 +48,6 @@ hero:
       <a href="/alur-kerja/akunting">
         <span class="role-name">Akunting</span>
         <span class="role-desc">Jurnal, laporan keuangan, dan penutupan periode.</span>
-        <span class="role-badge">Sedang ditulis ulang</span>
       </a>
     </li>
     <li>
