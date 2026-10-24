@@ -13,19 +13,19 @@ Total ada 78 halaman konten (tanpa `index.md`). Sejak audit pertama, halaman Lap
 
 | Kode | Kondisi | Penanda di halaman | Jumlah |
 |---|---|---|---|
-| **K** | Kosong, hanya placeholder | `::: warning Segera diperbarui` | 15 |
+| **K** | Kosong, hanya placeholder | `::: warning Segera diperbarui` | 7 |
 | **U** | Template lama, isi diketahui sudah usang | `::: warning Belum disesuaikan` | 5 |
 | **L** | Template lama + screenshot versi lama | `::: info Tampilan versi sebelumnya` | 6 |
 | **S** | Sudah gaya baru, tetapi baru sebagian | – | 1 |
-| **B** | Sudah gaya baru | – | 51 |
+| **B** | Sudah gaya baru | – | 59 |
 
-Halaman yang sudah gaya baru: `mulai/*` (5), `alur-kerja/kasir`, `supervisor`, `underlying`, `akunting`, `bantuan/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6), `pelanggan/*` (10), `inventori/*` (3), `master/*` (3), `shift/*` (3), `periode/*` (3), `staff/*` (3), `laporan-umum/*` (2), `keuangan/*` (6), `pengaturan/pengaturan-umum`.
+Halaman yang sudah gaya baru: `mulai/*` (5), `alur-kerja/kasir`, `supervisor`, `underlying`, `akunting`, `kepatuhan`, `admin`, `bantuan/*` (2), `transaksi/*` kecuali `transaksi-antarcabang` (6), `pelanggan/*` (10), `inventori/*` (3), `master/*` (3), `shift/*` (3), `periode/*` (3), `staff/*` (3), `laporan-umum/*` (2), `keuangan/*` (6), `pengaturan/pengaturan-umum`.
 
 Yang baru sebagian:
 
 - `eksternal/laporan-keuangan-bi`: tab Laba Rugi selesai, tab **Neraca** belum.
 
-Jadi **26 dari 78 halaman (33%)** masih perlu ditulis ulang, ditambah 1 yang belum tuntas. `pengaturan/pengaturan-dokumen` sudah banyak terisi tetapi masih berpenanda, jadi ikut dihitung kosong. Untuk mengecek ulang:
+Jadi **18 dari 78 halaman (23%)** masih perlu ditulis ulang, ditambah 1 yang belum tuntas. Untuk mengecek ulang:
 
 ```bash
 grep -rlE "Segera diperbarui|Belum disesuaikan|Tampilan versi sebelumnya" docs/src | sort
@@ -66,9 +66,9 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | [x] | `pelanggan/skrining/dttot` | – | Kepatuhan | Selesai | – |
 | [x] | `pelanggan/skrining/pep` | – | Kepatuhan | Selesai | – |
 | [x] | `pelanggan/blacklist` | – | Kepatuhan | Selesai, ditulis dari kode (akun uji tidak punya akses). Belum ada screenshot | – |
-| [ ] | `eksternal/ppatk/ltkt` | K | Kepatuhan | Ada tenggat lapor ke PPATK | M |
-| [ ] | `eksternal/ppatk/ltkm` | K | Kepatuhan | Ada tenggat lapor ke PPATK | M |
-| [ ] | `alur-kerja/kepatuhan` | K | Kepatuhan | Tulis setelah halaman skrining dan PPATK di atas selesai | M |
+| [x] | `eksternal/ppatk/ltkt` | K | Kepatuhan | Ada tenggat lapor ke PPATK | M |
+| [x] | `eksternal/ppatk/ltkm` | K | Kepatuhan | Ada tenggat lapor ke PPATK | M |
+| [x] | `alur-kerja/kepatuhan` | K | Kepatuhan | Tulis setelah halaman skrining dan PPATK di atas selesai | M |
 
 **Catatan underlying:** `alur-kerja/underlying.md` menyebut **Eksternal → Underlying** sebagai *satu* halaman dengan tiga tab (Perlu Underlying, Dokumen, Rekap Bulanan). Sidebar docs sudah memakai nama tab, tetapi nama file (`otorisasi-`, `lapor-`, `list-underlying`) dan H1 ("Otorisasi Underlying", "Lapor Underlying", "List Underlying") masih nama lama. Putuskan dulu sebelum menulis:
 
@@ -86,7 +86,7 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | [ ] | `eksternal/lku` | L | Kepatuhan | Dirujuk dari `laporan-keuangan-bi` (kurs tengah BI) | M |
 | [ ] | `eksternal/laporan-sipesat` | L | Kepatuhan | | M |
 | [ ] | `eksternal/laporan-kupva` | U | Kepatuhan | H1 masih "Laporan KUPVA BI" | M |
-| [ ] | `eksternal/master-risiko` | K | Kepatuhan | | M |
+| [x] | `eksternal/master-risiko` | K | Kepatuhan | | M |
 | [x] | `pelanggan/laporan` | – | Kepatuhan | Selesai | – |
 | [x] | `pelanggan/data-duplikat` | – | Kepatuhan | Selesai, ditulis dari kode (akun uji tidak punya akses). Belum ada screenshot | – |
 | [x] | `keuangan/daftar-akun` | L | Akunting | | M |
@@ -104,15 +104,15 @@ Perkiraan upaya: **S** = < 1 jam (bahan sudah ada), **M** = setengah hari (perlu
 | ✓ | Halaman | Kondisi | Catatan | Upaya |
 |---|---|---|---|---|
 | [x] | `pengaturan/pengaturan-umum` | – | Selesai | – |
-| [ ] | `pengaturan/pengaturan-dokumen` | K | Pembuka sudah ada (Invoice, Kop Surat & Dokumen); isi belum | M |
-| [ ] | `pengaturan/hari-libur` | K | Dipakai checklist Buka Hari | S |
-| [ ] | `pengaturan/pindah-cabang` | K | | S |
+| [x] | `pengaturan/pengaturan-dokumen` | K | Pembuka sudah ada (Invoice, Kop Surat & Dokumen); isi belum | M |
+| [x] | `pengaturan/hari-libur` | K | Dipakai checklist Buka Hari | S |
+| [x] | `pengaturan/pindah-cabang` | K | | S |
 | [ ] | `pengaturan/pengaturan-perusahaan/perusahaan` | U | | M |
 | [ ] | `pengaturan/pengaturan-perusahaan/area` | U | | S |
 | [ ] | `pengaturan/pengaturan-perusahaan/cabang` | U | | M |
 | [ ] | `pengaturan/pengaturan-perusahaan/pengaturan-cabang` | U | | M |
 | [x] | `master/pecahan-valas` | L | | S |
-| [ ] | `alur-kerja/admin` | K | Tulis setelah halaman pengaturan selesai | M |
+| [x] | `alur-kerja/admin` | K | Tulis setelah halaman pengaturan selesai | M |
 | [ ] | `aset/kategori-aset` | K | 7 halaman aset sebaiknya ditulis sekaligus | M |
 | [ ] | `aset/daftar-aset` | K | | M |
 | [ ] | `aset/penyusutan` | K | | M |

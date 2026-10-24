@@ -47,6 +47,20 @@ Klik **Simpan** untuk menyimpan. Kalau Anda meninggalkan halaman dengan perubaha
 Blok **Keterangan Invoice** mencetak teks dari isian **Keterangan Invoice** di bagian Invoice. Isinya diubah di sana, bukan di halaman tata letak.
 :::
 
+## Pengaturan Invoice
+
+Bagian **Invoice** (*Tata letak dan isi invoice yang dicetak dari transaksi.*) memuat isian berikut. Simpan dengan tombol **Simpan** di bawah halaman.
+
+| Isian | Fungsi |
+|---|---|
+| **Template Invoice** | Pilih kartu **Template siap pakai** (desain dikelompokkan menurut kertas printer) atau **Susun sendiri** (lihat bagian di atas). Klik **Pratinjau** untuk melihat hasilnya di tab baru. Pratinjau memakai transaksi terakhir cabang dan isian di halaman ini, termasuk yang belum disimpan |
+| **Tanggal Invoice** | Sumber tanggal yang dicetak: **Periode Sistem** atau **Tanggal Dibuat**. Hanya Super Admin yang bisa mengubahnya |
+| **Rincian Metode Pembayaran** | Mencetak rincian metode pembayaran (tunai/bank) pada invoice |
+| **Pakai Logo Kop Surat** | Invoice mencetak logo dari **Kop Surat**, bukan logo perusahaan. Kalau logo Kop Surat belum diunggah, invoice tetap memakai logo perusahaan |
+| **Keterangan Invoice** | Teks yang dicetak di bawah invoice, maksimal 1000 karakter. Tulis `{companyName}` untuk menyisipkan nama perusahaan. Dikosongkan, dipakai keterangan bawaan. Klik **Kembalikan ke keterangan bawaan** untuk membatalkan teks Anda |
+
+Sebagian template tidak mendukung semua isian. Bila begitu, catatan kecil di bawah isian itu menjelaskannya.
+
 ## Kop Surat & Dokumen
 
 Bagian ini mengatur kepala (kop) dan bagian bawah dokumen cetak: formulir CDD/EDD, laporan akuntansi, laporan stok, laporan umum, dan laporan lain. Daftar lengkapnya ada di kartu **Dokumen yang Memakai Kop** di halaman ini. Pengaturannya berlaku untuk seluruh perusahaan. Ekspor Excel tidak memakai kop.
@@ -91,12 +105,32 @@ Centang **Cetak blok pengesahan pada laporan** untuk menambahkan tempat tanda ta
 
 Formulir CDD dan EDD tidak ikut mencetak blok ini karena sudah punya kolom tanda tangan sendiri.
 
+### Formulir CDD/EDD
+
+Pilih **Tata Letak** formulir uji tuntas nasabah. Pilihan ini berlaku untuk formulir CDD maupun EDD.
+
+- **Standar — label dan isian satu kolom**: formulir bawaan ValasPro.
+- **Tabel Dua Kolom — perorangan & perusahaan berdampingan**: identitas pelanggan dicetak dalam tabel dengan kolom **Perorangan** dan **Perusahaan**, disusul **Informasi Lainnya**, **Beneficial Owner**, serta kolom tanda tangan **TTD Officer**, **Admin Officer**, dan **TTD Customer**. Data pelanggan Retail masuk ke kolom Perorangan, sedangkan pelanggan Corporate, Money Changer, dan Bank masuk ke kolom Perusahaan. Pada formulir EDD ada tambahan baris **Jenis High Risk** dan **Metode Pembayaran**.
+
+Kalau memilih Tabel Dua Kolom, muncul dua isian lagi:
+
+- **Warna Formulir**: warna pita judul bagian, misalnya kuning `#fdd85d`. Kosongkan untuk memakai Warna Aksen kop. Warna teks pada pita menyesuaikan otomatis supaya tetap terbaca.
+- **Catatan Kaki Formulir**: kalimat kecil di bawah kolom tanda tangan. Penanda seperti `{perusahaan}` bisa dipakai di sini. Kosongkan untuk memakai kalimat contoh.
+
+Kop di atas formulir tetap mengikuti pengaturan **Kop Surat**. Hasilnya bisa dilihat di tab **Formulir** pada Pratinjau.
+
 ### Menyimpan dan mengembalikan
 
 Klik **Simpan** untuk menerapkan pengaturan ke semua dokumen. Gambar yang sudah diunggah bisa dihapus lewat tautan di bawahnya, misalnya **Hapus logo kanan** atau **Hapus tanda tangan**.
 
-**Kembalikan ke bawaan** mengembalikan semua pengaturan kop, kaki dokumen, dan pengesahan ke kondisi awal. Gambar yang sudah diunggah tidak dihapus, jadi bisa dipakai lagi kalau Anda memilih mode Terstruktur atau Gambar lagi.
+**Kembalikan ke bawaan** mengembalikan semua pengaturan kop, kaki dokumen, pengesahan, dan formulir CDD/EDD ke kondisi awal. Gambar yang sudah diunggah tidak dihapus, jadi bisa dipakai lagi kalau Anda memilih mode Terstruktur atau Gambar lagi.
 
-::: warning Segera diperbarui
-Panduan lengkap menu ini sedang ditulis ulang untuk tampilan terbaru ValasPro.
-:::
+## Hak akses
+
+Bagian **Invoice** mengikuti akses Pengaturan Umum. **Kop Surat & Dokumen** punya akses sendiri, yaitu menu Kop Surat. Atur di [Daftar Akses](/staff/daftar-akses).
+
+## Terkait
+
+- [Pengaturan Umum](/pengaturan/pengaturan-umum)
+- [Formulir CDD / EDD](/transaksi/cdd-edd)
+- [Alur Kerja Admin](/alur-kerja/admin)
