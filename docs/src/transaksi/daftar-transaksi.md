@@ -53,7 +53,7 @@ Tombol **Tambah** membuka [Transaksi Valas](/transaksi/transaksi-valas). Fitur t
 
 ## Mengimpor transaksi dari Excel
 
-Dipakai untuk memindahkan transaksi lama dari aplikasi lain. Untuk transaksi harian, tetap pakai [Transaksi Valas](/transaksi/transaksi-valas). Tombol **Impor Excel** hanya tampil untuk Super Admin.
+Dipakai untuk memindahkan transaksi lama dari aplikasi lain. Untuk transaksi harian, tetap pakai [Transaksi Valas](/transaksi/transaksi-valas). Tombol **Impor Excel** hanya tampil bagi pengguna yang jabatannya diberi izin **Impor Transaksi** (di Hak Akses). Bawaannya izin ini hanya dimiliki Super Admin.
 
 Impor dengan urutan ini: [pecahan valas](/master/pecahan-valas), lalu [pelanggan](/pelanggan/daftar-pelanggan#mengimpor-pelanggan-dari-excel), baru transaksi. Pelanggan dan valas tidak dibuat otomatis.
 
@@ -66,7 +66,9 @@ Impor dengan urutan ini: [pecahan valas](/master/pecahan-valas), lalu [pelanggan
 3. Tarik berkas ke jendela **Impor Transaksi Valas**, atau klik kotaknya untuk memilih. Berkas langsung diperiksa; belum ada yang disimpan.
 4. Periksa hasilnya. Jendela menampilkan jumlah faktur **Siap diimpor**, **Bermasalah**, dan **Mungkin duplikat**, nilai beli dan jual yang akan masuk, serta tabel per faktur dengan nomor baris Excel dan pesannya.
    - Pakai chip **Bermasalah**, **Mungkin duplikat**, **Ada catatan**, atau **Siap** untuk menyaring tabel.
-   - Klik **Unduh daftar masalah (.csv)** untuk memperbaiki berkas di Excel, lalu klik **Periksa ulang** atau **Ganti berkas**.
+   - Klik **Unduh faktur bermasalah (.xlsx)** untuk mendapatkan baris-baris faktur yang bermasalah dalam format template yang sama, dengan kolom `keterangan` di paling kanan berisi masalahnya. Perbaiki isinya, lalu impor berkas itu. Kolom `keterangan` tidak perlu dihapus.
+   - Klik **Unduh daftar masalah (.csv)** untuk melihat semua pesan, termasuk catatan dan faktur yang mungkin duplikat.
+   - Setelah berkas diperbaiki, klik **Periksa ulang** atau **Ganti berkas**.
 5. Klik **Impor N faktur**. Hanya faktur yang siap yang disimpan. Nomor faktur yang terbentuk ditampilkan, dan daftar transaksi langsung diperbarui.
 
 | Status | Artinya |

@@ -109,7 +109,8 @@ Dipakai untuk memasukkan banyak pelanggan sekaligus, misalnya saat pindah dari a
    - `profession` dan `nation` diisi namanya, bukan kodenya.
    - `is_pep` hanya menerima `0`, `1`, atau `2`.
 3. Di jendela **Impor Data Pelanggan**, pilih file di **Berkas Excel** (.xlsx, .xls, atau .csv), lalu klik **Impor**.
-4. Baca hasilnya: jumlah yang berhasil diimpor, diperbarui, duplikat yang dilewati, dan yang gagal. Baris yang gagal dirinci di **Detail Error**.
+4. Baca hasilnya: jumlah yang berhasil diimpor, diperbarui, duplikat yang dilewati, dan yang gagal. Baris yang gagal dirinci di **Detail Error**, dengan nomor baris sesuai lembar kerja Anda.
+5. Bila ada yang gagal, klik **Unduh baris gagal (.xlsx)**. Berkas itu memakai template yang sama, hanya berisi baris yang gagal, dengan alasannya di kolom **keterangan** paling kanan. Perbaiki barisnya, lalu impor berkas itu lagi. Kolom keterangan tidak perlu dihapus. Tautan ini berlaku sehari.
 
 ![Jendela Impor Data Pelanggan dengan Panduan Kolom terbuka](/pelanggan-daftar-pelanggan-impor.png)
 

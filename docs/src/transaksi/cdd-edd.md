@@ -39,6 +39,8 @@ Contoh formulir EDD:
 
 Kalau ada data pelanggan yang salah, perbaiki di [Daftar Pelanggan](/pelanggan/daftar-pelanggan), lalu buka formulirnya lagi.
 
+Tabel di atas menjelaskan tata letak **Standar**. Perusahaan juga bisa memakai tata letak **Tabel Dua Kolom** (kolom Perorangan dan Perusahaan berdampingan, dengan warna dan catatan kaki sendiri). Tata letak ini diatur di [Pengaturan Dokumen](/pengaturan/pengaturan-dokumen#formulir-cdd-edd).
+
 ## Mencetak atau mengunduh
 
 1. Di **Transaksi → Daftar Transaksi**, klik ikon **Cetak CDD** atau **Cetak EDD** pada baris faktur.

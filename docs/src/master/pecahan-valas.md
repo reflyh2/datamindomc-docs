@@ -97,6 +97,8 @@ Untuk menambah banyak pecahan sekaligus:
 
 Hasilnya tampil di jendela yang sama: berapa baris masuk, dilewati, dan gagal, beserta alasannya per baris. Kode yang sudah terdaftar, termasuk milik pecahan nonaktif, dilewati dan tidak ditimpa. Semua pecahan hasil impor berkurs 0, jadi terbitkan kursnya di Pengaturan Kurs.
 
+Bila ada baris yang gagal, klik **Unduh baris gagal (.xlsx)**. Berkas itu memakai template yang sama, hanya berisi baris yang gagal, dengan alasannya di kolom **keterangan** paling kanan. Perbaiki barisnya, lalu impor berkas itu lagi. Kolom keterangan tidak perlu dihapus. Baris yang dilewati karena kodenya sudah terdaftar tidak ikut.
+
 ## Jika gagal
 
 | Yang muncul | Penyebab | Yang dilakukan |
