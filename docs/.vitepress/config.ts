@@ -39,6 +39,7 @@ export default defineConfig({
           { text: "Akunting", link: "/alur-kerja/akunting" },
           { text: "Kepatuhan", link: "/alur-kerja/kepatuhan" },
           { text: "Admin", link: "/alur-kerja/admin" },
+          { text: "Mengisi Saldo Awal Valas, Kas dan Bank", link: "/alur-kerja/saldo-awal" },
         ],
       },
 
